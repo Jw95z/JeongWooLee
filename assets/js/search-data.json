@@ -2,11 +2,11 @@
   
     
         "post0": {
-            "title": "James",
-            "content": "print(&quot;Hello&quot;) .",
-            "url": "https://jw95z.github.io/JeongWooLee/2022/08/23/jeongwoo.html",
-            "relUrl": "/2022/08/23/jeongwoo.html",
-            "date": " • Aug 23, 2022"
+            "title": "MyBlog",
+            "content": "print(&quot;Hello&quot;) . evalmachine.&lt;anonymous&gt;:1 print(&#34;Hello&#34;) ^ ReferenceError: print is not defined at evalmachine.&lt;anonymous&gt;:1:1 at ContextifyScript.Script.runInThisContext (vm.js:25:33) at Object.runInThisContext (vm.js:97:38) at run ([eval]:1020:15) at onRunRequest ([eval]:864:18) at onMessage ([eval]:828:13) at emitTwo (events.js:106:13) at process.emit (events.js:191:7) at process.nextTick (internal/child_process.js:758:12) at _combinedTickCallback (internal/process/next_tick.js:73:7) .",
+            "url": "https://jw95z.github.io/JeongWooLee/2022/08/24/jeongwoo.html",
+            "relUrl": "/2022/08/24/jeongwoo.html",
+            "date": " • Aug 24, 2022"
         }
         
     
