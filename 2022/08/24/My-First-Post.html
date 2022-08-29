@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Jupyter Blog Post | fastpages</title>
+<title>Quiz | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Jupyter Blog Post" />
+<meta property="og:title" content="Quiz" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A Post for Hacks of Jupyter notebooks." />
 <meta property="og:description" content="A Post for Hacks of Jupyter notebooks." />
@@ -18,9 +18,9 @@
 <meta property="article:published_time" content="2022-08-24T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://jw95z.github.io/JeongWooLee/images/chart-preview.png" />
-<meta property="twitter:title" content="Jupyter Blog Post" />
+<meta property="twitter:title" content="Quiz" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-24T00:00:00-05:00","datePublished":"2022-08-24T00:00:00-05:00","description":"A Post for Hacks of Jupyter notebooks.","headline":"Jupyter Blog Post","image":"https://jw95z.github.io/JeongWooLee/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/2022/08/24/My-First-Post.html"},"url":"https://jw95z.github.io/JeongWooLee/2022/08/24/My-First-Post.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-24T00:00:00-05:00","datePublished":"2022-08-24T00:00:00-05:00","description":"A Post for Hacks of Jupyter notebooks.","headline":"Quiz","image":"https://jw95z.github.io/JeongWooLee/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/2022/08/24/My-First-Post.html"},"url":"https://jw95z.github.io/JeongWooLee/2022/08/24/My-First-Post.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/JeongWooLee/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jw95z.github.io/JeongWooLee/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/JeongWooLee/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,7 +75,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Jupyter Blog Post</h1><p class="page-description">A Post for Hacks of Jupyter notebooks.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-24T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Quiz</h1><p class="page-description">A Post for Hacks of Jupyter notebooks.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-24T00:00:00-05:00" itemprop="datePublished">
         Aug 24, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -135,7 +135,58 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, world"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">questionAnswer</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">ans</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ans</span>
+
+<span class="k">def</span> <span class="nf">questionRespone</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"I got a number :"</span><span class="p">,</span><span class="n">ans</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ans</span>
+    
+<span class="k">def</span> <span class="nf">questi</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">correct</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">questionRespone</span><span class="p">(</span><span class="s2">"1 + 1 = ? "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">res</span> <span class="o">==</span> <span class="s2">"2"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">res</span> <span class="o">+</span> <span class="s2">" is correct"</span><span class="p">)</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">res</span> <span class="o">+</span> <span class="s2">" is incorrect"</span><span class="p">)</span>
+
+    <span class="n">rep</span> <span class="o">=</span> <span class="n">questionRespone</span><span class="p">(</span><span class="s2">"2 + 3 = ? "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rep</span> <span class="o">==</span> <span class="s2">"5"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rep</span> <span class="o">+</span> <span class="s2">" is correct"</span><span class="p">)</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rep</span> <span class="o">+</span> <span class="s2">" is incorrect"</span><span class="p">)</span>
+
+    <span class="n">reg</span> <span class="o">=</span> <span class="n">questionRespone</span><span class="p">(</span><span class="s2">"3 + 5 = ? "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">reg</span> <span class="o">==</span> <span class="s2">"8"</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">reg</span> <span class="o">+</span> <span class="s2">" is correct"</span><span class="p">)</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">reg</span> <span class="o">+</span> <span class="s2">" is incorrect"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">((</span><span class="nb">str</span><span class="p">)((</span><span class="nb">float</span><span class="p">)(</span><span class="n">correct</span><span class="o">/</span><span class="n">quest</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span> <span class="o">+</span> <span class="s2">"%"</span><span class="p">)</span>
+
+<span class="n">quest</span> <span class="o">=</span> <span class="mi">3</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" running "</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quest</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">questionAnswer</span><span class="p">(</span><span class="s2">"Are you ready to take the test[y/n]? "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="s2">"y"</span><span class="p">:</span>
+    <span class="n">questi</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"......"</span><span class="p">)</span>
+
+  
 </pre></div>
 
     </div>
@@ -148,7 +199,20 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello, world
+<pre>Hello, james running /bin/python3
+You will be asked 3 questions.
+question: Are you ready to take the test[y/n]? 
+Answer: y
+question: 1 + 1 = ? 
+I goy number : 2
+2 is correct
+question: 2 + 3 = ? 
+I goy number : 5
+5 is correct
+question: 3 + 5 = ? 
+I goy number : 8
+8 is correct
+100.0%
 </pre>
 </div>
 </div>
