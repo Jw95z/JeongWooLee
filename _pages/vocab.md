@@ -1,1 +1,1 @@
-vocab
+vocabs
