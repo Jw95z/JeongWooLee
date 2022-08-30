@@ -76,8 +76,8 @@
       ,"page3": {
           "title": "Notes",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://jw95z.github.io/JeongWooLee/about/",
-          "relUrl": "/about/",
+          "url": "https://jw95z.github.io/JeongWooLee/notes/",
+          "relUrl": "/notes/",
           "date": ""
       }
       
@@ -97,8 +97,8 @@
       ,"page8": {
           "title": "vocab",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "https://jw95z.github.io/JeongWooLee/about/",
-          "relUrl": "/about/",
+          "url": "https://jw95z.github.io/JeongWooLee/vocab/",
+          "relUrl": "/vocab/",
           "date": ""
       }
       
