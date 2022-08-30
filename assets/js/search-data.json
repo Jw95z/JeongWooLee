@@ -73,26 +73,48 @@
   
 
   
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
+      ,"page3": {
+          "title": "Notes",
+          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "url": "https://jw95z.github.io/JeongWooLee/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
   
 
   
   
 
   
-      ,"page10": {
+
+  
+  
+
+  
+
+  
+      ,"page8": {
+          "title": "vocab",
+          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "url": "https://jw95z.github.io/JeongWooLee/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jw95z.github.io/JeongWooLee/robots.txt",
