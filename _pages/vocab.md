@@ -1,7 +1,7 @@
 ---
 layout: page
 title: vocab
-permalink: /about/
+permalink: /vocab/
 ---
 
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
