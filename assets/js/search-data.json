@@ -125,10 +125,7 @@
   
 
   
-  
-
-  
-      ,"page13": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jw95z.github.io/JeongWooLee/robots.txt",
