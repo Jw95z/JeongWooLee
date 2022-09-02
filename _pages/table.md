@@ -1,3 +1,8 @@
+---
+layout: page
+title: Table
+permalink: /Table/
+---
 | Week | AP Test Prep | Career Tech |
 |---|---|---|
 |0|[Pseudo code](https://nighthawkcoders.github.io/APCSP/collegeboard/pseudo_code)|[Tools and equipment](https://nighthawkcoders.github.io/APCSP/techtalk/tools)|
