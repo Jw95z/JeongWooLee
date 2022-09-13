@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -159,6 +159,171 @@ If answer is wrong, there is one chance to redo and if there is two incorrect, t
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">var</span> <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">var</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">function</span> <span class="n">myFunction</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button1"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen2"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button2"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen4"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button3"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button4"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button5"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button6"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button7"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button9"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button8"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen5"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button10"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button11"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button12"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen6"</span><span class="p">);</span>
+    <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button13"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen7"</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+<span class="n">function</span> <span class="n">games</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button1"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen2"</span><span class="p">);</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button2"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen4"</span><span class="p">);</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button3"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen2"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button4"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen2"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button5"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen2"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button6"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen4"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button7"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button9"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button8"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen5"</span><span class="p">);</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button10"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen5"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button11"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen5"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button12"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen6"</span><span class="p">);</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">});</span>
+  <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button13"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen3"</span><span class="p">);</span>
+    <span class="n">onEvent</span><span class="p">(</span><span class="s2">"button15"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen5"</span><span class="p">);</span>
+      <span class="n">myFunction</span><span class="p">();</span>
+      <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+<span class="n">games</span><span class="p">();</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"button2"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">playSound</span><span class="p">(</span><span class="s2">"sound://category_achievements/lighthearted_bonus_objective_1.mp3"</span><span class="p">,</span> <span class="n">false</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"button8"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">playSound</span><span class="p">(</span><span class="s2">"sound://category_achievements/lighthearted_bonus_objective_1.mp3"</span><span class="p">,</span> <span class="n">false</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"button12"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">playSound</span><span class="p">(</span><span class="s2">"sound://category_achievements/lighthearted_bonus_objective_1.mp3"</span><span class="p">,</span> <span class="n">false</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"button14"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">write</span><span class="p">(</span><span class="s2">"you got"</span> <span class="o">+</span> <span class="n">total</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="n">onEvent</span><span class="p">(</span><span class="s2">"button16"</span><span class="p">,</span> <span class="s2">"click"</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="n">setScreen</span><span class="p">(</span><span class="s2">"screen1"</span><span class="p">);</span>
+  <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="n">games</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
