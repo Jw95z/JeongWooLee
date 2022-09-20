@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Collaboration 1.1",
+            "content": "Benefit of collaborating . Effective collaboration suppresses communication, consensus building, conflict resolution, and negotiation skills | Effective collaboration produces a computing innovation that reflects the diversity of talents and perspective of those who designed it. | We are humans, and when we code, we&#39;re not perfect and we have to think things through. | . Interpersonal skills . Communication | Consensus Building | Conflict Resolution | Negotiation | . How to collaborate in class . Pair Programming: Two programmers work together as a pair. One(the driver) writes program code, while the other(the observer, pointer, or navigator) reviews each line of program code as it is typed in. Think pair share: Students think through a problem alone, pair with a partner to share ideas and then share results with the class . Leave comments . Communicate to your partner(s) | Communicate to yourself | Acknowledge code segments used from other sources | Acknowledge media used from other sources | Differentiate what you and your partner(s) did | Clarify the functionality of your code | . Online tools . repl.it - multiplayer | Github - collaboration and repository | . shared document or folder . Ask friends and family to test drive your program and give you feedback .",
+            "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/19/Collaboration.html",
+            "relUrl": "/markdown/2022/09/19/Collaboration.html",
+            "date": " • Sep 19, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Docker Server",
             "content": "",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/15/server.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "idea",
             "content": "simple game, tetris(the random blocks will fall over the square and player have to match it) row 1 idea will require explaining of how code works row 2 the blocks have to appear with a random shape and random position row 4 make a function can make the random blocks and condition that can erase the line of blocks when the line is all filled by the blocks. row 5 need to use the algorithm for making score and function row 6 need functions to work . | jump game, character in the game have to jump over the obstacles. When it attach to the character, it will be die. afhahfkjahkfdlafjakfjafla afnjafklakfjlajfl . |",
             "url": "https://jw95z.github.io/JeongWooLee/games/",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Quiz in code.org",
             "content": "Fruit_quiz question1: what color the apple have? answer: red wrong: blue wrong: purple wrong: orange when were bananas discovered? answer: 327 BC wrong: 1997 wrong: 1792 wrong 2020 BC what one is a fruit? answer: strawberries wrong: melon wrong: tomato wrong: strawberries If answer is wrong, there is one chance to redo and if there is two incorrect, the player cannot take the quiz. If player solve the question with at least one incorrect, they can retake the quiz. . var total = 0; var i = 1; function myFunction() { onEvent(&quot;button1&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); }); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); }); onEvent(&quot;button3&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button4&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button5&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button6&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button7&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button9&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); }); onEvent(&quot;button10&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button11&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen6&quot;); }); onEvent(&quot;button13&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); } function games() { onEvent(&quot;button1&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); }); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); total = total + 1; }); onEvent(&quot;button3&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button4&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button5&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button6&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button7&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button9&quot;, &quot;click&quot;, function( ) { onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); total = total + 1; }); onEvent(&quot;button10&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button11&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen6&quot;); total = total + 1; }); onEvent(&quot;button13&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); } games(); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button14&quot;, &quot;click&quot;, function( ) { write(&quot;you got&quot; + total); }); onEvent(&quot;button16&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen1&quot;); total = 0; games(); }); .",
             "url": "https://jw95z.github.io/JeongWooLee/week%203/2022/09/07/quiz_org.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "List of dictionaries",
             "content": "Week2 . this is week 2 . dic_list = [] while True: sel = int(input(&quot;press 1 to continue and press 2 to stop&quot;)) if sel == 1: print(&quot;adding in dictionary&quot;) my_dict = {} while True: key = int(input(&quot;key: &quot;)) val = input(&quot;value: &quot;) my_dict[key] = val con = int(input(&quot;press 1 to continue and press 2 to stop&quot;)) if con ==2: print(&quot; The End &quot;) break dic_list.append(my_dict) elif sel == 2: print(&quot;end&quot;) break else: print(&quot;you pick the wrong one&quot;) break print(&quot;This is the list you made: &quot;,dic_list) . [&#39;afa&#39;, &#39;end&#39;] .",
             "url": "https://jw95z.github.io/JeongWooLee/phython%20codes/week2/2022/09/01/Quiz.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "List",
             "content": "Week2 . this is week 2 . InfoDb = [] InfoDb.append({ &quot;FirstName&quot;: &quot;James&quot;, &quot;LastName&quot;: &quot;Lee&quot;, &quot;DOB&quot;: &quot;Sempember 5&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Email&quot;: &quot;michaelmichael6909@gmail.com&quot;, &quot;Owns_sisters&quot;: [&quot;Chole&quot;, &quot;Rayna&quot;] }) def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;Email:&quot;, d_rec[&quot;Email&quot;]) print(&quot; t&quot;, &quot;Owns_sisters:&quot;, &quot;, &quot;.join(d_rec[&quot;Owns_sisters&quot;]) ) def while_loop(): print(&quot;While loop output n&quot;) i = 0 for i in range(0, len(InfoDb)): record = InfoDb[i] print_data(record) return while_loop() . While loop output James Lee Residence: San Diego Birth Day: Sempember 5 Email: michaelmichael6909@gmail.com Owns_sisters: Chole, Rayna .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week2/2022/08/30/Loop.html",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "Bash shell practice",
             "content": "Week1 . this is week 1 . python3 --version . Python 3.9.12 . Anaconda Verification . conda --version . conda 4.14.0 . git status . On branch master Your branch is up to date with &#39;origin/master&#39;. Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) 2022-08-29-Bash.ipynb version nothing added to commit but untracked files present (use &#34;git add&#34; to track) . git add *.ipynb . git status . On branch master Your branch is up to date with &#39;origin/master&#39;. Changes to be committed: (use &#34;git restore --staged &lt;file&gt;...&#34; to unstage) new file: 2022-08-29-Bash.ipynb Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) version . git commit -am &quot;Test Commit 2022-08-29.00&quot; . [master 77f0eae] Test Commit 2022-08-29.00 1 file changed, 0 insertions(+), 0 deletions(-) create mode 100644 _notebooks/2022-08-29-Bash.ipynb . git push . Username for &#39;https://github.com&#39;: .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week1/2022/08/29/Bash.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "MyBlog",
             "content": "MyBlog . Hello! Have a nice day .",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/08/24/MyBlog.html",
@@ -78,7 +89,7 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "Quiz",
             "content": "Week1 . this is week 1 . import getpass, sys correct = 0 def questionAnswer(prompt): print(&quot;question: &quot; + prompt) ans = input() print(&quot;Answer: &quot; + ans) return ans def questionRespone(prompt): print(&quot;question: &quot; + prompt) ans = input() print(&quot;I got a number :&quot;,ans) return ans def questi(): global correct res = questionRespone(&quot;1 + 1 = ? &quot;) if res == &quot;2&quot;: print(res + &quot; is correct&quot;) correct += 1 else: print(res + &quot; is incorrect&quot;) rep = questionRespone(&quot;2 + 3 = ? &quot;) if rep == &quot;5&quot;: print(rep + &quot; is correct&quot;) correct += 1 else: print(rep + &quot; is incorrect&quot;) reg = questionRespone(&quot;3 + 5 = ? &quot;) if reg == &quot;8&quot;: print(reg + &quot; is correct&quot;) correct += 1 else: print(reg + &quot; is incorrect&quot;) print((str)((float)(correct/quest*100)) + &quot;%&quot;) quest = 3 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(quest) + &quot; questions.&quot;) a = questionAnswer(&quot;Are you ready to take the test[y/n]? &quot;) if a == &quot;y&quot;: questi() else: print(&quot;......&quot;) . Hello, james running /bin/python3 You will be asked 3 questions. question: Are you ready to take the test[y/n]? Answer: y question: 1 + 1 = ? I goy number : 2 2 is correct question: 2 + 3 = ? I goy number : 5 5 is correct question: 3 + 5 = ? I goy number : 8 8 is correct 100.0% .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week1/2022/08/24/My-First-Post.html",
@@ -104,11 +115,22 @@
   
 
   
+      ,"page2": {
+          "title": "Psychology and the Good life",
+          "content": "Psychology and the Good Life . Vocab . Syllabus: an outline of the subjects in a course of study or teaching . Notes . Yale students have a lot of stress. Yale students are incredibly privileged to be at an amazing place like Yale with so many opportunities but they react to that with anxiety. Students are so stressed so they can’t make good opportunities. The stress takes its toll and it takes its toll in a way the students sometimes don’t want to admit. Many students are suffering at mental problems such as loneliness and depression. Science comes from two domains. One domain is this domain of positive psychology a field that literally studies happy people and other is the science of behavior change. Taking times in things that we like are built into the syllabus. We can control our happiness that we think and lot of this work comes from an idea that we tended think of people as being kind of a half glassful type person or a half empty kind of person. Unhappy people are spending time alone more than happy people. . Glitches . I think my whole life is my glitches. My heart is like a broken glass. . How to adapt . Just accept it and live. I just live because I don’t want to die. . Gratitude . I appreciated to my ELD teacher in last semester. Because of her, I could hear what teachers saying in the school. I was confused when I came to this school, but teacher teach me and communicate with me. . | I also thankful to staff of “league of legends”. I spend most of time in there. I used 1000 dollars in there. It is important as my life. I think my characters in the game have to wear expensive clothes than me. . | . Goal . To be alive | Get good score in every subjects | Be good at all of the finals | .",
+          "url": "https://jw95z.github.io/JeongWooLee/gratitude/",
+          "relUrl": "/gratitude/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page3": {
+
+  
+      ,"page4": {
           "title": "Notes",
-          "content": "This website is powered by fastpages 1. 1.1 daily video 1 Effective collaboration produces a computing innovation that reflects the diversity of talents and perspective of those who designed it. A computer innovation includes a program as an integral part of its function. A computer innovation can be physical (e.g.,self-driving car), nonphysical computing software(e.g.,picture editing software), or a nonphysical computing concept(e.g., e-commerce). What are the benefits of collaborating with your peers? answer.Effective collaboration produces a computing innovation that reflects the diversity of talents and perspectives of those who designed it. Interpersonal skills communication, consensus building, conflict resolution, negotiation . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": "This website is powered by fastpages [^1]. 1.1 daily video 1 Effective collaboration produces a computing innovation that reflects the diversity of talents and perspective of those who designed it. A computer innovation includes a program as an integral part of its function. A computer innovation can be physical (e.g.,self-driving car), nonphysical computing software(e.g.,picture editing software), or a nonphysical computing concept(e.g., e-commerce). What are the benefits of collaborating with your peers? answer.Effective collaboration produces a computing innovation that reflects the diversity of talents and perspectives of those who designed it. Interpersonal skills communication, consensus building, conflict resolution, negotiation 1.1 daily video 2 We are humans, and when we code, we’re not perfect and we have to think things through. So we have to let the driver figure things out, and then when they need help, maybe jump in. It’s beneficial, because everybody make mistakes. Think-pair-share How to collaborate in class online tools: repl.it - multiplayer, Github - collaboration and repository Psychology and the Good Life Yale students have a lot of stress. Yale students are incredibly privileged to be at an amazing place like Yale with so many opportunities but they react to that with anxiety. Students are so stressed so they can’t make good opportunities. The stress takes its toll and it takes its toll in a way the students sometimes don’t want to admit. 40 percent of college students report more than the average level of stress. Many students are suffering at mental problems such as loneliness and depression. Science comes from two domains. One domain is this domain of positive psychology a field that literally studies happy people and other is the science of behavior change. Taking times in things that we like are built into the syllabus. We can control our happiness that we think and lot of this work comes from an idea that we tended think of people as being kind of a half glassful type person or a half empty kind of person. [^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats. .",
           "url": "https://jw95z.github.io/JeongWooLee/notes/",
           "relUrl": "/notes/",
           "date": ""
@@ -125,7 +147,7 @@
   
 
   
-      ,"page7": {
+      ,"page8": {
           "title": "Table",
           "content": "Week AP Test Prep Career Tech . 0 | Pseudo code | Tools and equipment | . 1 | Hello to Phython | Fastpages, Jupyter notebooks, Markdown | . 2 | Phython list and dictionaries | Tools and equipment | .",
           "url": "https://jw95z.github.io/JeongWooLee/Table/",
@@ -138,7 +160,7 @@
   
 
   
-      ,"page9": {
+      ,"page10": {
           "title": "vocab",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://jw95z.github.io/JeongWooLee/vocab/",
@@ -158,7 +180,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jw95z.github.io/JeongWooLee/robots.txt",
