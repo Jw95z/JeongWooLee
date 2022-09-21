@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Program Function and Purpose",
+            "content": "Computing Innovation . Applications Games | Social Media | Business | Productivity | . | Physical Devices Computers | Smart Phones/tablets | Smart &quot;Things&quot; | Wearables | . | Systems E-commerce | Cloud services | E-mail ## Purpose of computing innovation | . | Social Media Application Allow users to connect from a distance and archive their activities. | . | E-commerce Allow users to save time and money by being able to shop from home. | . | Digital Assistant Device Allow users to control their devices hands-free, making them safer while driving or more convenient when trying to multitask | . | . Different forms of Computer programs . tactile | audio | visual | text(including numerical values) | . types of input and output do your devices accept . Smart Phone/tablet | Laptop computer | Gaming Console | . Most programs are written in an event driven environment . &quot;Events&quot; are triggered by some action, which usually sends input to the program | . types of event can use a trigger . mouse clicks | screen taps/swipes(force touch) | physical button clicks | keyboard entries | audio trigger(key word or phrase) | . output produced by a device . visual | audio | tactile(touch/feel) | text | . How does program know what to do upon an event? . An action triggers an event . Action may be initiated by the user or another program/device | . The program &quot;jump&quot; to the coe segment according to the event . The code segment is executed | Output is triggered by the code segment (or additional events are triggered). | . The program code is not necessarily executed &quot;in order&quot; . What is a program? . A program is a collection of statements . A statement is a single command | A group of statements is called a code segment | Code segments are executed according to the rules of the programming language | A program is often referred to as software | . What does this program do . This code segment is written to find the minimum value in a list . This code segment would need to work for a variety of different lists, like list that include: number out of order | negative numbers | large numbers | decimals | . | This code segment could be inserted into a larger program. | . Description . Simply state what would it does so that someone could use the code segment in a larger program | . | Or include how it does what it does by explaining in detail how the code segment function | so that someone could expand upon the code segment | . | .",
+            "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/20/program_purpose.html",
+            "relUrl": "/markdown/2022/09/20/program_purpose.html",
+            "date": " • Sep 20, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Collaboration 1.1",
             "content": "Benefit of collaborating . Effective collaboration suppresses communication, consensus building, conflict resolution, and negotiation skills | Effective collaboration produces a computing innovation that reflects the diversity of talents and perspective of those who designed it. | We are humans, and when we code, we&#39;re not perfect and we have to think things through. | . Interpersonal skills . Communication | Consensus Building | Conflict Resolution | Negotiation | . How to collaborate in class . Pair Programming: Two programmers work together as a pair. One(the driver) writes program code, while the other(the observer, pointer, or navigator) reviews each line of program code as it is typed in. Think pair share: Students think through a problem alone, pair with a partner to share ideas and then share results with the class . Leave comments . Communicate to your partner(s) | Communicate to yourself | Acknowledge code segments used from other sources | Acknowledge media used from other sources | Differentiate what you and your partner(s) did | Clarify the functionality of your code | . Online tools . repl.it - multiplayer | Github - collaboration and repository | . shared document or folder . Ask friends and family to test drive your program and give you feedback .",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/19/Collaboration.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Docker Server",
             "content": "",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/15/server.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "idea",
             "content": "simple game, tetris(the random blocks will fall over the square and player have to match it) row 1 idea will require explaining of how code works row 2 the blocks have to appear with a random shape and random position row 4 make a function can make the random blocks and condition that can erase the line of blocks when the line is all filled by the blocks. row 5 need to use the algorithm for making score and function row 6 need functions to work . | jump game, character in the game have to jump over the obstacles. When it attach to the character, it will be die. afhahfkjahkfdlafjakfjafla afnjafklakfjlajfl . |",
             "url": "https://jw95z.github.io/JeongWooLee/games/",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Quiz in code.org",
             "content": "Fruit_quiz question1: what color the apple have? answer: red wrong: blue wrong: purple wrong: orange when were bananas discovered? answer: 327 BC wrong: 1997 wrong: 1792 wrong 2020 BC what one is a fruit? answer: strawberries wrong: melon wrong: tomato wrong: strawberries If answer is wrong, there is one chance to redo and if there is two incorrect, the player cannot take the quiz. If player solve the question with at least one incorrect, they can retake the quiz. . var total = 0; var i = 1; function myFunction() { onEvent(&quot;button1&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); }); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); }); onEvent(&quot;button3&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button4&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button5&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button6&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button7&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button9&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); }); onEvent(&quot;button10&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button11&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen6&quot;); }); onEvent(&quot;button13&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); } function games() { onEvent(&quot;button1&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); }); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); total = total + 1; }); onEvent(&quot;button3&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button4&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button5&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button6&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button7&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button9&quot;, &quot;click&quot;, function( ) { onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); total = total + 1; }); onEvent(&quot;button10&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button11&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen6&quot;); total = total + 1; }); onEvent(&quot;button13&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); } games(); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button14&quot;, &quot;click&quot;, function( ) { write(&quot;you got&quot; + total); }); onEvent(&quot;button16&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen1&quot;); total = 0; games(); }); .",
             "url": "https://jw95z.github.io/JeongWooLee/week%203/2022/09/07/quiz_org.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "List of dictionaries",
             "content": "Week2 . this is week 2 . dic_list = [] while True: sel = int(input(&quot;press 1 to continue and press 2 to stop&quot;)) if sel == 1: print(&quot;adding in dictionary&quot;) my_dict = {} while True: key = int(input(&quot;key: &quot;)) val = input(&quot;value: &quot;) my_dict[key] = val con = int(input(&quot;press 1 to continue and press 2 to stop&quot;)) if con ==2: print(&quot; The End &quot;) break dic_list.append(my_dict) elif sel == 2: print(&quot;end&quot;) break else: print(&quot;you pick the wrong one&quot;) break print(&quot;This is the list you made: &quot;,dic_list) . [&#39;afa&#39;, &#39;end&#39;] .",
             "url": "https://jw95z.github.io/JeongWooLee/phython%20codes/week2/2022/09/01/Quiz.html",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "List",
             "content": "Week2 . this is week 2 . InfoDb = [] InfoDb.append({ &quot;FirstName&quot;: &quot;James&quot;, &quot;LastName&quot;: &quot;Lee&quot;, &quot;DOB&quot;: &quot;Sempember 5&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Email&quot;: &quot;michaelmichael6909@gmail.com&quot;, &quot;Owns_sisters&quot;: [&quot;Chole&quot;, &quot;Rayna&quot;] }) def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;Email:&quot;, d_rec[&quot;Email&quot;]) print(&quot; t&quot;, &quot;Owns_sisters:&quot;, &quot;, &quot;.join(d_rec[&quot;Owns_sisters&quot;]) ) def while_loop(): print(&quot;While loop output n&quot;) i = 0 for i in range(0, len(InfoDb)): record = InfoDb[i] print_data(record) return while_loop() . While loop output James Lee Residence: San Diego Birth Day: Sempember 5 Email: michaelmichael6909@gmail.com Owns_sisters: Chole, Rayna .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week2/2022/08/30/Loop.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "Bash shell practice",
             "content": "Week1 . this is week 1 . python3 --version . Python 3.9.12 . Anaconda Verification . conda --version . conda 4.14.0 . git status . On branch master Your branch is up to date with &#39;origin/master&#39;. Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) 2022-08-29-Bash.ipynb version nothing added to commit but untracked files present (use &#34;git add&#34; to track) . git add *.ipynb . git status . On branch master Your branch is up to date with &#39;origin/master&#39;. Changes to be committed: (use &#34;git restore --staged &lt;file&gt;...&#34; to unstage) new file: 2022-08-29-Bash.ipynb Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) version . git commit -am &quot;Test Commit 2022-08-29.00&quot; . [master 77f0eae] Test Commit 2022-08-29.00 1 file changed, 0 insertions(+), 0 deletions(-) create mode 100644 _notebooks/2022-08-29-Bash.ipynb . git push . Username for &#39;https://github.com&#39;: .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week1/2022/08/29/Bash.html",
@@ -78,7 +89,7 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "MyBlog",
             "content": "MyBlog . Hello! Have a nice day .",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/08/24/MyBlog.html",
@@ -89,7 +100,7 @@
     
   
     
-        ,"post8": {
+        ,"post9": {
             "title": "Quiz",
             "content": "Week1 . this is week 1 . import getpass, sys correct = 0 def questionAnswer(prompt): print(&quot;question: &quot; + prompt) ans = input() print(&quot;Answer: &quot; + ans) return ans def questionRespone(prompt): print(&quot;question: &quot; + prompt) ans = input() print(&quot;I got a number :&quot;,ans) return ans def questi(): global correct res = questionRespone(&quot;1 + 1 = ? &quot;) if res == &quot;2&quot;: print(res + &quot; is correct&quot;) correct += 1 else: print(res + &quot; is incorrect&quot;) rep = questionRespone(&quot;2 + 3 = ? &quot;) if rep == &quot;5&quot;: print(rep + &quot; is correct&quot;) correct += 1 else: print(rep + &quot; is incorrect&quot;) reg = questionRespone(&quot;3 + 5 = ? &quot;) if reg == &quot;8&quot;: print(reg + &quot; is correct&quot;) correct += 1 else: print(reg + &quot; is incorrect&quot;) print((str)((float)(correct/quest*100)) + &quot;%&quot;) quest = 3 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(quest) + &quot; questions.&quot;) a = questionAnswer(&quot;Are you ready to take the test[y/n]? &quot;) if a == &quot;y&quot;: questi() else: print(&quot;......&quot;) . Hello, james running /bin/python3 You will be asked 3 questions. question: Are you ready to take the test[y/n]? Answer: y question: 1 + 1 = ? I goy number : 2 2 is correct question: 2 + 3 = ? I goy number : 5 5 is correct question: 3 + 5 = ? I goy number : 8 8 is correct 100.0% .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week1/2022/08/24/My-First-Post.html",
