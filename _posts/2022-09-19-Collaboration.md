@@ -20,20 +20,20 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Benefit-of-collaborating">Benefit of collaborating<a class="anchor-link" href="#Benefit-of-collaborating"> </a></h2><ul>
+<h2 id="Benefit-of-collaborating"><font color="pink">Benefit of collaborating</font><a class="anchor-link" href="#Benefit-of-collaborating"> </a></h2><ul>
 <li>Effective collaboration suppresses communication, consensus building, conflict resolution, and negotiation skills</li>
 <li>Effective collaboration produces a computing innovation that reflects the diversity of talents and perspective of those who designed it.</li>
 <li>We are humans, and when we code, we're not perfect and we have to think things through.</li>
 </ul>
-<h2 id="Interpersonal-skills">Interpersonal skills<a class="anchor-link" href="#Interpersonal-skills"> </a></h2><ul>
+<h2 id="Interpersonal-skills"><font color="pink">Interpersonal skills</font><a class="anchor-link" href="#Interpersonal-skills"> </a></h2><ul>
 <li>Communication</li>
 <li>Consensus Building</li>
 <li>Conflict Resolution</li>
 <li>Negotiation</li>
 </ul>
-<h2 id="How-to-collaborate-in-class">How to collaborate in class<a class="anchor-link" href="#How-to-collaborate-in-class"> </a></h2><p>Pair Programming: Two programmers work together as a pair. One(the driver) writes program code, while the other(the observer, pointer, or navigator) reviews each line of program code as it is typed in.
+<h2 id="How-to-collaborate-in-class"><font color="pink">How to collaborate in class</font><a class="anchor-link" href="#How-to-collaborate-in-class"> </a></h2><p>Pair Programming: Two programmers work together as a pair. One(the driver) writes program code, while the other(the observer, pointer, or navigator) reviews each line of program code as it is typed in.
 Think pair share: Students think through a problem alone, pair with a partner to share ideas and then share results with the class</p>
-<h2 id="Leave-comments">Leave comments<a class="anchor-link" href="#Leave-comments"> </a></h2><ul>
+<h2 id="Leave-comments"><font color="pink">Leave comments</font><a class="anchor-link" href="#Leave-comments"> </a></h2><ul>
 <li>Communicate to your partner(s)</li>
 <li>Communicate to yourself</li>
 <li>Acknowledge code segments used from other sources</li>
@@ -41,11 +41,11 @@ Think pair share: Students think through a problem alone, pair with a partner to
 <li>Differentiate what you and your partner(s) did</li>
 <li>Clarify the functionality of your code</li>
 </ul>
-<h3 id="Online-tools">Online tools<a class="anchor-link" href="#Online-tools"> </a></h3><ul>
+<h3 id="Online-tools"><font color="pink">Online tools</font><a class="anchor-link" href="#Online-tools"> </a></h3><ul>
 <li>repl.it - multiplayer</li>
 <li>Github - collaboration and repository</li>
 </ul>
-<h4 id="shared-document-or-folder">shared document or folder<a class="anchor-link" href="#shared-document-or-folder"> </a></h4><h4 id="Ask-friends-and-family-to-test-drive-your-program-and-give-you-feedback">Ask friends and family to test drive your program and give you feedback<a class="anchor-link" href="#Ask-friends-and-family-to-test-drive-your-program-and-give-you-feedback"> </a></h4>
+<h4 id="shared-document-or-folder"><font color="pink">shared document or folder</font><a class="anchor-link" href="#shared-document-or-folder"> </a></h4><h4 id="Ask-friends-and-family-to-test-drive-your-program-and-give-you-feedback"><font color="pink">Ask friends and family to test drive your program and give you feedback</font><a class="anchor-link" href="#Ask-friends-and-family-to-test-drive-your-program-and-give-you-feedback"> </a></h4>
 </div>
 </div>
 </div>
