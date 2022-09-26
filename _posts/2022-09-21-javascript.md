@@ -1,6 +1,10 @@
 ---
 keywords: fastai
-title: Title
+title: JavaScript
+toc: true
+badges: true
+comments: true
+categories: [markdown]
 nb_path: _notebooks/2022-09-21-javascript.ipynb
 layout: notebook
 ---
@@ -21,7 +25,7 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -34,7 +38,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>hello, world
+<pre>Hello, World!
 </pre>
 </div>
 </div>
