@@ -25,6 +25,37 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, World!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-javascript"><pre><span></span><span class="nx">test</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="nx">test</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="s2">&quot;num&quot;</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span> <span class="s2">&quot;int&quot;</span><span class="o">:</span> <span class="mf">2</span><span class="p">});</span>
 <span class="nx">test</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="s2">&quot;num&quot;</span><span class="o">:</span> <span class="mf">2</span><span class="p">,</span> <span class="s2">&quot;int&quot;</span><span class="o">:</span> <span class="mf">3</span><span class="p">});</span>
@@ -98,37 +129,6 @@ change to 100, 5
 == remove object which name is changed
 3, 4
 5, 6
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello, World!
 </pre>
 </div>
 </div>
