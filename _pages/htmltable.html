@@ -1,0 +1,42 @@
+<hr />
+
+<p>Classroom.prototype._toHtml = function() {
+  // HTML Style is build using inline structure
+  var style = (
+    “display:inline-block;” +
+    “border: 2px solid grey;” +
+    “box-shadow: 0.8em 0.4em 0.4em grey;”
+  );</p>
+
+<p>// HTML Body of Table is build as a series of concatenations (+=)
+  var body = “”;
+  // Heading for Array Columns
+  body += “&lt;tr&gt;”;
+  body += “&lt;th&gt;<mark>" + "Name" + "</mark>&lt;/th&gt;”;
+  body += “&lt;th&gt;<mark>" + "GitHub ID" + "</mark>&lt;/th&gt;”;
+  body += “&lt;th&gt;<mark>" + "Class Of" + "</mark>&lt;/th&gt;”;
+  body += “&lt;th&gt;<mark>" + "Role" + "</mark>&lt;/th&gt;”;
+  body += “&lt;/tr&gt;”;
+  // Data of Array, iterate through each row of compsci.classroom 
+  for (var row of compsci.classroom) {
+    // tr for each row, a new line
+    body += “&lt;tr&gt;”;
+    // td for each column of data
+    body += “&lt;td&gt;” + row.name + “&lt;/td&gt;”;
+    body += “&lt;td&gt;” + row.ghID + “&lt;/td&gt;”;
+    body += “&lt;td&gt;” + row.classOf + “&lt;/td&gt;”;
+    body += “&lt;td&gt;” + row.role + “&lt;/td&gt;”;
+    // tr to end line
+    body += “&lt;tr&gt;”;
+  }</p>
+
+<p>// Build and HTML fragment of div, table, table body
+  return (
+    “&lt;div style='" + style + "'&gt;” +
+      “&lt;table&gt;” +
+        body +
+      “&lt;/table&gt;” +
+    “&lt;/div&gt;”
+  );</p>
+
+<p>};</p>

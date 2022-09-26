@@ -159,9 +159,20 @@
   
 
   
+      ,"page3": {
+          "title": "",
+          "content": ". Classroom.prototype._toHtml = function() { // HTML Style is build using inline structure var style = ( “display:inline-block;” + “border: 2px solid grey;” + “box-shadow: 0.8em 0.4em 0.4em grey;” ); . // HTML Body of Table is build as a series of concatenations (+=) var body = “”; // Heading for Array Columns body += “&lt;tr&gt;”; body += “&lt;th&gt;&quot; + &quot;Name&quot; + &quot;&lt;/th&gt;”; body += “&lt;th&gt;&quot; + &quot;GitHub ID&quot; + &quot;&lt;/th&gt;”; body += “&lt;th&gt;&quot; + &quot;Class Of&quot; + &quot;&lt;/th&gt;”; body += “&lt;th&gt;&quot; + &quot;Role&quot; + &quot;&lt;/th&gt;”; body += “&lt;/tr&gt;”; // Data of Array, iterate through each row of compsci.classroom for (var row of compsci.classroom) { // tr for each row, a new line body += “&lt;tr&gt;”; // td for each column of data body += “&lt;td&gt;” + row.name + “&lt;/td&gt;”; body += “&lt;td&gt;” + row.ghID + “&lt;/td&gt;”; body += “&lt;td&gt;” + row.classOf + “&lt;/td&gt;”; body += “&lt;td&gt;” + row.role + “&lt;/td&gt;”; // tr to end line body += “&lt;tr&gt;”; } . // Build and HTML fragment of div, table, table body return ( “&lt;div style=&#39;&quot; + style + &quot;&#39;&gt;” + “&lt;table&gt;” + body + “&lt;/table&gt;” + “&lt;/div&gt;” ); . }; .",
+          "url": "https://jw95z.github.io/JeongWooLee/_pages/htmltable.html",
+          "relUrl": "/_pages/htmltable.html",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page4": {
+
+  
+      ,"page5": {
           "title": "Notes",
           "content": "This website is powered by fastpages [^1]. This is my first server that I made [^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats. .",
           "url": "https://jw95z.github.io/JeongWooLee/notes/",
@@ -180,7 +191,7 @@
   
 
   
-      ,"page8": {
+      ,"page9": {
           "title": "Table",
           "content": "Week AP Test Prep Career Tech . 0 | Pseudo code | Tools and equipment | . 1 | Hello to Phython | Fastpages, Jupyter notebooks, Markdown | . 2 | Phython list and dictionaries | Tools and equipment | .",
           "url": "https://jw95z.github.io/JeongWooLee/Table/",
@@ -193,7 +204,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "vocab",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://jw95z.github.io/JeongWooLee/vocab/",
@@ -213,7 +224,7 @@
   
 
   
-      ,"page14": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jw95z.github.io/JeongWooLee/robots.txt",
