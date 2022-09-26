@@ -25,6 +25,96 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">test</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="s2">&quot;num&quot;</span><span class="o">:</span> <span class="mf">1</span><span class="p">,</span> <span class="s2">&quot;int&quot;</span><span class="o">:</span> <span class="mf">2</span><span class="p">});</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="s2">&quot;num&quot;</span><span class="o">:</span> <span class="mf">2</span><span class="p">,</span> <span class="s2">&quot;int&quot;</span><span class="o">:</span> <span class="mf">3</span><span class="p">});</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="s2">&quot;num&quot;</span><span class="o">:</span> <span class="mf">3</span><span class="p">,</span> <span class="s2">&quot;int&quot;</span><span class="o">:</span> <span class="mf">4</span><span class="p">});</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">push</span><span class="p">({</span><span class="s2">&quot;num&quot;</span><span class="o">:</span> <span class="mf">4</span><span class="p">,</span> <span class="s2">&quot;int&quot;</span><span class="o">:</span> <span class="mf">5</span><span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">()</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">num</span> <span class="o">=</span> <span class="mf">5</span><span class="p">;</span>
+<span class="nx">obj</span><span class="p">.</span><span class="kr">int</span> <span class="o">=</span> <span class="mf">6</span><span class="p">;</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+
+<span class="nx">test</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">num</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span><span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="kr">int</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;== Get index 0, 1 value&#39;</span><span class="p">);</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">num</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="kr">int</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;==only values except index 0, 1 remain in the val&quot;</span><span class="p">)</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">num</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="kr">int</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;= change the object which name is 4&quot;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">test3</span> <span class="o">=</span> <span class="nx">test</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">item</span><span class="p">.</span><span class="nx">num</span> <span class="o">==</span> <span class="s2">&quot;4&quot;</span><span class="p">;</span>
+
+<span class="p">});</span>
+
+<span class="nx">test3</span><span class="p">.</span><span class="nx">num</span> <span class="o">=</span> <span class="s2">&quot;change to 100&quot;</span><span class="p">;</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">num</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="kr">int</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;== remove object which name is changed&quot;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">test</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">test3</span><span class="p">)</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mf">1</span><span class="p">);</span>
+<span class="nx">test</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">item</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">.</span><span class="nx">num</span> <span class="o">+</span> <span class="s2">&quot;, &quot;</span> <span class="o">+</span> <span class="nx">item</span><span class="p">.</span><span class="kr">int</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1, 2
+2, 3
+3, 4
+4, 5
+5, 6
+== Get index 0, 1 value
+1, 2
+2, 3
+==only values except index 0, 1 remain in the val
+3, 4
+4, 5
+5, 6
+= change the object which name is 4
+3, 4
+change to 100, 5
+5, 6
+== remove object which name is changed
+3, 4
+5, 6
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span>
 </pre></div>
 
