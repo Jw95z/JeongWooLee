@@ -4,7 +4,7 @@ title: JavaScript
 toc: true
 badges: true
 comments: true
-categories: [markdown]
+categories: [week5]
 nb_path: _notebooks/2022-09-21-javascript.ipynb
 layout: notebook
 ---
