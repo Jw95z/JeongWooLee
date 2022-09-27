@@ -2,9 +2,9 @@
 keywords: fastai
 title: Table
 toc: true
-comments: true
 badges: true
-categories: [week5]
+comments: true
+categories: [markdown]
 nb_path: _notebooks/2022-09-26-javatable.ipynb
 layout: notebook
 ---
@@ -20,52 +20,48 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>&lt;!DOCTYPE html&gt;</p>
+<h2 id="minecraft">minecraft<a class="anchor-link" href="#minecraft"> </a></h2><p><!--DOCTYPE html --></p>
 <html>
     <head>
         <style>
-            table {
-                border-collapse: collapse;
-                border-spacing: 0;
-            }
-            th, td {
-                padding: 10px 20px;
+            table ,tr,td,th {  
                 border: 1px solid #000;
             }
-        </style>
+        </style>    
     </head>
     <body>
-        <h1>Minecraft Resources<h1>
         <table>
+<!--            <thead> -->
             <tr>
                 <th>Resources</th>
                 <th>Description</th>
-                <th> Images</th>
+                <th>Images</th>
+            </tr>
+ <!--           </thead> -->
+            <tr>
+                <td style = "color:skyblue;"><font size= "5">Diamond
+                <td style="font-size: 90%;">A rare mineral obtained from diamond ore or loot chests</td>
+                <td style="width:5%;text-align:center;"><img src="dia1.png" width = 50 height = 50></td>
             </tr>
             <tr>
-                <td style = "color:skyblue;"><font size= "5">Diamond</td>
-                <td style="font-size: 50%;">A rare mineral obtained from diamond ore or loot chests</td>
-                <td align=center><img src="dia1.png" width = 50 height = 50></td>
+                <td style = "color:gold;"><font size= "5">Gold
+                <td style="font-size: 90%;">A material found in both the overworld and the Nether</td>
+                <td style="width:5%;text-align:center;"><img src="gold1.png" width = 50 height = 50></td>
             </tr>
             <tr>
-                <td style = "color:gold;"><font size= "5">Gold</td>
-                <td style="font-size: 50%;">A material found in both the overworld and the Nether</td>
-                <td align=center><img src="gold1.png" width = 50 height = 50></td>
+                <td style = "color:silver;"><font size= "5">Iron
+                <td style = "font-size: 90%;">The product of the naturally occuring Silver Ore that is located underground</td>
+                <td style="width:5%;text-align:center;"><img src="download6.png" width = 50 height = 50></td>
             </tr>
             <tr>
-                <td style = "color:silver;"><font size= "5">Iron</td>
-                <td style = "font-size: 50%;">The product of the naturally occuring Silver Ore that is located underground</td>
-                <td align=center><img src="download5.png" width = 50 height = 50></td>
+                <td style = "color:green;"><font size= "5">Emerald
+                <td style = "font-size: 90%;">Rare minerals that are used primarily as the currency for trading with villagers and wandering traders</td>
+                <td style="width:5%;text-align:center;"><img src="download5.png" width = 50 height = 50></td>
             </tr>
             <tr>
-                <td style = "color:green;"><font size= "5">Emerald</td>
-                <td style = "font-size: 50%;">Rare minerals that are used primarily as the currency for trading with villagers and wandering traders</td>
-                <td align=center><img src="download6.png" width = 50 height = 50></td>
-            </tr>
-            <tr>
-                <td style = "color:brown"><font size= "5">Netherite</td>
-                <td style = "font-size: 50%;">A material from the Nether, used primarily to upgrade diamond gear</td>
-                <td align=center><img src="ne1.png" width = 50 height = 50></td>
+                <td style = "color:brown"><font size= "5">Netherite
+                <td style = "font-size: 90%;">A material from the Nether, used primarily to upgrade diamond gear</td>
+                <td style="width:5%;text-align:center;"><img src="ne2.png" width = 50 height = 50></td>
             </tr>
         </table>
     </body>
