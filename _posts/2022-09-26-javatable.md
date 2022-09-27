@@ -20,8 +20,7 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="minecraft">minecraft<a class="anchor-link" href="#minecraft"> </a></h2><p><!--DOCTYPE html --></p>
-<html>
+<h2 id="minecraft">minecraft<a class="anchor-link" href="#minecraft"> </a></h2><html>
     <head>
         <style>
             table ,tr,td,th {  
@@ -31,13 +30,11 @@ layout: notebook
     </head>
     <body>
         <table>
-<!--            <thead> -->
             <tr>
                 <th>Resources</th>
                 <th>Description</th>
                 <th>Images</th>
             </tr>
- <!--           </thead> -->
             <tr>
                 <td style = "color:skyblue;"><font size= "5">Diamond
                 <td style="font-size: 90%;">A rare mineral obtained from diamond ore or loot chests</td>
