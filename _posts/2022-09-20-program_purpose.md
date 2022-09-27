@@ -20,6 +20,7 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include image.html file="/JeongWooLee/images/copied_from_nb/college1.png" %}</p>
 <h2 id="Computing-Innovation">Computing Innovation<a class="anchor-link" href="#Computing-Innovation"> </a></h2><ul>
 <li>Applications<ul>
 <li>Games</li>
