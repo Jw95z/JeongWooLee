@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Program design and development",
+            "content": "Program developed with a systematic approach to achieve a desired purpose. n . Develop of program . Program always starts with idea. . Programs are all developed a specific with specific purpose. | Developes follow specific steps and stick to their plan | Sometimes the development is more exploratory than anything, and the steps are dictated by what happens | . When we think about early AI projects or artificial intelligence, we abbreviate that to AI. Early on in this developers were just trying to figure out like hey, what is possible?, what can we make a computer do that would resemble intelligence. . Developes start investigating the problem/purpose and reflect . Investigation is an important step in the process. | Developers must determine the requirements of the program | Developers must understand the constraints | . One of the constraints is time you don’t have enough time to write this grand thing, you have to be very limited and very targeted about what you would accomplish. So understanding the constraints are a very important part of the investigative process. . Method of investigate . surveys | user testing | interviews | direct observations | . Developers design the program by . brainstorm | storyboarding the program | planning user experience | laying out the user interface | organizing into modules | develop a testing strategy | . Developers decide on the program requirements that . describe how a program should behave | include a list of user interactions | . The program specifications outline all of the requirements. Developers create a prototype of the program or components. An incremental process is frequently used so developers can refine small parts of the program . Testing, testing, and more testing . Developers test the program every step of the way . Testing occurs at the . micro level | macro level | . Developers refine and revise through testing, feedback, and reflection . Program development is rarely a solo endeavor . Programs are usually developed with by teams of people | Individuals and teams work on different functional components | Each member of the project deserves to receive credit for their work | Their names must be written in the documentation of the program indicating their contributors to the project | . The program should also be given credit where credit is due . Documentation is an important place to give credit . Many projects use comments within the programming language | Important part of the development of the program | When developers find a bug, they need to be able to determine who can fix the program | This may be most useful after a program is completed and users find additional bugs | . Many times developers use code segments, procedures, algorithms, and more than that are written by others. Similar to quoting someone in a research paper or article. . Reason of creating program documentation . describe the overall program | list program specifications | describe functions/procedures/methods within the code | specific code segments | list of events and corresponding outputs | the development of program | how other programs may interact with the program | . | list of contributors/authors of the program | . When does documentation happens . Documentation happens throughout the development of the program . At the beginning: list specifications | During: to keep track of process | After: to explain the overall process | improvement of documentation . efficiency of overall programming process | programmer’s ability to test and to refine the program | programmer’s response to bugs | . How do programmers document while programming . Most programming languages offer a commenting feature, although some do not. Commenting allows programming to write text within the program. This text does not affect the program. Comments are for programmers to read. This is a form of documentation and can be very useful when programmers collaborate or work individually. . example of comments . Text . Python | Java | Javascript, C/C++, Swift | XML/HTML | Applescript/Pascal | . Block based language . Scratch | MIT Applnventor | .",
+            "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/10/01/Programpurpose.html",
+            "relUrl": "/markdown/2022/10/01/Programpurpose.html",
+            "date": " • Oct 1, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Table",
             "content": "minecraft . . Resources Description Images . Diamond A rare mineral obtained from diamond ore or loot chests | | &lt;/tr&gt; Gold A material found in both the overworld and the Nether | | &lt;/tr&gt; Iron The product of the naturally occuring Silver Ore that is located underground | | &lt;/tr&gt; Emerald Rare minerals that are used primarily as the currency for trading with villagers and wandering traders | | &lt;/tr&gt; Netherite A material from the Nether, used primarily to upgrade diamond gear | | &lt;/tr&gt; &lt;/table&gt; &lt;/body&gt; &lt;/html&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; | . | . | . | . | .",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/26/javatable.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Agile Methodology Diagram",
             "content": ". PBL vocabulary . Agile Methodology: a way to manage a project by breaking it up into several phases | Scrum board: a tool that helps Teams make Sprint Backlog items visible | Sprint: period of time that Team uses to plan work and execute work | DevOps: combination of cultural philosophies, practices, and tools that increases an team’s ability to deliver applications and services at high velocity | frontend developer: who creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app | backend developer: who builds and maintains the technology that powers those components which, together, enable the user-facing side of the website to even exist in the first place | . 7 Important Transferable Skills . Creativity: Creativity in education and workplace, in many cases, presents itself in terms of how you approach tasks and solve problems | Conceptualize problems and solutions | Display foresight | Make connections | Make intelligent inferences | Synthesize ideas and data | . Critical thinking: critical thinking skills enable the discovery of deficiencies that could cause less than optimal results | take a step back and look at things more critically | head off problems before critical thinkers arise | . Communication: Effective communication is the crux of everything you do. | Verbal skills | Listening skills | Writing skills | Technological communication skills | . Collaboration through Leadership: Leadership skills generally encompass communication, problem-solving and managing conflict, relationship building and being able to get people on your team on board with a mission or project | Delegating responsibility | Demonstrating effective time management | Initiating new ideas | Major decision-making | Managing conflict | Managing groups | Multitasking | Teaching and mentoring | . Collaboration: Teamwork — a sense of community — elevates spirits and improves productivity | Accepting responsibility | Making and implementing decisions | Managing time wisely | Meeting both short- and long-term goals | Organizing | Setting and meeting deadlines | . Research: Research is a key part of the lifecycle: changing plans, fluctuating results, and roadblocks require research before anyone can take action | Analyzing information | Brainstorming solutions | Delineating needs and requirements | Extracting information from data | Gathering information | Forecasting possible roadblocks | Setting goals | Solving problems | . Technical: Try to stay current with the many technical advancements on your project | Being easy to work with | Quick to learn | Glad to learn | Failing and always willing to try new things | Willing to open new doors in case of a drastic oversight | . 12 principles . Our highest priority is to satisfy the customer through early and continuous delivery of valuable software. | Welcome changing requirements, even late in development. Agile processes harness change for the customer’s competitive advantage. | Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale. | Business people and developers must work together daily throughout the project. | Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done. | The most efficient and effective method of conveying information to and within a development team is face-to-face conversation. | Working software is the primary measure of progress. | Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely. | Continuous attention to technical excellence and good design enhances agility. | Simplicity–the art of maximizing the amount of work not done–is essential. | The best architectures, requirements, and designs emerge from self-organizing teams. | At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly. |",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/25/Scrum.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "JavaScript",
             "content": "console.log(&quot;Hello, World!&quot;); . Hello, World! . var msg = &quot;Hello, World!&quot;; console.log(msg); . Hello, World! . test = [] test.push({&quot;num&quot;: 1, &quot;int&quot;: 2}); test.push({&quot;num&quot;: 2, &quot;int&quot;: 3}); test.push({&quot;num&quot;: 3, &quot;int&quot;: 4}); test.push({&quot;num&quot;: 4, &quot;int&quot;: 5}); var obj = new Object() obj.num = 5; obj.int = 6; test.push(obj); test.forEach(function(item) { console.log(item.num + &quot;, &quot;+ item.int); }); console.log(&#39;== Get index 0, 1 value&#39;); test.splice(0,2).forEach(function(item) { console.log(item.num + &quot;, &quot; + item.int); }); console.log(&quot;==only values except index 0, 1 remain in the val&quot;) test.forEach(function(item) { console.log(item.num + &quot;, &quot; + item.int); }); console.log(&quot;= change the object which name is 4&quot;) var test3 = test.find(function(item){ return item.num == &quot;4&quot;; }); test3.num = &quot;change to 100&quot;; test.forEach(function(item) { console.log(item.num + &quot;, &quot; + item.int); }); console.log(&quot;== remove object which name is changed&quot;) var index = test.indexOf(test3) test.splice(index, 1); test.forEach(function(item) { console.log(item.num + &quot;, &quot; + item.int); }); . 1, 2 2, 3 3, 4 4, 5 5, 6 == Get index 0, 1 value 1, 2 2, 3 ==only values except index 0, 1 remain in the val 3, 4 4, 5 5, 6 = change the object which name is 4 3, 4 change to 100, 5 5, 6 == remove object which name is changed 3, 4 5, 6 .",
             "url": "https://jw95z.github.io/JeongWooLee/week5/2022/09/21/javascript.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Program Function and Purpose",
             "content": ". Computing Innovation . Applications Games | Social Media | Business | Productivity | . | Physical Devices Computers | Smart Phones/tablets | Smart &quot;Things&quot; | Wearables | . | Systems E-commerce | Cloud services | E-mail ## Purpose of computing innovation | . | Social Media Application Allow users to connect from a distance and archive their activities. | . | E-commerce Allow users to save time and money by being able to shop from home. | . | Digital Assistant Device Allow users to control their devices hands-free, making them safer while driving or more convenient when trying to multitask | . | . Different forms of Computer programs . tactile | audio | visual | text(including numerical values) | . types of input and output do your devices accept . Smart Phone/tablet | Laptop computer | Gaming Console | . Most programs are written in an event driven environment . &quot;Events&quot; are triggered by some action, which usually sends input to the program | . types of event can use a trigger . mouse clicks | screen taps/swipes(force touch) | physical button clicks | keyboard entries | audio trigger(key word or phrase) | . output produced by a device . visual | audio | tactile(touch/feel) | text | . How does program know what to do upon an event? . An action triggers an event . Action may be initiated by the user or another program/device | . The program &quot;jump&quot; to the coe segment according to the event . The code segment is executed | Output is triggered by the code segment (or additional events are triggered). | . The program code is not necessarily executed &quot;in order&quot; . What is a program? . A program is a collection of statements . A statement is a single command | A group of statements is called a code segment | Code segments are executed according to the rules of the programming language | A program is often referred to as software | . What does this program do . This code segment is written to find the minimum value in a list . This code segment would need to work for a variety of different lists, like list that include: number out of order | negative numbers | large numbers | decimals | . | This code segment could be inserted into a larger program. | . Description . Simply state what would it does so that someone could use the code segment in a larger program | . | Or include how it does what it does by explaining in detail how the code segment function | so that someone could expand upon the code segment | . | .",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/20/program_purpose.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "Collaboration 1.1",
             "content": "Benefit of collaborating . Effective collaboration suppresses communication, consensus building, conflict resolution, and negotiation skills | Effective collaboration produces a computing innovation that reflects the diversity of talents and perspective of those who designed it. | We are humans, and when we code, we&#39;re not perfect and we have to think things through. | . Interpersonal skills . Communication | Consensus Building | Conflict Resolution | Negotiation | . How to collaborate in class . Pair Programming: Two programmers work together as a pair. One(the driver) writes program code, while the other(the observer, pointer, or navigator) reviews each line of program code as it is typed in. Think pair share: Students think through a problem alone, pair with a partner to share ideas and then share results with the class . Leave comments . Communicate to your partner(s) | Communicate to yourself | Acknowledge code segments used from other sources | Acknowledge media used from other sources | Differentiate what you and your partner(s) did | Clarify the functionality of your code | . Online tools . repl.it - multiplayer | Github - collaboration and repository | . shared document or folder . Ask friends and family to test drive your program and give you feedback .",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/19/Collaboration.html",
@@ -56,7 +67,7 @@
     
   
     
-        ,"post5": {
+        ,"post6": {
             "title": "Docker Server",
             "content": "",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/09/15/server.html",
@@ -67,7 +78,7 @@
     
   
     
-        ,"post6": {
+        ,"post7": {
             "title": "idea",
             "content": "simple game, tetris(the random blocks will fall over the square and player have to match it) row 1 idea will require explaining of how code works row 2 the blocks have to appear with a random shape and random position row 4 make a function can make the random blocks and condition that can erase the line of blocks when the line is all filled by the blocks. row 5 need to use the algorithm for making score and function row 6 need functions to work . | jump game, character in the game have to jump over the obstacles. When it attach to the character, it will be die. afhahfkjahkfdlafjakfjafla afnjafklakfjlajfl . |",
             "url": "https://jw95z.github.io/JeongWooLee/games/",
@@ -78,7 +89,7 @@
     
   
     
-        ,"post7": {
+        ,"post8": {
             "title": "Quiz in code.org",
             "content": "Fruit_quiz question1: what color the apple have? answer: red wrong: blue wrong: purple wrong: orange when were bananas discovered? answer: 327 BC wrong: 1997 wrong: 1792 wrong 2020 BC what one is a fruit? answer: strawberries wrong: melon wrong: tomato wrong: strawberries If answer is wrong, there is one chance to redo and if there is two incorrect, the player cannot take the quiz. If player solve the question with at least one incorrect, they can retake the quiz. . var total = 0; var i = 1; function myFunction() { onEvent(&quot;button1&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); }); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); }); onEvent(&quot;button3&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button4&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button5&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button6&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button7&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button9&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); }); onEvent(&quot;button10&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button11&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen6&quot;); }); onEvent(&quot;button13&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen7&quot;); }); } function games() { onEvent(&quot;button1&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); }); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); total = total + 1; }); onEvent(&quot;button3&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button4&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button5&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen2&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button6&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen4&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button7&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button9&quot;, &quot;click&quot;, function( ) { onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); total = total + 1; }); onEvent(&quot;button10&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button11&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen6&quot;); total = total + 1; }); onEvent(&quot;button13&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen3&quot;); onEvent(&quot;button15&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen5&quot;); myFunction(); total = total - 1; }); }); } games(); onEvent(&quot;button2&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button8&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button12&quot;, &quot;click&quot;, function( ) { playSound(&quot;sound://category_achievements/lighthearted_bonus_objective_1.mp3&quot;, false); }); onEvent(&quot;button14&quot;, &quot;click&quot;, function( ) { write(&quot;you got&quot; + total); }); onEvent(&quot;button16&quot;, &quot;click&quot;, function( ) { setScreen(&quot;screen1&quot;); total = 0; games(); }); .",
             "url": "https://jw95z.github.io/JeongWooLee/week%203/2022/09/07/quiz_org.html",
@@ -89,7 +100,7 @@
     
   
     
-        ,"post8": {
+        ,"post9": {
             "title": "List of dictionaries",
             "content": "Week2 . this is week 2 . dic_list = [] while True: sel = int(input(&quot;press 1 to continue and press 2 to stop&quot;)) if sel == 1: print(&quot;adding in dictionary&quot;) my_dict = {} while True: key = int(input(&quot;key: &quot;)) val = input(&quot;value: &quot;) my_dict[key] = val con = int(input(&quot;press 1 to continue and press 2 to stop&quot;)) if con ==2: print(&quot; The End &quot;) break dic_list.append(my_dict) elif sel == 2: print(&quot;end&quot;) break else: print(&quot;you pick the wrong one&quot;) break print(&quot;This is the list you made: &quot;,dic_list) . [&#39;afa&#39;, &#39;end&#39;] .",
             "url": "https://jw95z.github.io/JeongWooLee/phython%20codes/week2/2022/09/01/Quiz.html",
@@ -100,7 +111,7 @@
     
   
     
-        ,"post9": {
+        ,"post10": {
             "title": "List",
             "content": "Week2 . this is week 2 . InfoDb = [] InfoDb.append({ &quot;FirstName&quot;: &quot;James&quot;, &quot;LastName&quot;: &quot;Lee&quot;, &quot;DOB&quot;: &quot;Sempember 5&quot;, &quot;Residence&quot;: &quot;San Diego&quot;, &quot;Email&quot;: &quot;michaelmichael6909@gmail.com&quot;, &quot;Owns_sisters&quot;: [&quot;Chole&quot;, &quot;Rayna&quot;] }) def print_data(d_rec): print(d_rec[&quot;FirstName&quot;], d_rec[&quot;LastName&quot;]) print(&quot; t&quot;, &quot;Residence:&quot;, d_rec[&quot;Residence&quot;]) print(&quot; t&quot;, &quot;Birth Day:&quot;, d_rec[&quot;DOB&quot;]) print(&quot; t&quot;, &quot;Email:&quot;, d_rec[&quot;Email&quot;]) print(&quot; t&quot;, &quot;Owns_sisters:&quot;, &quot;, &quot;.join(d_rec[&quot;Owns_sisters&quot;]) ) def while_loop(): print(&quot;While loop output n&quot;) i = 0 for i in range(0, len(InfoDb)): record = InfoDb[i] print_data(record) return while_loop() . While loop output James Lee Residence: San Diego Birth Day: Sempember 5 Email: michaelmichael6909@gmail.com Owns_sisters: Chole, Rayna .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week2/2022/08/30/Loop.html",
@@ -111,7 +122,7 @@
     
   
     
-        ,"post10": {
+        ,"post11": {
             "title": "Bash shell practice",
             "content": "Week1 . this is week 1 . python3 --version . Python 3.9.12 . Anaconda Verification . conda --version . conda 4.14.0 . git status . On branch master Your branch is up to date with &#39;origin/master&#39;. Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) 2022-08-29-Bash.ipynb version nothing added to commit but untracked files present (use &#34;git add&#34; to track) . git add *.ipynb . git status . On branch master Your branch is up to date with &#39;origin/master&#39;. Changes to be committed: (use &#34;git restore --staged &lt;file&gt;...&#34; to unstage) new file: 2022-08-29-Bash.ipynb Untracked files: (use &#34;git add &lt;file&gt;...&#34; to include in what will be committed) version . git commit -am &quot;Test Commit 2022-08-29.00&quot; . [master 77f0eae] Test Commit 2022-08-29.00 1 file changed, 0 insertions(+), 0 deletions(-) create mode 100644 _notebooks/2022-08-29-Bash.ipynb . git push . Username for &#39;https://github.com&#39;: .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week1/2022/08/29/Bash.html",
@@ -122,7 +133,7 @@
     
   
     
-        ,"post11": {
+        ,"post12": {
             "title": "MyBlog",
             "content": "MyBlog . Hello! Have a nice day .",
             "url": "https://jw95z.github.io/JeongWooLee/markdown/2022/08/24/MyBlog.html",
@@ -133,7 +144,7 @@
     
   
     
-        ,"post12": {
+        ,"post13": {
             "title": "Quiz",
             "content": "Week1 . this is week 1 . import getpass, sys correct = 0 def questionAnswer(prompt): print(&quot;question: &quot; + prompt) ans = input() print(&quot;Answer: &quot; + ans) return ans def questionRespone(prompt): print(&quot;question: &quot; + prompt) ans = input() print(&quot;I got a number :&quot;,ans) return ans def questi(): global correct res = questionRespone(&quot;1 + 1 = ? &quot;) if res == &quot;2&quot;: print(res + &quot; is correct&quot;) correct += 1 else: print(res + &quot; is incorrect&quot;) rep = questionRespone(&quot;2 + 3 = ? &quot;) if rep == &quot;5&quot;: print(rep + &quot; is correct&quot;) correct += 1 else: print(rep + &quot; is incorrect&quot;) reg = questionRespone(&quot;3 + 5 = ? &quot;) if reg == &quot;8&quot;: print(reg + &quot; is correct&quot;) correct += 1 else: print(reg + &quot; is incorrect&quot;) print((str)((float)(correct/quest*100)) + &quot;%&quot;) quest = 3 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(quest) + &quot; questions.&quot;) a = questionAnswer(&quot;Are you ready to take the test[y/n]? &quot;) if a == &quot;y&quot;: questi() else: print(&quot;......&quot;) . Hello, james running /bin/python3 You will be asked 3 questions. question: Are you ready to take the test[y/n]? Answer: y question: 1 + 1 = ? I goy number : 2 2 is correct question: 2 + 3 = ? I goy number : 5 5 is correct question: 3 + 5 = ? I goy number : 8 8 is correct 100.0% .",
             "url": "https://jw95z.github.io/JeongWooLee/jupyter/week1/2022/08/24/My-First-Post.html",
@@ -149,6 +160,17 @@
 
   
       ,"page1": {
+          "title": "Stub_menu",
+          "content": "Using Javascript Table .",
+          "url": "https://jw95z.github.io/JeongWooLee/stub/",
+          "relUrl": "/stub/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "Hello my name is James This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://jw95z.github.io/JeongWooLee/about/",
@@ -159,7 +181,7 @@
   
 
   
-      ,"page2": {
+      ,"page3": {
           "title": "Psychology and the Good life",
           "content": "Psychology and the Good Life . Vocab . Syllabus: an outline of the subjects in a course of study or teaching . Notes . Yale students have a lot of stress. Yale students are incredibly privileged to be at an amazing place like Yale with so many opportunities but they react to that with anxiety. Students are so stressed so they can’t make good opportunities. The stress takes its toll and it takes its toll in a way the students sometimes don’t want to admit. Many students are suffering at mental problems such as loneliness and depression. Science comes from two domains. One domain is this domain of positive psychology a field that literally studies happy people and other is the science of behavior change. Taking times in things that we like are built into the syllabus. We can control our happiness that we think and lot of this work comes from an idea that we tended think of people as being kind of a half glassful type person or a half empty kind of person. Unhappy people are spending time alone more than happy people. . Glitches . I think my whole life is my glitches. My heart is like a broken glass. . How to adapt . Just accept it and live. I just live because I don’t want to die. . Gratitude . I appreciated to my ELD teacher in last semester. Because of her, I could hear what teachers saying in the school. I was confused when I came to this school, but teacher teach me and communicate with me. . | I also thankful to staff of “league of legends”. I spend most of time in there. I used 1000 dollars in there. It is important as my life. I think my characters in the game have to wear expensive clothes than me. . | . Goal . To be alive | Get good score in every subjects | Be good at all of the finals | .",
           "url": "https://jw95z.github.io/JeongWooLee/gratitude/",
@@ -172,7 +194,7 @@
   
 
   
-      ,"page4": {
+      ,"page5": {
           "title": "Notes",
           "content": "This website is powered by fastpages [^1]. This is my first server that I made [^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats. .",
           "url": "https://jw95z.github.io/JeongWooLee/notes/",
@@ -191,7 +213,7 @@
   
 
   
-      ,"page8": {
+      ,"page9": {
           "title": "Table",
           "content": "Week AP Test Prep Career Tech . 0 | Pseudo code | Tools and equipment | . 1 | Hello to Phython | Fastpages, Jupyter notebooks, Markdown | . 2 | Phython list and dictionaries | Tools and equipment | .",
           "url": "https://jw95z.github.io/JeongWooLee/Table/",
@@ -204,7 +226,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "vocab",
           "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://jw95z.github.io/JeongWooLee/vocab/",
@@ -224,7 +246,7 @@
   
 
   
-      ,"page14": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jw95z.github.io/JeongWooLee/robots.txt",
