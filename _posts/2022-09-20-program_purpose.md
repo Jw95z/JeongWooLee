@@ -21,7 +21,7 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>{% include image.html file="/JeongWooLee/images/copied_from_nb/college1.png" %}</p>
-<h2 id="Computing-Innovation">Computing Innovation<a class="anchor-link" href="#Computing-Innovation"> </a></h2><ul>
+<h2 id="Computing-Innovation"><font color="pink">Computing Innovation</font><a class="anchor-link" href="#Computing-Innovation"> </a></h2><ul>
 <li>Applications<ul>
 <li>Games</li>
 <li>Social Media</li>
@@ -40,7 +40,7 @@ layout: notebook
 <li>E-commerce</li>
 <li>Cloud services</li>
 <li>E-mail
-## Purpose of computing innovation</li>
+## <font color='pink'>Purpose of computing innovation</font></li>
 </ul>
 </li>
 <li>Social Media Application<ul>
@@ -56,13 +56,13 @@ layout: notebook
 </ul>
 </li>
 </ul>
-<h2 id="Different-forms-of-Computer-programs">Different forms of Computer programs<a class="anchor-link" href="#Different-forms-of-Computer-programs"> </a></h2><ul>
+<h2 id="Different-forms-of-Computer-programs"><font color="pink">Different forms of Computer programs</font><a class="anchor-link" href="#Different-forms-of-Computer-programs"> </a></h2><ul>
 <li>tactile</li>
 <li>audio</li>
 <li>visual</li>
 <li>text(including numerical values)</li>
 </ul>
-<h2 id="types-of-input-and-output-do-your-devices-accept">types of input and output do your devices accept<a class="anchor-link" href="#types-of-input-and-output-do-your-devices-accept"> </a></h2><ul>
+<h2 id="types-of-input-and-output-do-your-devices-accept"><font color="pink">types of input and output do your devices accept</font><a class="anchor-link" href="#types-of-input-and-output-do-your-devices-accept"> </a></h2><ul>
 <li>Smart Phone/tablet</li>
 <li>Laptop computer</li>
 <li>Gaming Console</li>
@@ -71,33 +71,33 @@ layout: notebook
 <ul>
 <li>"Events" are triggered by some action, which usually sends input to the program</li>
 </ul>
-<h2 id="types-of-event-can-use-a-trigger">types of event can use a trigger<a class="anchor-link" href="#types-of-event-can-use-a-trigger"> </a></h2><ul>
+<h2 id="types-of-event-can-use-a-trigger"><font color="pink">types of event can use a trigger</font><a class="anchor-link" href="#types-of-event-can-use-a-trigger"> </a></h2><ul>
 <li>mouse clicks</li>
 <li>screen taps/swipes(force touch)</li>
 <li>physical button clicks</li>
 <li>keyboard entries</li>
 <li>audio trigger(key word or phrase)</li>
 </ul>
-<h2 id="output-produced-by-a-device">output produced by a device<a class="anchor-link" href="#output-produced-by-a-device"> </a></h2><ul>
+<h2 id="output-produced-by-a-device"><font color="pink">output produced by a device</font><a class="anchor-link" href="#output-produced-by-a-device"> </a></h2><ul>
 <li>visual</li>
 <li>audio</li>
 <li>tactile(touch/feel)</li>
 <li>text</li>
 </ul>
-<h2 id="How-does-program-know-what-to-do-upon-an-event?">How does program know what to do upon an event?<a class="anchor-link" href="#How-does-program-know-what-to-do-upon-an-event?"> </a></h2><h3 id="An-action-triggers-an-event">An action triggers an event<a class="anchor-link" href="#An-action-triggers-an-event"> </a></h3><ul>
+<h2 id="How-does-program-know-what-to-do-upon-an-event?"><font color="pink">How does program know what to do upon an event?</font><a class="anchor-link" href="#How-does-program-know-what-to-do-upon-an-event?"> </a></h2><h3 id="An-action-triggers-an-event"><font color="pink">An action triggers an event</font><a class="anchor-link" href="#An-action-triggers-an-event"> </a></h3><ul>
 <li>Action may be initiated by the user or another program/device</li>
 </ul>
-<h3 id="The-program-&quot;jump&quot;-to-the-coe-segment-according-to-the-event">The program "jump" to the coe segment according to the event<a class="anchor-link" href="#The-program-&quot;jump&quot;-to-the-coe-segment-according-to-the-event"> </a></h3><ul>
+<h3 id="The-program-&quot;jump&quot;-to-the-coe-segment-according-to-the-event"><font color="pink">The program "jump" to the coe segment according to the event</font><a class="anchor-link" href="#The-program-&quot;jump&quot;-to-the-coe-segment-according-to-the-event"> </a></h3><ul>
 <li>The code segment is executed</li>
 <li>Output is triggered by the code segment (or additional events are triggered).</li>
 </ul>
-<h3 id="The-program-code-is-not-necessarily-executed-&quot;in-order&quot;">The program code is not necessarily executed "in order"<a class="anchor-link" href="#The-program-code-is-not-necessarily-executed-&quot;in-order&quot;"> </a></h3><h2 id="What-is-a-program?">What is a program?<a class="anchor-link" href="#What-is-a-program?"> </a></h2><h3 id="A-program-is-a-collection-of-statements">A program is a collection of statements<a class="anchor-link" href="#A-program-is-a-collection-of-statements"> </a></h3><ul>
+<h3 id="The-program-code-is-not-necessarily-executed-&quot;in-order&quot;"><font color="pink">The program code is not necessarily executed "in order"</font><a class="anchor-link" href="#The-program-code-is-not-necessarily-executed-&quot;in-order&quot;"> </a></h3><h2 id="What-is-a-program?"><font color="pink">What is a program?</font><a class="anchor-link" href="#What-is-a-program?"> </a></h2><h3 id="A-program-is-a-collection-of-statements"><font color="pink">A program is a collection of statements</font><a class="anchor-link" href="#A-program-is-a-collection-of-statements"> </a></h3><ul>
 <li>A statement is a single command</li>
 <li>A group of statements is called a code segment</li>
 <li>Code segments are executed according to the rules of the programming language</li>
 <li>A program is often referred to as software</li>
 </ul>
-<h2 id="What-does-this-program-do">What does this program do<a class="anchor-link" href="#What-does-this-program-do"> </a></h2><h3 id="This-code-segment-is-written-to-find-the-minimum-value-in-a-list">This code segment is written to find the minimum value in a list<a class="anchor-link" href="#This-code-segment-is-written-to-find-the-minimum-value-in-a-list"> </a></h3><ul>
+<h2 id="What-does-this-program-do"><font color="pink">What does this program do</font><a class="anchor-link" href="#What-does-this-program-do"> </a></h2><h3 id="This-code-segment-is-written-to-find-the-minimum-value-in-a-list&lt;/font&gt;">This code segment is written to find the minimum value in a list&lt;/font&gt;<a class="anchor-link" href="#This-code-segment-is-written-to-find-the-minimum-value-in-a-list&lt;/font&gt;"> </a></h3><ul>
 <li>This code segment would need to work for a variety of different lists, like list that include:<ul>
 <li>number out of order</li>
 <li>negative numbers</li>
@@ -107,7 +107,7 @@ layout: notebook
 </li>
 <li>This code segment could be inserted into a larger program.</li>
 </ul>
-<h2 id="Description">Description<a class="anchor-link" href="#Description"> </a></h2><ul>
+<h2 id="Description"><font color="pink">Description</font><a class="anchor-link" href="#Description"> </a></h2><ul>
 <li>Simply state what would it does<ul>
 <li>so that someone could use the code segment in a larger program</li>
 </ul>

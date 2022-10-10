@@ -23,7 +23,7 @@ layout: notebook
 <h2 id="minecraft">minecraft<a class="anchor-link" href="#minecraft"> </a></h2><html>
     <head>
         <style>
-            table ,tr,td,th {  
+            table ,td,th {  
                 border: 1px solid #000;
             }
         </style>    
