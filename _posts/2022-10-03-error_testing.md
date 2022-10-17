@@ -501,6 +501,8 @@ layout: notebook
     <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;do you want to order more? [y/n]&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="s2">&quot;n&quot;</span><span class="p">:</span>
         <span class="k">break</span>
+    <span class="k">else</span> <span class="p">:</span>
+        
 
 <span class="c1">#code should add the price of the menu items selected by the user </span>
 <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
