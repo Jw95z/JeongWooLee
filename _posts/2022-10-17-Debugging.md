@@ -6,4 +6,4 @@ comments: true
 categories: [markdown]
 layout: post
 ---
-![](images/debugg.png)
+[image](images/debugg.png)
