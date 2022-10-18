@@ -6,4 +6,4 @@ comments: true
 categories: [markdown]
 layout: post
 ---
-[image](images/debugg.png)
+![]({{site.baseurl}}/images/debugg.png)
