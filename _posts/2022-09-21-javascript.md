@@ -25,7 +25,20 @@ layout: notebook
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">);</span>
+<div class=" highlight hl-javascript"><pre><span></span><span class="kr">const</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+	<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+		<span class="s1">&#39;content-type&#39;</span><span class="o">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
+		<span class="s1">&#39;X-RapidAPI-Key&#39;</span><span class="o">:</span> <span class="s1">&#39;56cf0d9c39msh90ab47fd56c02e6p1d2792jsn0f4dfaa46b90&#39;</span><span class="p">,</span>
+		<span class="s1">&#39;X-RapidAPI-Host&#39;</span><span class="o">:</span> <span class="s1">&#39;motivational-quotes1.p.rapidapi.com&#39;</span>
+	<span class="p">},</span>
+	<span class="nx">body</span><span class="o">:</span> <span class="s1">&#39;{&quot;key1&quot;:&quot;value&quot;,&quot;key2&quot;:&quot;value&quot;}&#39;</span>
+<span class="p">};</span>
+
+<span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://motivational-quotes1.p.rapidapi.com/motivation&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+	<span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">response</span><span class="p">))</span>
+	<span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="p">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
 </pre></div>
 
     </div>
@@ -37,9 +50,23 @@ layout: notebook
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello, World!
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:1
+const options = {
+^
+
+TypeError: Identifier &#39;options&#39; has already been declared
+    at evalmachine.&lt;anonymous&gt;:1:1
+    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
+    at Object.runInThisContext (vm.js:97:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:758:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)</pre>
 </div>
 </div>
 
