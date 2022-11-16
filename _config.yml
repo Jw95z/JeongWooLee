@@ -41,6 +41,10 @@ minima:
   social_links:
     twitter: fastdotai
     github: fastai
+   social_links:
+    - { platform: github, user_url: ”https://github.com/fastai“}
+    - { platform: twitter, user_url: ”https://twitter.com/fastdotai“}
+    - { platform: youtube, user_url: ”https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q“}
 
 # Set this to true to get LaTeX math equation support
 use_math: 
