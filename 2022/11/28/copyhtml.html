@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <div class="container">
+            <div class="calendar">
+                <div class="month">
+                    <button id="prev" onclick="prev()">Prev</button>
+                    <button id="next" onclick="next()">Next</button>
+​
+                    <p id="month">Month Here</p>
+                </div>
+            </div>
+        </div>
+​
+        <script>
+​
+            let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let index = 0;
+​
+            function next() {
+                if (index > 11) {
+                    index = 0;
+                }
+                else {
+                    index += 1;
+                }
+                document.getElementById("month").innerHTML = months[index]
+            }
+​
+            function prev() {
+                if (index < 0) {
+                    index = 11;
+                }
+                else {
+                    index -= 1;
+                }
+                document.getElementById("month").innerHTML = months[index]
+            }
+​
+            document.getElementById("month").innerHTML = months[index]
+​
+        </script>
+    </body>
+</html>
