@@ -12,10 +12,8 @@
         </div>
 ​
         <script>
-​
             let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             let index = 0;
-​
             function next() {
                 if (index > 11) {
                     index = 0;
@@ -25,7 +23,6 @@
                 }
                 document.getElementById("month").innerHTML = months[index]
             }
-​
             function prev() {
                 if (index < 0) {
                     index = 11;
@@ -35,9 +32,6 @@
                 }
                 document.getElementById("month").innerHTML = months[index]
             }
-​
-            document.getElementById("month").innerHTML = months[index]
-​
         </script>
     </body>
 </html>
