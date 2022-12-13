@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Section 3.12 ~ 3.13 | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Section 3.12 ~ 3.13" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://jw95z.github.io/JeongWooLee/lesson_project/2022/12/08/12and13.html" />
+<meta property="og:url" content="https://jw95z.github.io/JeongWooLee/lesson_project/2022/12/08/12and13.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-08T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Section 3.12 ~ 3.13" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-08T00:00:00-06:00","datePublished":"2022-12-08T00:00:00-06:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Section 3.12 ~ 3.13","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/lesson_project/2022/12/08/12and13.html"},"url":"https://jw95z.github.io/JeongWooLee/lesson_project/2022/12/08/12and13.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/JeongWooLee/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jw95z.github.io/JeongWooLee/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/JeongWooLee/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/JeongWooLee/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/JeongWooLee/API/">API</a><a class="page-link" href="/JeongWooLee/stub/">Sub_menu</a><a class="page-link" href="/JeongWooLee/about/">About Me</a><a class="page-link" href="/JeongWooLee/gratitude/">Psychology and the Good life</a><a class="page-link" href="/JeongWooLee/notes/">Notes</a><a class="page-link" href="/JeongWooLee/search/">Search</a><a class="page-link" href="/JeongWooLee/Table/">Table</a><a class="page-link" href="/JeongWooLee/categories/">Tags</a><a class="page-link" href="/JeongWooLee/vocab/">vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Section 3.12 ~ 3.13</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-08T00:00:00-06:00" itemprop="datePublished">
+        Dec 8, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      9 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/JeongWooLee/categories/#Lesson_Project">Lesson_Project</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Jw95z/JeongWooLee/tree/master/_notebooks/2022-12-08-12and13.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/JeongWooLee/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Jw95z/JeongWooLee/master?filepath=_notebooks%2F2022-12-08-12and13.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Jw95z/JeongWooLee/blob/master/_notebooks/2022-12-08-12and13.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FJw95z%2FJeongWooLee%2Fblob%2Fmaster%2F_notebooks%2F2022-12-08-12and13.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Define-Procedure-and-parameter">Define Procedure and parameter </a></li>
+<li class="toc-entry toc-h3"><a href="#Quiz">Quiz </a></li>
+<li class="toc-entry toc-h3"><a href="#Return-Value">Return Value </a></li>
+<li class="toc-entry toc-h3"><a href="#Code">Code </a></li>
+<li class="toc-entry toc-h3"><a href="#Why-abstracting-away-your-program-logic-into-separate,-modular-functions-is-effective?">Why abstracting away your program logic into separate, modular functions is effective? </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Hack-2">Hack 2 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Procedure-that-uses-other-sub-procedures-and-explanation">Procedure that uses other sub-procedures and explanation </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#About-the-procedure">About the procedure </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Definition">Definition </a></li>
+<li class="toc-entry toc-h3"><a href="#Binary-calculator">Binary calculator </a></li>
+<li class="toc-entry toc-h3"><a href="#This-is-the-code-of-calculator">This is the code of calculator </a></li>
+</ul>
+</li>
+</ul><body>
+<!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-08-12and13.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-1">
+<a class="anchor" href="#Hack-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1<a class="anchor-link" href="#Hack-1"> </a>
+</h2>
+<h3 id="Define-Procedure-and-parameter">
+<a class="anchor" href="#Define-Procedure-and-parameter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Define Procedure and parameter<a class="anchor-link" href="#Define-Procedure-and-parameter"> </a>
+</h3>
+<ul>
+<li>The other word of procedure is a function. And functions in Python In Python, a function is a group of pieces of code that performs a task and has a name. Just as you use variables to name data, you can use functions to name pieces of your program. Grouping code like this is called a function definition. </li>
+<li>A parameter is a variable that receives a value passed as an input to a function. We can use this to put values in the function. For example, a and b will be the parameter in this function. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>7
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Quiz">
+<a class="anchor" href="#Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz<a class="anchor-link" href="#Quiz"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questionNum</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"What is are correct names for a procedure? </span><span class="se">\n</span><span class="s2"> A) Method </span><span class="se">\n</span><span class="s2"> B) Function </span><span class="se">\n</span><span class="s2"> C) Both"</span><span class="p">,</span>
+    <span class="s2">"What is a procedure? </span><span class="se">\n</span><span class="s2"> A) Sequencing </span><span class="se">\n</span><span class="s2"> B) Selection </span><span class="se">\n</span><span class="s2"> C) Iteration </span><span class="se">\n</span><span class="s2"> D) All"</span><span class="p">,</span>
+    <span class="s2">"Use this for following question: </span><span class="se">\n</span><span class="s2"> def inchesToFeet(lengthInches): </span><span class="se">\n\t</span><span class="s2"> lengthFeet = lengthInches / 12 </span><span class="se">\n\t</span><span class="s2"> return lengthFeet </span><span class="se">\n\n</span><span class="s2"> What is the procedure name, the parameter, and what the procedure returns? </span><span class="se">\n</span><span class="s2"> A) feetToInches, lengthInches, lengthMeters </span><span class="se">\n</span><span class="s2"> B) inchesToFeet, lengthInches, lengthFeet </span><span class="se">\n</span><span class="s2"> C) inchesToFeet, lengthFeet, lengthInches </span><span class="se">\n</span><span class="s2"> D) lengthInches, inchesToFeet, lengthFeet"</span><span class="p">]</span>
+<span class="n">answers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"c"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">qna</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question:"</span><span class="p">,</span> <span class="n">question</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer:"</span><span class="p">,</span> <span class="n">response</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">answer</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct :) </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+        <span class="k">global</span> <span class="n">correct</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Incorrect :( </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">questionNum</span><span class="p">):</span>
+    <span class="n">qna</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="n">x</span><span class="p">],</span> <span class="n">answers</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Score:"</span><span class="p">,</span> <span class="n">correct</span><span class="p">,</span> <span class="s2">"/ 3"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Question: What is are correct names for a procedure? 
+ A) Method 
+ B) Function 
+ C) Both
+Answer: c
+Correct :) 
+
+Question: What is a procedure? 
+ A) Sequencing 
+ B) Selection 
+ C) Iteration 
+ D) All
+Answer: d
+Correct :) 
+
+Question: Use this for following question: 
+ def inchesToFeet(lengthInches): 
+	 lengthFeet = lengthInches / 12 
+	 return lengthFeet 
+
+ What is the procedure name, the parameter, and what the procedure returns? 
+ A) feetToInches, lengthInches, lengthMeters 
+ B) inchesToFeet, lengthInches, lengthFeet 
+ C) inchesToFeet, lengthFeet, lengthInches 
+ D) lengthInches, inchesToFeet, lengthFeet
+Answer: b
+Correct :) 
+
+Score: 3 / 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Return-Value">
+<a class="anchor" href="#Return-Value" aria-hidden="true"><span class="octicon octicon-link"></span></a>Return Value<a class="anchor-link" href="#Return-Value"> </a>
+</h3>
+<ul>
+<li>A return value is a value that a function performs some function and returns the result to the place where it was called. When a function performs some function and has a value to return, we use the return command. When creating functions, we use the def reserved word. Function content is indented.</li>
+<li>Output Parameter is a also same as parameter. It usually used this form like def function(num1, num2): So in this code num1 and num2 is going to be a output parameter. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">a</span>
+    <span class="n">a</span> <span class="o">+=</span> <span class="n">c</span>
+    <span class="k">return</span> <span class="n">a</span>
+<span class="n">num</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>74
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Code">
+<a class="anchor" href="#Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code<a class="anchor-link" href="#Code"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="k">def</span> <span class="nf">root</span><span class="p">():</span>
+    <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"write a number: "</span><span class="p">))</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"how much did you want to divide"</span><span class="p">))</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">num2</span> <span class="o">=</span>  <span class="nb">float</span><span class="p">(</span><span class="n">num1</span><span class="o">**</span><span class="n">b</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="s2">"of"</span><span class="p">,</span><span class="n">a</span> <span class="p">,</span><span class="s2">"root is"</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+<span class="n">root</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4 of 3 root is 1.5874010519681994
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Why-abstracting-away-your-program-logic-into-separate,-modular-functions-is-effective?">
+<a class="anchor" href="#Why-abstracting-away-your-program-logic-into-separate,-modular-functions-is-effective?" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why abstracting away your program logic into separate, modular functions is effective?<a class="anchor-link" href="#Why-abstracting-away-your-program-logic-into-separate,-modular-functions-is-effective?"> </a>
+</h3>
+<ul>
+<li>If we abstract away our code logic into separate or modular functions, we can make our code shorter. And we don't have to repeat code by defining functions. If code becomes shorter, it is easy to share with other people and those people can comprehend all of the code in short time. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-2">
+<a class="anchor" href="#Hack-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 2<a class="anchor-link" href="#Hack-2"> </a>
+</h2>
+<h3 id="Procedure-that-uses-other-sub-procedures-and-explanation">
+<a class="anchor" href="#Procedure-that-uses-other-sub-procedures-and-explanation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Procedure that uses other sub-procedures and explanation<a class="anchor-link" href="#Procedure-that-uses-other-sub-procedures-and-explanation"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="c1">## Telling the story ##</span>
+<span class="k">def</span> <span class="nf">displayIntro</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'You are in a land full of dragons. In front of you,'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'you see two caves. In one cave, the dragon is friendly'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'and will share his treasure with you. The other dragon'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'is greedy and hungry, and will eat you on sight.'</span><span class="p">)</span>
+<span class="c1">## Saying to player to choose the cave to go ##</span>
+<span class="k">def</span> <span class="nf">chooseCave</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Which cave will you go into? (1 or 2)'</span><span class="p">)</span>
+    <span class="c1">## choosing the cave to go ##</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">choose</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">choose</span><span class="o">==</span><span class="s1">'1'</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">choose</span><span class="o">==</span><span class="s1">'2'</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="k">else</span> <span class="p">:</span>
+            <span class="c1">## if player press not 1 or 2, say player to pick again ##</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Please type 1 or 2'</span><span class="p">)</span>
+            <span class="k">continue</span>
+    
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="c1">## return the value ##</span>
+    <span class="k">return</span> <span class="n">choose</span>
+ 
+<span class="k">def</span> <span class="nf">goCave</span><span class="p">(</span><span class="n">direction</span><span class="p">):</span>
+    <span class="c1">## Telling the story ##</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'You approach the cave...'</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'It is dark and spooky...'</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'A large dragon jumps out in front of you! He opens his jaws and...'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c1">## randomize the value of Judgement ##</span>
+    <span class="n">judgement</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c1">## if the direction and judgement is equal, there will be treasure ##</span>
+    <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="nb">str</span><span class="p">(</span><span class="n">judgement</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Gives you his treasure!'</span><span class="p">)</span>
+    <span class="c1">## if the direction is not same with judgement, there will be gobbles</span>
+    <span class="k">elif</span> <span class="n">direction</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">(</span><span class="n">judgement</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Gobbles you down in one bite!'</span><span class="p">)</span>
+    <span class="c1">## print for the space</span>
+    <span class="nb">print</span><span class="p">()</span>
+<span class="c1">## To know whether player will continue or not</span>
+<span class="k">def</span> <span class="nf">playAgain</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Do you want to play again? (yes or no)'</span><span class="p">)</span>
+    
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">temp</span><span class="o">=</span><span class="nb">input</span><span class="p">()</span>
+        <span class="c1">## if temp is yes, the game will start again</span>
+        <span class="k">if</span> <span class="n">temp</span> <span class="o">==</span> <span class="s1">'yes'</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Go Again'</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">()</span>
+            <span class="k">return</span> <span class="s1">'yes'</span>
+        <span class="c1">## if temp is no, it means game over</span>
+        <span class="k">elif</span> <span class="n">temp</span> <span class="o">==</span> <span class="s1">'no'</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Good Bye'</span><span class="p">)</span>
+            <span class="k">return</span> <span class="s1">'no'</span>
+        <span class="k">else</span> <span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'please type yes or no'</span><span class="p">)</span>
+ 
+<span class="c1">###########################################################</span>
+ 
+<span class="n">regame</span> <span class="o">=</span> <span class="s1">'yes'</span> <span class="c1">## To know that player will continue the game ##</span>
+    
+<span class="k">while</span> <span class="n">regame</span><span class="o">==</span><span class="s1">'yes'</span><span class="p">:</span>
+    <span class="c1">## this is the codes that make game to start</span>
+    <span class="n">displayIntro</span><span class="p">()</span>
+    <span class="n">caveNumber</span> <span class="o">=</span> <span class="n">chooseCave</span><span class="p">()</span>
+    <span class="n">goCave</span><span class="p">(</span><span class="n">caveNumber</span><span class="p">)</span>
+    <span class="n">regame</span> <span class="o">=</span> <span class="n">playAgain</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You are in a land full of dragons. In front of you,
+you see two caves. In one cave, the dragon is friendly
+and will share his treasure with you. The other dragon
+is greedy and hungry, and will eat you on sight.
+Which cave will you go into? (1 or 2)
+
+You approach the cave...
+It is dark and spooky...
+A large dragon jumps out in front of you! He opens his jaws and...
+
+Gives you his treasure!
+
+Do you want to play again? (yes or no)
+Good Bye
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="About-the-procedure">
+<a class="anchor" href="#About-the-procedure" aria-hidden="true"><span class="octicon octicon-link"></span></a>About the procedure<a class="anchor-link" href="#About-the-procedure"> </a>
+</h4>
+<ul>
+<li>This code contains three sub procedures: displayIntro(), chooseCave(), goCave(), and playAgain()<ul>
+<li>DisplayIntro() is a procedure that tells about the story of game. It composed by print. In this procedure, there are only letters that are printed.</li>
+<li>chooseCave() is a procedure that make player to choose cave to go. And also deciding the value which cave is right to go. </li>
+<li>goCave() is to consider which cave the player goes. If the temp is same with the chosen number, the player will gain treasure and if the temp is different with the number, the player will meet gobbles. </li>
+<li>playAgain() is to know whether player want to play again. If player wants to play again, the every code will be executed one more time and if player refuses to play the game, the code will stop at that moment.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="c1"># use the split() method to split the string into a list of words</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>
+
+	<span class="c1"># initialize a new list to hold all non-empty strings</span>
+    <span class="n">new_words</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="o">!=</span> <span class="s2">""</span><span class="p">:</span>
+            <span class="c1"># add all non-empty substrings of `words` to `new_words`</span>
+            <span class="n">new_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">words</span>
+
+<span class="c1"># this function takes a list of words as input and returns the number of words</span>
+<span class="c1"># that start with the given letter (case-insensitive)</span>
+<span class="k">def</span> <span class="nf">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">letter</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># loop through the list of words and check if each word starts with the given letter</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="c1"># use the lower() method to make the comparison case-insensitive</span>
+        <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">letter</span><span class="p">):</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="c1"># this function takes a string as input and returns the number of words that start with 'a'</span>
+<span class="k">def</span> <span class="nf">count_words_starting_with_a_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="c1"># use the split_string() function to split the input string into a list of words</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    
+    <span class="c1"># use the count_words_starting_with_letter() function to count the number of words</span>
+    <span class="c1"># that start with 'a' in the list of words</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="c1"># see above</span>
+<span class="k">def</span> <span class="nf">count_words_starting_with_d_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">count</span>
+
+       
+    <span class="c1"># this function takes a string as input and returns the number of words that start with any inputted letter</span>
+<span class="k">def</span> <span class="nf">count_words_starting_with_l_letter</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What letter would you like to check?"</span><span class="p">)</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">l</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">count</span>
+
+
+<span class="c1"># example usage:</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">"   This is  a  test  string! Don't you think this is cool? "</span>
+<span class="n">l_count</span> <span class="o">=</span> <span class="n">count_words_starting_with_l_letter</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">a_count</span> <span class="o">=</span> <span class="n">count_words_starting_with_a_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">d_count</span> <span class="o">=</span> <span class="n">count_words_starting_with_d_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Words a starting with your letter:"</span><span class="p">,</span> <span class="n">a_count</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Words d starting with your letter:"</span><span class="p">,</span> <span class="n">d_count</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Words l starting with your letter:"</span><span class="p">,</span> <span class="n">l_count</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Words a starting with your letter: 1
+Words d starting with your letter: 1
+Words l starting with your letter: 0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-3">
+<a class="anchor" href="#Hack-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 3<a class="anchor-link" href="#Hack-3"> </a>
+</h2>
+<h3 id="Definition">
+<a class="anchor" href="#Definition" aria-hidden="true"><span class="octicon octicon-link"></span></a>Definition<a class="anchor-link" href="#Definition"> </a>
+</h3>
+<ul>
+<li>Procedure name is the name given in function. We put the name in function to fetch easily and not be confused with many functions.</li>
+<li>A parameter is a variable that receives a value passed as an input to a function, and an argument is an input value passed when calling a function. In def add(a,b), a and b are called parameters. In print(add(3,4)), 3 and 4 are called arguments.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>7
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Binary-calculator">
+<a class="anchor" href="#Binary-calculator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary calculator<a class="anchor-link" href="#Binary-calculator"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>&lt;!DOCTYPE html&gt;</p>
+
+
+    <title>Calculator</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px 10px;
+            text-align: center;
+        }
+        input {
+            text-align: right;
+            border: none;
+        }
+        input:focus {
+            outline: none;
+        }
+    </style>
+
+
+    <table border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="a">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <input type="text" id="b">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">AC</td>
+            <td onclick="add('/')">/</td>
+        </tr>
+        <tr>
+            <td onclick="add(7)">7</td>
+            <td onclick="add(8)">8</td>
+            <td onclick="add(9)">9</td>
+            <td onclick="add('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="add(4)">4</td>
+            <td onclick="add(5)">5</td>
+            <td onclick="add(6)">6</td>
+            <td onclick="add('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="add(1)">1</td>
+            <td onclick="add(2)">2</td>
+            <td onclick="add(3)">3</td>
+            <td onclick="add('+')">+</td>
+        </tr>
+        <tr>
+            <td colspan="2" onclick="add(0)">0</td>
+            <td onclick="add('.')">.</td>
+            <td onclick="calculate()">=</td>
+        </tr>
+    </table>
+    <script>
+        function add(char) {
+            var display = document.getElementById('a');
+            display.value = display.value + char;
+        }
+        function calculate() {
+            var display = document.getElementById('a');
+            var result = eval(display.value); 
+            document.getElementById('b').value = result;
+        }
+        function reset() {
+            document.getElementById('a').value = "";
+            document.getElementById('b').value = "";
+        }
+    </script>
+
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="This-is-the-code-of-calculator">
+<a class="anchor" href="#This-is-the-code-of-calculator" aria-hidden="true"><span class="octicon octicon-link"></span></a>This is the code of calculator<a class="anchor-link" href="#This-is-the-code-of-calculator"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;!</span>DOCTYPE html&gt;
+<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">Calculator</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+        <span class="n">table</span> <span class="p">{</span>
+            <span class="n">border</span><span class="o">-</span><span class="n">collapse</span><span class="p">:</span> <span class="n">collapse</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">td</span> <span class="p">{</span>
+            <span class="n">padding</span><span class="p">:</span> <span class="mi">5</span><span class="n">px</span> <span class="mi">10</span><span class="n">px</span><span class="p">;</span>
+            <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nb">input</span> <span class="p">{</span>
+            <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">right</span><span class="p">;</span>
+            <span class="n">border</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nb">input</span><span class="p">:</span><span class="n">focus</span> <span class="p">{</span>
+            <span class="n">outline</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">table</span> <span class="n">border</span><span class="o">=</span><span class="s2">"1"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">colspan</span><span class="o">=</span><span class="s2">"4"</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"a"</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">colspan</span><span class="o">=</span><span class="s2">"4"</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nb">id</span><span class="o">=</span><span class="s2">"b"</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">colspan</span><span class="o">=</span><span class="s2">"3"</span><span class="o">&gt;</span><span class="n">AC</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add('/')"</span><span class="o">&gt;/&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(7)"</span><span class="o">&gt;</span><span class="mi">7</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(8)"</span><span class="o">&gt;</span><span class="mi">8</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(9)"</span><span class="o">&gt;</span><span class="mi">9</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add('*')"</span><span class="o">&gt;*&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(4)"</span><span class="o">&gt;</span><span class="mi">4</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(5)"</span><span class="o">&gt;</span><span class="mi">5</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(6)"</span><span class="o">&gt;</span><span class="mi">6</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add('-')"</span><span class="o">&gt;-&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(1)"</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(2)"</span><span class="o">&gt;</span><span class="mi">2</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(3)"</span><span class="o">&gt;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add('+')"</span><span class="o">&gt;+&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">colspan</span><span class="o">=</span><span class="s2">"2"</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add(0)"</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"add('.')"</span><span class="o">&gt;.&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">td</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">"calculate()"</span><span class="o">&gt;=&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+        <span class="n">function</span> <span class="n">add</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">var</span> <span class="n">display</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>
+            <span class="n">display</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">display</span><span class="o">.</span><span class="n">value</span> <span class="o">+</span> <span class="n">char</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">function</span> <span class="n">calculate</span><span class="p">()</span> <span class="p">{</span>
+            <span class="n">var</span> <span class="n">display</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>
+            <span class="n">var</span> <span class="n">result</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">display</span><span class="o">.</span><span class="n">value</span><span class="p">);</span> 
+            <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'b'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">result</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">function</span> <span class="n">reset</span><span class="p">()</span> <span class="p">{</span>
+            <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'a'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+            <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s1">'b'</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+</body>
+  </div><a class="u-url" href="/JeongWooLee/lesson_project/2022/12/08/12and13.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/JeongWooLee/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/JeongWooLee/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="”https://github.com/fastai“" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://twitter.com/fastdotai“" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q“" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
