@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      12 min read
     
 </span></p>
 
@@ -124,6 +124,12 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Vocab">Vocab </a></li>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Calling-Procedures">Calling Procedures </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Define-Procedure-and-parameter">Define Procedure and parameter </a></li>
@@ -149,6 +155,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#This-is-the-code-of-calculator">This is the code of calculator </a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#Please-give-me-Perfect-Score">Please give me Perfect Score </a></li>
 </ul><body>
 <!--
 #################################################
@@ -159,6 +166,69 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vocab">
+<a class="anchor" href="#Vocab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab<a class="anchor-link" href="#Vocab"> </a>
+</h2>
+<ul>
+<li>A procedure is a named set of instructions that can take in parameters and return values.<ul>
+<li>May be called "method" or "function" in different programming languages.</li>
+</ul>
+</li>
+<li>Parameters are independent variables used in the procedure to produce a result. It allows a procedure to execute without initially knowing specific input values.</li>
+<li>Modularity - the practice of breaking a complex program into smaller, independent parts or modules that can be used and reused in different parts of the program</li>
+<li>Abstraction - the practice of hiding the details of how a particular code or system works and exposing only the essential features or functions that are necessary for other parts of the program to use</li>
+<li>Duplication - having multiple duplicate code blocks, often decreasing readability and efficiency</li>
+<li>Logic - the sequence of steps and operations that a computer follows to execute a program, including the specific instructions and decision-making processes built into the code</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+</h2>
+<h3 id="Calling-Procedures">
+<a class="anchor" href="#Calling-Procedures" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calling Procedures<a class="anchor-link" href="#Calling-Procedures"> </a>
+</h3>
+<ul>
+<li>To call a procedure you would write the name of the procedure followed by the parentheses with the parameters of the procedure</li>
+<li>Procedures do not require parameters, but the parentheses must be there
+#### Ex: </li>
+<li>procedureName(parameter1, parameter2, ...)</li>
+<li>How would you call this procedure?
+### Determining the Result of a Procedure</li>
+<li>To determine the result of a procedure or any code, you must follow the code line by line and see what each one does</li>
+<li>Using syntax, you can determine the result by<ul>
+<li>function parameters</li>
+<li>return value and statements</li>
+</ul>
+</li>
+<li>To use return values, you have to write the syntax return followed by the expression you would like to return variables</li>
+<li>Value can be string, a tuple, or any other type that is being sent back to the main program </li>
+<li>what is x being assigned to inside the function?</li>
+<li>As a reminder, to use function parameters, you would have to write the syntax name of the function followed by the parameters needed in parentheses</li>
+<li>Function parameters are the parameters that are used when calling the function in order to get a result. </li>
+<li>A return statement exits a function and instructs python to continue executing the program and to return a certain value
+### Abstracting Shared Features</li>
+<li>Say we want to create a set of functions that count the number of words in a sentence that start with a certain character. We want to create...</li>
+<li>In order to count words starting with a certain character, we'll first need to split up the sentence into words. This behavior will be shared across both functions we intend to create, so procedural abstraction is appropriate here.
+### Functions - Basic Structure</li>
+<li>Functions can be created in many different languages. Below are some examples in Collegeboard's format, Python, and Javascript.
+### Python</li>
+<li>Python is similar to the Collegeboard example, where <code>def</code> defines the function, <code>function</code>, and then is followed by parameters <code>a,b</code>, which can later be interchanged with any numbers as shown with <code>function(1,2)</code>. The numbers are called arguments, which are information provided to the function with parameters. In this case, the parameters are being added within the function and then printed.
+### Javascript </li>
+<li>Javascript in this case is almost the exact same as Python, the only differences being that function is called with <code>function</code> and that the formatting is a little different. Otherwise, it does the exact same thing as the Python example.</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -588,7 +658,7 @@ Good Bye
     <span class="c1"># loop through the list of words and check if each word starts with the given letter</span>
     <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
         <span class="c1"># use the lower() method to make the comparison case-insensitive</span>
-        <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">letter</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="o">==</span> <span class="n">letter</span><span class="p">:</span>
             <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
     
     <span class="k">return</span> <span class="n">count</span>
@@ -640,7 +710,7 @@ Good Bye
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Words a starting with your letter: 1
-Words d starting with your letter: 1
+Words d starting with your letter: 0
 Words l starting with your letter: 0
 </pre>
 </div>
@@ -898,6 +968,15 @@ Words l starting with your letter: 0
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Please-give-me-Perfect-Score">
+<a class="anchor" href="#Please-give-me-Perfect-Score" aria-hidden="true"><span class="octicon octicon-link"></span></a>Please give me Perfect Score<a class="anchor-link" href="#Please-give-me-Perfect-Score"> </a>
+</h2>
+</div>
+</div>
+</div>
 </div>
 
 
