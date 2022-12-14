@@ -3,6 +3,7 @@ title: Note from computer science
 toc: true
 badges: true
 comments: true
+permalink: /notes/
 categories: [Notes]
 layout: post
 ---
