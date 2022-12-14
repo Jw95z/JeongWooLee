@@ -1,5 +1,5 @@
 ---
-title: Teacher
+title: Note from computer science
 toc: true
 badges: true
 comments: true
