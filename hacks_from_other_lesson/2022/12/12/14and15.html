@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      10 min read
     
 </span></p>
 
@@ -125,6 +125,11 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#Vocab">Vocab </a></li>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Library">Library </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Write-the-code-that-use-libraries">Write the code that use libraries </a>
@@ -173,6 +178,141 @@ window.onload = wrap_img;
 <li>Libraries includes several special codes and these codes make the function. </li>
 </ul>
 </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<span class="k">def</span> <span class="nf">root</span><span class="p">():</span>
+    <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"write a number: "</span><span class="p">))</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"how much did you want to divide"</span><span class="p">))</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">num2</span> <span class="o">=</span>  <span class="nb">float</span><span class="p">(</span><span class="n">num1</span><span class="o">**</span><span class="n">b</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="s2">"of"</span><span class="p">,</span><span class="n">a</span> <span class="p">,</span><span class="s2">"root is"</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+<span class="n">root</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5 of 4 root is 1.4953487812212205
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Randomization: having a random value between two value<ul>
+<li>If there is random(3, 7), the result will be 3 or 4 or 5 or 6 or 7. </li>
+<li>In these days, there is many random things in the world. The most popular thing that use random is gambling.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>6
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>seed()            |  Initialize the random number generator</p>
+<p>getstate()        |  Returns the current internal state of the random number generator</p>
+<p>setstate()        |  Restores the internal state of the random number generator</p>
+<p>getrandbits()     |  Returns a number representing the random bits</p>
+<p>randrange()       |  Returns a random number between the given range</p>
+<p>randint()         |  Returns a random number between the given range</p>
+<p>choice()          |  Returns a random element from the given sequence</p>
+<p>choices()         |  Returns a list with a random selection from the given sequence</p>
+<p>shuffle()         |  Takes a sequence and returns the sequence in a random order</p>
+<p>sample()          |  Returns a given sample of a sequence</p>
+<p>random()          |  Returns a random float number between 0 and 1</p>
+<p>uniform()         |  Returns a random float number between two given parameters</p>
+<p>betavariate()     |  Returns a random float number between 0 and 1 based on the Beta distribution (used in statistics)</p>
+<p>expovariate()     |  Returns a random float number based on the Exponential distribution (used in statistics)</p>
+<p>gammavariate()    |  Returns a random float number based on the Gamma distribution (used in statistics)</p>
+<p>gauss()           |  Returns a random float number based on the Gaussian distribution (used in probability theories)</p>
+<p>lognormvariate()  |  Returns a random float number based on a log-normal distribution (used in probability theories)</p>
+<p>normalvariate()   |  Returns a random float number based on the normal distribution (used in probability theories)</p>
+<p>vonmisesvariate() |  Returns a random float number based on the von Mises distribution (used in directional statistics)</p>
+<p>paretovariate()   |  Returns a random float number based on the Pareto distribution (used in probability theories)</p>
+<p>weibullvariate()  |  Returns a random float number based on the Weibull distribution (used in statistics)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+</h2>
+<h3 id="Library">
+<a class="anchor" href="#Library" aria-hidden="true"><span class="octicon octicon-link"></span></a>Library<a class="anchor-link" href="#Library"> </a>
+</h3>
+<ul>
+<li>Software library contains procedures that can be used in the creation of new programs.</li>
+<li>Existing segments of code can come from internal or external sources, ie. libraries or previously written code.</li>
+<li>The use of libraries simplifies the task of creating complex programs.</li>
+<li>Application program interfaces (APIs) are specifications for how the procedures in a library behave and can be used.</li>
+<li>Documentation for a library or API is necessary in understanding the key behaviors provided by the API/library and how to utilize them in your work.
+### Randomization</li>
+<li>Random can also have different methods, in the above examples we only used one example, randint which returns a random number between the given range. Down below I have created a table of all the methods with the description of what it is used for with the random function.</li>
 </ul>
 
 </div>
