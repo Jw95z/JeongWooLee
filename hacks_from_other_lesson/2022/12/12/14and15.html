@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Section 3.14 ~ 3.15 | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Section 3.14 ~ 3.15" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://jw95z.github.io/JeongWooLee/hacks_from_other_lesson/2022/12/12/14and15.html" />
+<meta property="og:url" content="https://jw95z.github.io/JeongWooLee/hacks_from_other_lesson/2022/12/12/14and15.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-12T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Section 3.14 ~ 3.15" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-12T00:00:00-06:00","datePublished":"2022-12-12T00:00:00-06:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Section 3.14 ~ 3.15","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/hacks_from_other_lesson/2022/12/12/14and15.html"},"url":"https://jw95z.github.io/JeongWooLee/hacks_from_other_lesson/2022/12/12/14and15.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/JeongWooLee/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jw95z.github.io/JeongWooLee/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/JeongWooLee/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/JeongWooLee/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/JeongWooLee/API/">API</a><a class="page-link" href="/JeongWooLee/stub/">Sub_menu</a><a class="page-link" href="/JeongWooLee/about/">About Me</a><a class="page-link" href="/JeongWooLee/gratitude/">Psychology and the Good life</a><a class="page-link" href="/JeongWooLee/notes/">Notes</a><a class="page-link" href="/JeongWooLee/search/">Search</a><a class="page-link" href="/JeongWooLee/Table/">Table</a><a class="page-link" href="/JeongWooLee/categories/">Tags</a><a class="page-link" href="/JeongWooLee/vocab/">vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Section 3.14 ~ 3.15</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-12T00:00:00-06:00" itemprop="datePublished">
+        Dec 12, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/JeongWooLee/categories/#Hacks_from_other_lesson">Hacks_from_other_lesson</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Jw95z/JeongWooLee/tree/master/_notebooks/2022-12-12-14and15.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/JeongWooLee/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Jw95z/JeongWooLee/master?filepath=_notebooks%2F2022-12-12-14and15.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Jw95z/JeongWooLee/blob/master/_notebooks/2022-12-12-14and15.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FJw95z%2FJeongWooLee%2Fblob%2Fmaster%2F_notebooks%2F2022-12-12-14and15.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Write-the-code-that-use-libraries">Write the code that use libraries </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Explanation">Explanation </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Hack2">Hack2 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Few-lines-of-code-that-implements-the-import-function">Few lines of code that implements the import function </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Poker-game">Poker game </a></li>
+<li class="toc-entry toc-h4"><a href="#ROCK,-SCISSOR,-PAPER">ROCK, SCISSOR, PAPER </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#About-the-random-function">About the random function </a></li>
+<li class="toc-entry toc-h3"><a href="#Types-of-libraries">Types of libraries </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Make-Code">Make Code </a></li>
+<li class="toc-entry toc-h3"><a href="#Question:-what-can-be-outputted-from-RANDOM(12,20)-and-what-number-are-excluded?">Question: what can be outputted from RANDOM(12,20) and what number are excluded? </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-12-14and15.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-1">
+<a class="anchor" href="#Hack-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1<a class="anchor-link" href="#Hack-1"> </a>
+</h2>
+<h3 id="Write-the-code-that-use-libraries">
+<a class="anchor" href="#Write-the-code-that-use-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Write the code that use libraries<a class="anchor-link" href="#Write-the-code-that-use-libraries"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="c1">## fetching the random function</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="c1">## fetching the time</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"dogs are cute"</span><span class="p">,</span> <span class="s2">"cats are small"</span><span class="p">,</span> <span class="s2">"fox is quiet"</span><span class="p">,</span> <span class="s2">"Mouse is used to be in computer"</span><span class="p">,</span> 
+<span class="s2">"Panda are living in China"</span><span class="p">,</span> <span class="s2">"Frog are sleeping in the winter"</span><span class="p">,</span> <span class="s2">"Bear is catching the fish"</span><span class="p">]</span>
+<span class="c1">## defining the list</span>
+<span class="n">num</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1">## Number for the presenting that it is a first</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"if you are ready, please press enter to start"</span><span class="p">)</span>
+<span class="c1">## This code is written because I have to know whether player is ready</span>
+<span class="nb">input</span><span class="p">()</span>
+<span class="c1">## player put enter or any keys in here</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="c1">## time starts</span>
+<span class="n">question</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="c1">## Making a question from the list</span>
+<span class="k">while</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="c1">## I used loop function to reduce the code. </span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">"th question: "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+    <span class="c1">## printing the question</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="c1">## players have to write exact same thing, this is for knowing how fast they can type</span>
+    <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="n">question</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Pass"</span><span class="p">)</span>
+        <span class="c1">## if answer is same as the question, print "pass"</span>
+        <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="c1">## And also add 1 in number</span>
+        <span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+        <span class="c1">## remove the question which is already used</span>
+        <span class="n">question</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="c1">## picking another new question</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"try again"</span><span class="p">)</span>
+        <span class="c1">## if they are not same, print "try again"</span>
+<span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="c1">## having the ending time</span>
+<span class="n">sec</span> <span class="o">=</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span>
+<span class="c1">## defining the second about how much it was taken</span>
+<span class="n">sec</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">sec</span><span class="p">,</span> <span class="s2">"2f"</span><span class="p">)</span>
+<span class="c1">## fix in format</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You got "</span><span class="p">,</span> <span class="n">sec</span><span class="p">,</span> <span class="s2">"seconds"</span><span class="p">)</span>
+<span class="c1">## print the second</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>if you are ready, please press enter to start
+1 th question: 
+Frog are sleeping in the winter
+Pass
+2 th question: 
+Mouse is used to be in computer
+Pass
+3 th question: 
+Panda are living in China
+Pass
+4 th question: 
+fox is quiet
+Pass
+5 th question: 
+Bear is catching the fish
+Pass
+You got  37.188412 seconds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Explanation">
+<a class="anchor" href="#Explanation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Explanation<a class="anchor-link" href="#Explanation"> </a>
+</h4>
+<ul>
+<li>this code is for practicing how fast you type the letters in the keyboard. Player has to type 5 sentences and if the typing is ended, the time that player spend on writing will be printed in the last.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack2">
+<a class="anchor" href="#Hack2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack2<a class="anchor-link" href="#Hack2"> </a>
+</h2>
+<h3 id="Few-lines-of-code-that-implements-the-import-function">
+<a class="anchor" href="#Few-lines-of-code-that-implements-the-import-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Few lines of code that implements the import function<a class="anchor-link" href="#Few-lines-of-code-that-implements-the-import-function"> </a>
+</h3>
+<h4 id="Poker-game">
+<a class="anchor" href="#Poker-game" aria-hidden="true"><span class="octicon octicon-link"></span></a>Poker game<a class="anchor-link" href="#Poker-game"> </a>
+</h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">CardRank</span><span class="p">(</span><span class="n">cards</span><span class="p">):</span>
+    <span class="n">paircount</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">n1</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">n2</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n1</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">cards</span><span class="p">[</span><span class="n">n1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">cards</span><span class="p">[</span><span class="n">n2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="p">:</span>
+                <span class="n">paircount</span> <span class="o">=</span> <span class="n">paircount</span><span class="o">+</span><span class="mi">1</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="n">cards</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+    <span class="n">num</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">straightox</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">paircount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">straightox</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">num</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="n">straightox</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">suit</span> <span class="o">=</span> <span class="p">[</span><span class="n">cards</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+    <span class="n">suit</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">flushox</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">suit</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">suit</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span>
+        <span class="n">flushox</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">if</span> <span class="n">straightox</span> <span class="ow">and</span> <span class="n">flushox</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">paircount</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="k">elif</span> <span class="n">paircount</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">elif</span> <span class="n">flushox</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="k">elif</span> <span class="n">straightox</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="k">elif</span> <span class="n">paircount</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">6</span>
+    <span class="k">elif</span> <span class="n">paircount</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">7</span>
+    <span class="k">elif</span> <span class="n">paircount</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">8</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">rank</span> <span class="o">=</span> <span class="mi">9</span>
+    <span class="k">return</span> <span class="n">rank</span>
+
+
+<span class="n">Money</span> <span class="o">=</span> <span class="mi">2000</span>
+
+<span class="n">deck</span> <span class="o">=</span> <span class="p">[(</span><span class="n">suit</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="k">for</span>  <span class="n">suit</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"s"</span><span class="p">,</span> <span class="s2">"h"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">14</span><span class="p">)]</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+
+    <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">deck</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]:</span>
+        <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Do you want to bet? (y/n)"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s1">'n'</span> <span class="ow">or</span> <span class="n">answer</span> <span class="o">==</span> <span class="s1">'N'</span><span class="p">:</span>
+            <span class="k">break</span> <span class="c1">#</span>
+        <span class="n">Money</span> <span class="o">=</span> <span class="n">Money</span><span class="o">-</span><span class="mi">10</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">cards_A</span> <span class="o">=</span> <span class="p">[</span> <span class="n">deck</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>  
+            <span class="n">cards_B</span> <span class="o">=</span> <span class="p">[</span> <span class="n">deck</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>  
+        <span class="k">elif</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">cards_A</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">deck</span><span class="p">[</span><span class="n">n</span><span class="o">*</span><span class="mi">2</span><span class="p">])</span>
+            <span class="n">cards_B</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">deck</span><span class="p">[</span><span class="n">n</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">hiddencard</span> <span class="o">=</span> <span class="n">deck</span><span class="p">[</span><span class="n">n</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span>
+            <span class="n">cards_B</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">deck</span><span class="p">[</span><span class="n">n</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">cards_A</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hiddencard</span><span class="p">)</span>
+            <span class="n">rank_A</span> <span class="o">=</span> <span class="n">CardRank</span><span class="p">(</span><span class="n">cards_A</span><span class="p">)</span>
+            <span class="n">rank_B</span> <span class="o">=</span> <span class="n">CardRank</span><span class="p">(</span><span class="n">cards_B</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">rank_B</span> <span class="o">&lt;</span> <span class="n">rank_A</span><span class="p">:</span>
+                <span class="n">Money</span> <span class="o">=</span> <span class="n">Money</span><span class="o">+</span><span class="mi">100</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">'You won'</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">rank_B</span> <span class="o">==</span> <span class="n">rank_A</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">'draw'</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">'computer won'</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Money = "</span><span class="p">,</span> <span class="n">Money</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"computer: "</span><span class="p">,</span> <span class="n">cards_A</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"player  : "</span><span class="p">,</span> <span class="n">cards_B</span><span class="p">)</span>
+    
+    <span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Are you playing the game? (y/n)"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="s1">'n'</span> <span class="ow">or</span> <span class="n">answer</span> <span class="o">==</span> <span class="s1">'N'</span><span class="p">:</span>
+        <span class="k">break</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Money =  1990
+computer:  [('c', 11), ('c', 10)]
+player  :  [('d', 10), ('c', 8)]
+Money =  1980
+computer:  [('c', 11), ('c', 10), ('h', 10)]
+player  :  [('d', 10), ('c', 8), ('h', 3)]
+Money =  1970
+computer:  [('c', 11), ('c', 10), ('h', 10), ('h', 8)]
+player  :  [('d', 10), ('c', 8), ('h', 3), ('d', 7)]
+Money =  1960
+computer:  [('c', 11), ('c', 10), ('h', 10), ('h', 8)]
+player  :  [('d', 10), ('c', 8), ('h', 3), ('d', 7), ('s', 11)]
+computer won
+Money =  1950
+computer:  [('c', 11), ('c', 10), ('h', 10), ('h', 8), ('s', 7)]
+player  :  [('d', 10), ('c', 8), ('h', 3), ('d', 7), ('s', 11)]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="ROCK,-SCISSOR,-PAPER">
+<a class="anchor" href="#ROCK,-SCISSOR,-PAPER" aria-hidden="true"><span class="octicon octicon-link"></span></a>ROCK, SCISSOR, PAPER<a class="anchor-link" href="#ROCK,-SCISSOR,-PAPER"> </a>
+</h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">sel</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'scissor'</span><span class="p">,</span> <span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'paper'</span><span class="p">]</span>
+<span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s1">'win.'</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s1">'lose.'</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">'draw.'</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">checkWin</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">com</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">sel</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s1">'you wrote wrong. type it again'</span><span class="p">)</span>
+       <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'player 1 ( </span><span class="si">{</span><span class="n">user</span><span class="si">}</span><span class="s1"> vs </span><span class="si">{</span><span class="n">com</span><span class="si">}</span><span class="s1"> ) com'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">user</span> <span class="o">==</span> <span class="n">com</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="s1">'scissor'</span> <span class="ow">and</span> <span class="n">com</span> <span class="o">==</span> <span class="s1">'rock'</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="s1">'rock'</span> <span class="ow">and</span> <span class="n">com</span> <span class="o">==</span> <span class="s1">'paper'</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="s1">'paper'</span> <span class="ow">and</span> <span class="n">com</span> <span class="o">==</span> <span class="s1">'scissor'</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">-------------------------------------------'</span><span class="p">)</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"rock, scissor, paper : "</span><span class="p">)</span>
+    <span class="n">com</span> <span class="o">=</span> <span class="n">sel</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="n">checkWin</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">com</span><span class="p">):</span>
+        <span class="k">break</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'-------------------------------------------</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+-------------------------------------------
+player 1 ( rock vs rock ) com
+draw.
+-------------------------------------------
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="About-the-random-function">
+<a class="anchor" href="#About-the-random-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>About the random function<a class="anchor-link" href="#About-the-random-function"> </a>
+</h3>
+<ul>
+<li>This module generates random numbers for various distributions. When using various functions (functions, variables) in the random module, input them in the form of random.().<ul>
+<li>A function that returns a random integer within a specified range.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Types-of-libraries">
+<a class="anchor" href="#Types-of-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Types of libraries<a class="anchor-link" href="#Types-of-libraries"> </a>
+</h3>
+<ul>
+<li>import pygame<ul>
+<li>It is a library for multimedia expression such as games that can be written in Python. It is based on SDL. It is an open source and free tool, and can be run on any platform that can run Python.</li>
+</ul>
+</li>
+<li>import math<ul>
+<li>Various functions and constants related to mathematics are predefined, and these mathematical problems can be easily solved through Python programming. The math module is a basic module provided by Python.</li>
+</ul>
+</li>
+<li>import request<ul>
+<li>The requests package uses the corresponding package when extracting API data similar to Ajax, and is mainly used when writing a program that calls HTTP in Python.</li>
+</ul>
+</li>
+<li>import time<ul>
+<li>It is a function that obtains the current time of the computer, and the return value is a real number indicating how many seconds have passed since the standard time (depending on the operating system). For example, if you call this function once and call it again exactly 1 second later, the two return values ​​will differ by 1.</li>
+</ul>
+</li>
+<li>import sys<ul>
+<li>This module provides access to some variables used or maintained by the interpreter, as well as functions that interact strongly with the interpreter. Always available.</li>
+</ul>
+</li>
+<li>import os<ul>
+<li>As an abbreviation of Operating System, it allows you to perform various functions provided by the operating system in Python. For example, you can use the os module to copy files or create directories using Python and get a list of files in a specific directory.</li>
+</ul>
+</li>
+<li>import pickle<ul>
+<li>It refers to saving the Python object itself as a file, not the textual data. At this time, the desired object itself is stored in binary, and it has the advantage of being fast because it only needs to be called when needed.</li>
+</ul>
+</li>
+<li>import turtle<ul>
+<li>It is a graphics module available in Python. You can draw a picture on the screen using the trail of the turtle-shaped cursor.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-3">
+<a class="anchor" href="#Hack-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 3<a class="anchor-link" href="#Hack-3"> </a>
+</h2>
+<h3 id="Make-Code">
+<a class="anchor" href="#Make-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make Code<a class="anchor-link" href="#Make-Code"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="n">num</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">&lt;</span><span class="mi">6</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">==</span><span class="mi">6</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"purple"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span><span class="o">==</span><span class="mi">7</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"orange"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span><span class="o">==</span><span class="mi">8</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"red"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>green
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"first"</span><span class="p">,</span> <span class="s2">"second"</span><span class="p">,</span> <span class="s2">"third"</span><span class="p">,</span> <span class="s2">"fourth"</span><span class="p">,</span> <span class="s2">"fifth"</span><span class="p">,</span> <span class="s2">"sixth"</span><span class="p">,</span> <span class="s2">"seventh"</span><span class="p">,</span> <span class="s2">"eighth"</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"green"</span><span class="p">)</span>
+    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">)</span>
+    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"purple"</span><span class="p">)</span>
+    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"red"</span><span class="p">)</span>
+    <span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"orange"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">b</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">b</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"red"</span><span class="p">)</span>
+        <span class="n">b</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"purple"</span><span class="p">)</span>
+        <span class="n">b</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"orange"</span><span class="p">)</span>
+<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">": "</span><span class="p">,</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>first :  green
+second :  green
+third :  blue
+fourth :  red
+fifth :  orange
+sixth :  purple
+seventh :  green
+eighth :  orange
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Question:-what-can-be-outputted-from-RANDOM(12,20)-and-what-number-are-excluded?">
+<a class="anchor" href="#Question:-what-can-be-outputted-from-RANDOM(12,20)-and-what-number-are-excluded?" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question: what can be outputted from RANDOM(12,20) and what number are excluded?<a class="anchor-link" href="#Question:-what-can-be-outputted-from-RANDOM(12,20)-and-what-number-are-excluded?"> </a>
+</h3>
+<ul>
+<li>The number will be outputted between 12 and 20 including 12 and 20. The number will be excluded in this range will be number &gt; 20 and number &lt; 12, so the number can only be the number such as 13, 15, and 16.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/JeongWooLee/hacks_from_other_lesson/2022/12/12/14and15.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/JeongWooLee/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/JeongWooLee/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="”https://github.com/fastai“" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://twitter.com/fastdotai“" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q“" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
