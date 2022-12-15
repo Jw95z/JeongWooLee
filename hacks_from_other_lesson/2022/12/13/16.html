@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Section 3.16 | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Section 3.16" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://jw95z.github.io/JeongWooLee/hacks_from_other_lesson/2022/12/13/16.html" />
+<meta property="og:url" content="https://jw95z.github.io/JeongWooLee/hacks_from_other_lesson/2022/12/13/16.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-13T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Section 3.16" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-13T00:00:00-06:00","datePublished":"2022-12-13T00:00:00-06:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Section 3.16","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/hacks_from_other_lesson/2022/12/13/16.html"},"url":"https://jw95z.github.io/JeongWooLee/hacks_from_other_lesson/2022/12/13/16.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/JeongWooLee/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jw95z.github.io/JeongWooLee/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/JeongWooLee/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/JeongWooLee/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/JeongWooLee/API/">API</a><a class="page-link" href="/JeongWooLee/stub/">Sub_menu</a><a class="page-link" href="/JeongWooLee/about/">About Me</a><a class="page-link" href="/JeongWooLee/gratitude/">Psychology and the Good life</a><a class="page-link" href="/JeongWooLee/notes/">Notes</a><a class="page-link" href="/JeongWooLee/search/">Search</a><a class="page-link" href="/JeongWooLee/Table/">Table</a><a class="page-link" href="/JeongWooLee/categories/">Tags</a><a class="page-link" href="/JeongWooLee/vocab/">vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Section 3.16</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-13T00:00:00-06:00" itemprop="datePublished">
+        Dec 13, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      14 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/JeongWooLee/categories/#Hacks_from_other_lesson">Hacks_from_other_lesson</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Jw95z/JeongWooLee/tree/master/_notebooks/2022-12-13-16.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/JeongWooLee/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Jw95z/JeongWooLee/master?filepath=_notebooks%2F2022-12-13-16.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Jw95z/JeongWooLee/blob/master/_notebooks/2022-12-13-16.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FJw95z%2FJeongWooLee%2Fblob%2Fmaster%2F_notebooks%2F2022-12-13-16.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/JeongWooLee/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Vocab">Vocab </a></li>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a></li>
+<li class="toc-entry toc-h2"><a href="#Hack-1">Hack 1 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#writing-example-of-simulation">writing example of simulation </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Hack-2">Hack 2 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Quiz">Quiz </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Rolling-Dices">Rolling Dices </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Guided-Question">Guided Question </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Hack-4">Hack 4 </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Making-game-of-rolling-dice">Making game of rolling dice </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Guided-Question">Guided Question </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Extra-things">Extra things </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Guided-Question">Guided Question </a></li>
+<li class="toc-entry toc-h3"><a href="#Second-one-is-Rock,-Scissor,-Paper">Second one is Rock, Scissor, Paper </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Description">Description </a></li>
+<li class="toc-entry toc-h4"><a href="#Guided-question">Guided question </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Please-Give-me-Perfect-Score">Please Give me Perfect Score </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-13-16.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vocab">
+<a class="anchor" href="#Vocab" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab<a class="anchor-link" href="#Vocab"> </a>
+</h2>
+<ul>
+<li>Simulation: an imitation of a situation or process</li>
+<li>Ex)<ul>
+<li>testing safety of a car</li>
+<li>games</li>
+<li>testing the efficiency of a parking lot</li>
+<li>testing a new train route</li>
+</ul>
+</li>
+<li>Experiment: procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+</h2>
+<ul>
+<li>Advantage of simulation<ul>
+<li>Can be safer</li>
+<li>More cost-effective</li>
+<li>More efficient </li>
+<li>More data in less time</li>
+</ul>
+</li>
+<li>Disadvantage of simulation<ul>
+<li>Not as accurate as experiments</li>
+<li>outside factors not included (ex: in rolling dice simulation gravity and air resistance)</li>
+</ul>
+</li>
+<li>When do you not use a simulation?<ul>
+<li>when a situation already has set results/data (won't change) </li>
+<li>examples: a score in a game, most purchased food, average yearly wage</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-1">
+<a class="anchor" href="#Hack-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 1<a class="anchor-link" href="#Hack-1"> </a>
+</h2>
+<h3 id="writing-example-of-simulation">
+<a class="anchor" href="#writing-example-of-simulation" aria-hidden="true"><span class="octicon octicon-link"></span></a>writing example of simulation<a class="anchor-link" href="#writing-example-of-simulation"> </a>
+</h3>
+<p>The simulation I am trying to write is Russian Roulette. After putting only one bullet into a six-shot revolver, turning the cylinder, and turning each other, they put the gun to their head and pull the trigger. If there are 1, 2, 3, or 6 factors of 6 playing the game, the odds of dying are the same. With any other number, the number of 6 attempts cannot be divided evenly, so there will inevitably be a person with a high probability of dying. If the person in front succeeds, the probability that the person behind will die increases, but since the probability of the person in front dying first and the probability of not dying because I shoot are combined, the probability of dying at the start of the game is fair. If no one has died by the 5th, the 6th chamber will of course contain bullets. There is also a rule to rotate the cylinder for each shot. In this case, regardless of the number of people, there is an equal 1/6 chance of death each turn, but if you can run away without shooting when all opponents are dead, the later you shoot, the more advantageous it is.</p>
+<ul>
+<li>Guided question<ul>
+<li>What make it simulation? The random value of the bullet can make simulation. If the bullet was in the first round, the first person will die, but if the bullet is in the last round, the last person will die. </li>
+<li>What are it’s advantages and disadvantages? Running this simulation gives you an idea of ​​what might happen. However, the disadvantages of this simulation is that it's not useful in your life. Even if the number of cases is known, there is no way to use it, so it is very useless in real life.</li>
+<li>In your opinion, would an experiment be better in this situation? I think it is better to be an experiment, because we have to gather multiple people for doing this game.</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQrRJYvDMDqlTHdMnT5ssmoYBCK3KZppTJXA&amp;usqp=CAU" alt="Russian"></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="k">def</span> <span class="nf">enter</span><span class="p">():</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"shoot"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="s2">""</span><span class="p">:</span>
+            <span class="k">break</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">bullet</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"alive"</span><span class="p">,</span> <span class="s2">"alive"</span><span class="p">,</span> <span class="s2">"alive"</span><span class="p">,</span> <span class="s2">"alive"</span><span class="p">,</span> <span class="s2">"alive"</span><span class="p">,</span> <span class="s2">"death"</span><span class="p">]</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">idx_bullet</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+        <span class="n">enter</span><span class="p">()</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">bullet</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">idx_bullet</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="s2">"death"</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>alive
+death
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-2">
+<a class="anchor" href="#Hack-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 2<a class="anchor-link" href="#Hack-2"> </a>
+</h2>
+<h3 id="Quiz">
+<a class="anchor" href="#Quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz<a class="anchor-link" href="#Quiz"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions_number</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">answers_correct</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"True or False: Simulations will always have the same result. </span><span class="se">\n</span><span class="s2"> A: True, </span><span class="se">\n</span><span class="s2"> B: False"</span><span class="p">,</span>
+    <span class="s2">"True or False: A simulation has results that are more accurate than an experiment </span><span class="se">\n</span><span class="s2"> A: True, </span><span class="se">\n</span><span class="s2"> B: False"</span><span class="p">,</span>
+    <span class="s2">"True or False: A simulation can model real world events that are not practical for experiments </span><span class="se">\n</span><span class="s2"> A: True, </span><span class="se">\n</span><span class="s2"> B: False"</span><span class="p">,</span>
+    <span class="s2">"Which one of these is FALSE regarding simulations </span><span class="se">\n</span><span class="s2"> A: Reduces Costs, </span><span class="se">\n</span><span class="s2"> B: Is safer than real life experiments, </span><span class="se">\n</span><span class="s2"> C: More Efficient, </span><span class="se">\n</span><span class="s2"> D: More accurate than real life experiments"</span><span class="p">,</span>
+    <span class="s2">"Which of the following scenarios would be the LEAST beneficial to have as a simulation </span><span class="se">\n</span><span class="s2"> A: A retail company wants to identify the item which sold the most on their website, </span><span class="se">\n</span><span class="s2"> B: A restaurant wants to determine if the use of robots will increase efficiency, </span><span class="se">\n</span><span class="s2"> C: An insurance company wants to study the impact of rain on car accidents, </span><span class="se">\n</span><span class="s2"> D: A sports car company wants to study design changes to their new bike design "</span><span class="p">,</span>
+    <span class="s2">"Which of the following is better to do as a simulation than as a calculation </span><span class="se">\n</span><span class="s2"> A: Keeping score at a basketball game, </span><span class="se">\n</span><span class="s2"> B: Keeping track of how many games a person has won, </span><span class="se">\n</span><span class="s2"> C: Determining the average grade for a group of tests, </span><span class="se">\n</span><span class="s2"> D: Studying the impact of carbon emissions on the environment"</span>
+<span class="p">]</span>
+<span class="n">question_answers</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"B"</span><span class="p">,</span>
+    <span class="s2">"B"</span><span class="p">,</span>
+    <span class="s2">"A"</span><span class="p">,</span>
+    <span class="s2">"D"</span><span class="p">,</span>
+    <span class="s2">"A"</span><span class="p">,</span>
+    <span class="s2">"D"</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome to the Simulations Quiz!"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">ask_question</span> <span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">question</span><span class="p">)</span>
+    <span class="n">user_answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You said: "</span><span class="p">,</span> <span class="n">user_answer</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">user_answer</span> <span class="o">==</span> <span class="n">answer</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+        <span class="k">global</span> <span class="n">answers_correct</span>
+        <span class="n">answers_correct</span> <span class="o">=</span> <span class="n">answers_correct</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"You are incorrect"</span><span class="p">)</span>
+    
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">questions_number</span><span class="p">):</span>
+    <span class="n">ask_question</span><span class="p">(</span><span class="n">questions</span><span class="p">[</span><span class="n">num</span><span class="p">],</span> <span class="n">question_answers</span><span class="p">[</span><span class="n">num</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You scored: "</span><span class="p">,</span> <span class="n">answers_correct</span><span class="p">,</span> <span class="s2">"/6"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Welcome to the Simulations Quiz!
+
+ True or False: Simulations will always have the same result. 
+ A: True, 
+ B: False
+You said:  B
+Correct!
+
+ True or False: A simulation has results that are more accurate than an experiment 
+ A: True, 
+ B: False
+You said:  B
+Correct!
+
+ True or False: A simulation can model real world events that are not practical for experiments 
+ A: True, 
+ B: False
+You said:  A
+Correct!
+
+ Which one of these is FALSE regarding simulations 
+ A: Reduces Costs, 
+ B: Is safer than real life experiments, 
+ C: More Efficient, 
+ D: More accurate than real life experiments
+You said:  D
+Correct!
+
+ Which of the following scenarios would be the LEAST beneficial to have as a simulation 
+ A: A retail company wants to identify the item which sold the most on their website, 
+ B: A restaurant wants to determine if the use of robots will increase efficiency, 
+ C: An insurance company wants to study the impact of rain on car accidents, 
+ D: A sports car company wants to study design changes to their new bike design 
+You said:  A
+Correct!
+
+ Which of the following is better to do as a simulation than as a calculation 
+ A: Keeping score at a basketball game, 
+ B: Keeping track of how many games a person has won, 
+ C: Determining the average grade for a group of tests, 
+ D: Studying the impact of carbon emissions on the environment
+You said:  D
+Correct!
+You scored:  6 /6
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-3">
+<a class="anchor" href="#Hack-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 3<a class="anchor-link" href="#Hack-3"> </a>
+</h2>
+<h3 id="Rolling-Dices">
+<a class="anchor" href="#Rolling-Dices" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rolling Dices<a class="anchor-link" href="#Rolling-Dices"> </a>
+</h3>
+<ul>
+<li>pick a random number between 1 and 6. It is because the dice has six parts. If it is 14 - sided dice, you have to pick number in 1 to 14. </li>
+<li>After picking the two numbers for a and b, compare a and b. There will be three results: a is bigger than b, a is equal to b, and a is smaller than b. </li>
+<li>First, if a is bigger than b, print the word about the winning of A. Second, if a is equal to b, there will no winner in this game, so it has to be printed "draw". Third, if a is smaller than b, the b becomes a winner. Therefore, the end result will be "B won".</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">start</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Press Enter to Roll the dices : '</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A's dice is </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">. "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"B's dice is </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">. "</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'A won'</span><span class="p">)</span>
+    
+<span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'draw'</span><span class="p">)</span>
+    
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'B won'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A's dice is 2. 
+B's dice is 4. 
+B won
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Guided-Question">
+<a class="anchor" href="#Guided-Question" aria-hidden="true"><span class="octicon octicon-link"></span></a>Guided Question<a class="anchor-link" href="#Guided-Question"> </a>
+</h4>
+<ul>
+<li>What makes it a simulation?<ul>
+<li>We can say this is a simulation because we're not rolling the dices in real world and just writing the codes in our computer. </li>
+</ul>
+</li>
+<li>what are it’s advantages and disadvantages? <ul>
+<li>Advantages we can get is that we don't have to prepare some dices to roll. We can just make sure to choose the random value from the computer. Disadvantages is that it is more easy to simulate in real world, but in computer world, we have to write the letters instead of rolling dices in the real world. It can be hard for someone who has slow typing skill.</li>
+</ul>
+</li>
+<li>In your opinion, would an experiment be better in this situation?<ul>
+<li>I think rolling dice in real world is much better because it caused outside factors.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-4">
+<a class="anchor" href="#Hack-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 4<a class="anchor-link" href="#Hack-4"> </a>
+</h2>
+<h3 id="Making-game-of-rolling-dice">
+<a class="anchor" href="#Making-game-of-rolling-dice" aria-hidden="true"><span class="octicon octicon-link"></span></a>Making game of rolling dice<a class="anchor-link" href="#Making-game-of-rolling-dice"> </a>
+</h3>
+<ul>
+<li>This is the code of game<ul>
+<li>At first, two dices are given</li>
+<li>three people and one dealer are playing this game.</li>
+<li>Game starts with the order of User 1 to User2 and to User 3</li>
+<li>Player can only bet maximum 10000 dollars</li>
+<li>Players have to fight with the dealer and person who got bigger numbers of two dices will win</li>
+<li>when it happens to draw, the user will win</li>
+<li>If dealer wins the users lose their money, but if users win, they will get money.</li>
+<li>The conditionals to make game over is that two users have to lose all of their money. </li>
+<li>The only person who left in the end will be the winner.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="n">SEEDMAX</span> <span class="o">=</span> <span class="mi">100000</span>
+<span class="n">BETMAX</span> <span class="o">=</span> <span class="mi">10000</span>
+
+
+<span class="k">def</span> <span class="nf">seed</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> seed(1~</span><span class="si">{</span><span class="n">SEEDMAX</span><span class="si">}</span><span class="s2">): "</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">s</span> <span class="k">if</span> <span class="mi">1</span><span class="o">&lt;=</span><span class="n">s</span><span class="o">&lt;=</span><span class="n">SEEDMAX</span> <span class="k">else</span> <span class="n">seed</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">bet</span><span class="p">(</span><span class="n">usr</span><span class="p">):</span>
+    <span class="n">lmt</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">usr</span><span class="p">[</span><span class="s1">'money'</span><span class="p">],</span> <span class="n">BETMAX</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">usr</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]</span><span class="si">}</span><span class="s2"> bet(1~</span><span class="si">{</span><span class="n">lmt</span><span class="si">}</span><span class="s2">): "</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">b</span> <span class="k">if</span> <span class="mi">1</span><span class="o">&lt;=</span><span class="n">b</span><span class="o">&lt;=</span><span class="n">lmt</span> <span class="k">else</span> <span class="n">bet</span><span class="p">(</span><span class="n">usr</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">roll</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">dbl</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dbl</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">*</span> <span class="mi">10</span>
+
+
+<span class="k">def</span> <span class="nf">play</span><span class="p">(</span><span class="n">usr</span><span class="p">,</span> <span class="n">bet</span><span class="p">):</span>
+    <span class="n">rd</span><span class="p">,</span> <span class="n">ru</span> <span class="o">=</span> <span class="n">roll</span><span class="p">(),</span> <span class="n">roll</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">score</span><span class="p">(</span><span class="n">ru</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">score</span><span class="p">(</span><span class="n">rd</span><span class="p">):</span>
+        <span class="n">winner</span><span class="p">,</span> <span class="n">loser</span> <span class="o">=</span> <span class="p">(</span><span class="n">usr</span><span class="p">[</span><span class="s1">'name'</span><span class="p">],</span> <span class="n">ru</span><span class="p">),</span> <span class="p">(</span><span class="s1">'dealer'</span><span class="p">,</span> <span class="n">rd</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">winner</span><span class="p">,</span> <span class="n">loser</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'dealer'</span><span class="p">,</span> <span class="n">rd</span><span class="p">),</span> <span class="p">(</span><span class="n">usr</span><span class="p">[</span><span class="s1">'name'</span><span class="p">],</span> <span class="n">ru</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">calc</span><span class="p">(</span><span class="n">usr</span><span class="p">,</span> <span class="n">bet</span><span class="p">,</span> <span class="n">winner</span><span class="p">,</span> <span class="n">loser</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">calc</span><span class="p">(</span><span class="n">usr</span><span class="p">,</span> <span class="n">bet</span><span class="p">,</span> <span class="n">winner</span><span class="p">,</span> <span class="n">loser</span><span class="p">):</span>
+    <span class="n">doubled</span> <span class="o">=</span> <span class="n">dbl</span><span class="p">(</span><span class="n">winner</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">dbl</span><span class="p">(</span><span class="n">loser</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">stake</span> <span class="o">=</span>  <span class="n">bet</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">doubled</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">usr</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]</span> <span class="ow">in</span> <span class="n">winner</span><span class="p">:</span>
+        <span class="n">usr</span><span class="p">[</span><span class="s1">'money'</span><span class="p">]</span> <span class="o">+=</span> <span class="n">stake</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">usr</span><span class="p">[</span><span class="s1">'money'</span><span class="p">]</span> <span class="o">-=</span> <span class="n">stake</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{}{}</span><span class="s2"> win</span><span class="si">{}</span><span class="s2">, </span><span class="si">{}{}</span><span class="s2"> lose, </span><span class="si">{}</span><span class="s2">'s money=</span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">winner</span><span class="p">,</span> <span class="s1">'(x2)'</span><span class="o">*</span><span class="n">doubled</span><span class="p">,</span> <span class="o">*</span><span class="n">loser</span><span class="p">,</span> <span class="o">*</span><span class="n">usr</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+    <span class="k">return</span> <span class="n">usr</span><span class="p">[</span><span class="s1">'money'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span>
+
+
+<span class="n">usrs</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">'name'</span><span class="p">:</span><span class="n">n</span><span class="p">,</span> <span class="s1">'money'</span><span class="p">:</span><span class="n">seed</span><span class="p">(</span><span class="n">n</span><span class="p">)}</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'User1'</span><span class="p">,</span> <span class="s1">'User2'</span><span class="p">,</span> <span class="s1">'User3'</span><span class="p">)]</span>
+<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">usrs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">usr</span> <span class="o">=</span> <span class="n">usrs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">usrs</span> <span class="o">+=</span> <span class="p">[</span><span class="n">usr</span><span class="p">]</span> <span class="k">if</span> <span class="n">play</span><span class="p">(</span><span class="n">usr</span><span class="p">,</span> <span class="n">bet</span><span class="p">(</span><span class="n">usr</span><span class="p">))</span> <span class="k">else</span> <span class="p">[]</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+<span class="n">last_usr</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">usrs</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">u</span><span class="p">:</span> <span class="n">u</span><span class="p">[</span><span class="s1">'money'</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Finally </span><span class="si">{}</span><span class="s1"> win, money=</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">last_usr</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dealer(4, 5) win, User1(6, 1) lose, User1's money=5000
+
+dealer(2, 5) win, User2(3, 1) lose, User2's money=6000
+
+User3(3, 6) win, dealer(2, 4) lose, User3's money=13000
+
+User1(3, 3) win(x2), dealer(3, 4) lose, User1's money=10000
+
+User2(3, 2) win, dealer(3, 1) lose, User2's money=9000
+
+dealer(6, 2) win, User3(2, 3) lose, User3's money=9000
+
+User1(1, 4) win, dealer(1, 4) lose, User1's money=20000
+
+User2(1, 1) win(x2), dealer(5, 6) lose, User2's money=27000
+
+dealer(3, 5) win, User3(1, 3) lose, User3's money=0
+
+User1(2, 2) win(x2), dealer(5, 3) lose, User1's money=40000
+
+User2(6, 1) win, dealer(5, 1) lose, User2's money=37000
+
+dealer(3, 6) win, User1(4, 2) lose, User1's money=30000
+
+User2(2, 4) win, dealer(1, 2) lose, User2's money=47000
+
+dealer(1, 1) win(x2), User1(4, 1) lose, User1's money=10000
+
+dealer(2, 6) win, User2(1, 2) lose, User2's money=37000
+
+dealer(1, 1) win(x2), User1(4, 2) lose, User1's money=-10000
+
+Finally User2 win, money=37000
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Guided-Question">
+<a class="anchor" href="#Guided-Question" aria-hidden="true"><span class="octicon octicon-link"></span></a>Guided Question<a class="anchor-link" href="#Guided-Question"> </a>
+</h4>
+<ul>
+<li>What makes it a simulation?    <ul>
+<li>This is the simulation of Gambling. People bet their money. Sometimes they lose it, but sometimes they earn more money. </li>
+</ul>
+</li>
+<li>What are it’s advantages and disadvantages? <ul>
+<li>The advantages of this simulation is that we can enjoy gambling in our houses. It can make us feel excited when you're boring. The disadvantages of this simulation is that it's not perfect. It's just a simple game, so it will be not useful soon. And the excitement of gambling comes from the real money. Thrills and hope in the gambling makes people fun.</li>
+</ul>
+</li>
+<li>In your opinion, would an experiment be better in this situation?<ul>
+<li>I think it is not good to be in experiment. We don't be happy when the fate money increased. We want to get money by winning in the gambling.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Extra-things">
+<a class="anchor" href="#Extra-things" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra things<a class="anchor-link" href="#Extra-things"> </a>
+</h2>
+<ul>
+<li>I did two of it. 
+### First one is Bingo
+#### Description</li>
+<li>This is the code of bingo game.</li>
+<li>It is a same rule with the normal bingo.</li>
+<li>we can choose the dimension. </li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">board</span><span class="p">(</span><span class="n">bingo</span><span class="p">,</span> <span class="n">dimension</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dimension</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">' _'</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">''</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dimension</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'|'</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">''</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dimension</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">bingo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'|'</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">''</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">dimension</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Please input the size of the game board(more than 2): "</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">dimension</span> <span class="o">&lt;=</span> <span class="mi">2</span> <span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'[Error] try again'</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">break</span>
+
+<span class="n">bingo</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">'_'</span><span class="p">]</span><span class="o">*</span><span class="n">dimension</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dimension</span><span class="p">)]</span>
+<span class="n">board</span><span class="p">(</span><span class="n">bingo</span><span class="p">,</span> <span class="n">dimension</span><span class="p">)</span>
+
+<span class="n">turn</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">play_count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'&lt;Play no.</span><span class="si">{}</span><span class="s1">&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">play_count</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">turn</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Currently player: 1'</span><span class="p">)</span>
+        <span class="n">row_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Which row?(start with 1)'</span><span class="p">))</span>
+        <span class="n">column_1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Which column?(start with 1)'</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">bingo</span><span class="p">[</span><span class="n">row_1</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">column_1</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'_'</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Space is not empty. Try again'</span><span class="p">)</span>
+            <span class="n">turn</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">continue</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">bingo</span><span class="p">[</span><span class="n">row_1</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">column_1</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'O'</span>
+            <span class="n">board</span><span class="p">(</span><span class="n">bingo</span><span class="p">,</span><span class="n">dimension</span><span class="p">)</span>
+            <span class="n">turn</span> <span class="o">=</span> <span class="mi">2</span>
+
+    <span class="k">elif</span> <span class="n">turn</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Currently player: 2'</span><span class="p">)</span>
+        <span class="n">row_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Which row?(start with 1) '</span><span class="p">))</span>
+        <span class="n">column_2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Which column?(start with 1) '</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">bingo</span><span class="p">[</span><span class="n">row_2</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">column_2</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'_'</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Space is not empty. Try again'</span><span class="p">)</span>
+            <span class="n">turn</span> <span class="o">=</span> <span class="mi">2</span>
+            <span class="k">continue</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">bingo</span><span class="p">[</span><span class="n">row_2</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">column_2</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'X'</span>
+            <span class="n">board</span><span class="p">(</span><span class="n">bingo</span><span class="p">,</span><span class="n">dimension</span><span class="p">)</span>
+            <span class="n">turn</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="n">check_diag</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">check_reverse</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">check_row</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">check_column</span> <span class="o">=</span><span class="p">[]</span>
+            
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dimension</span><span class="p">):</span>
+        <span class="n">check_diag</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bingo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">check_reverse</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bingo</span><span class="p">[</span><span class="n">dimension</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+        
+
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dimension</span><span class="p">):</span>
+            <span class="n">check_row</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bingo</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">check_column</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bingo</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+        
+        <span class="k">if</span> <span class="nb">set</span><span class="p">(</span><span class="n">check_row</span><span class="p">)</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'O'</span><span class="p">}:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Player 1 wins!'</span><span class="p">)</span>
+            <span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">elif</span> <span class="nb">set</span><span class="p">(</span><span class="n">check_row</span><span class="p">)</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'X'</span><span class="p">}:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Player 2 wins!'</span><span class="p">)</span>
+            <span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">check_row</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">if</span> <span class="nb">set</span><span class="p">(</span><span class="n">check_column</span><span class="p">)</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'O'</span><span class="p">}:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Player 1 wins!'</span><span class="p">)</span>
+            <span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">elif</span> <span class="nb">set</span><span class="p">(</span><span class="n">check_column</span><span class="p">)</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'X'</span><span class="p">}:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">'Player 2 wins!'</span><span class="p">)</span>
+            <span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">check_column</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">check_diag</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">check_diag</span><span class="p">)</span>
+    <span class="n">check_reverse</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">check_reverse</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">check_diag</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'O'</span><span class="p">}</span> <span class="ow">or</span> <span class="n">check_reverse</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'O'</span><span class="p">}:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Player 1 wins!'</span><span class="p">)</span>
+        <span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+        
+    <span class="k">elif</span> <span class="n">check_diag</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'X'</span><span class="p">}</span> <span class="ow">or</span> <span class="n">check_reverse</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'X'</span><span class="p">}:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Player 2 wins!'</span><span class="p">)</span>
+        <span class="n">turn</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="n">play_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+    <span class="k">if</span> <span class="n">turn</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">play_count</span> <span class="o">==</span> <span class="n">dimension</span><span class="o">**</span><span class="mi">2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'Finish'</span><span class="p">)</span>
+        <span class="k">break</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> _ _ _
+|_|_|_|
+|_|_|_|
+|_|_|_|
+&lt;Play no.1&gt;
+Currently player: 1
+ _ _ _
+|O|_|_|
+|_|_|_|
+|_|_|_|
+&lt;Play no.2&gt;
+Currently player: 2
+ _ _ _
+|O|_|_|
+|_|X|_|
+|_|_|_|
+&lt;Play no.3&gt;
+Currently player: 1
+ _ _ _
+|O|_|O|
+|_|X|_|
+|_|_|_|
+&lt;Play no.4&gt;
+Currently player: 2
+ _ _ _
+|O|_|O|
+|_|X|_|
+|_|_|X|
+&lt;Play no.5&gt;
+Currently player: 1
+ _ _ _
+|O|O|O|
+|_|X|_|
+|_|_|X|
+Player 1 wins!
+Finish
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Guided-Question">
+<a class="anchor" href="#Guided-Question" aria-hidden="true"><span class="octicon octicon-link"></span></a>Guided Question<a class="anchor-link" href="#Guided-Question"> </a>
+</h4>
+<ul>
+<li>What makes it a simulation?<ul>
+<li>It might be seemed to simulation because we are not doing Bingo on paper instead of writing many codes. </li>
+</ul>
+</li>
+<li>What are it’s advantages and disadvantages? <ul>
+<li>Bingo can be played without paper. And disadvantages is that we can only play bingo with two people.</li>
+</ul>
+</li>
+<li>In your opinion, would an experiment be better in this situation?<ul>
+<li>I think it is not a good way to be experiment. It will be funnier when we play bingo in the real life and 3D. </li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Second-one-is-Rock,-Scissor,-Paper">
+<a class="anchor" href="#Second-one-is-Rock,-Scissor,-Paper" aria-hidden="true"><span class="octicon octicon-link"></span></a>Second one is Rock, Scissor, Paper<a class="anchor-link" href="#Second-one-is-Rock,-Scissor,-Paper"> </a>
+</h3>
+<h4 id="Description">
+<a class="anchor" href="#Description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description<a class="anchor-link" href="#Description"> </a>
+</h4>
+<ul>
+<li>same rule with rock scissor paper</li>
+<li>get the value by input</li>
+<li>the value must be rock or scissor or paper</li>
+<li>compare with the computer</li>
+<li>if player wins, print "player win"</li>
+<li>if computer wins, print "computer win"</li>
+<li>if they are small, print "draw"</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">sel</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'scissor'</span><span class="p">,</span> <span class="s1">'rock'</span><span class="p">,</span> <span class="s1">'paper'</span><span class="p">]</span>
+<span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s1">'win.'</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s1">'lose.'</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s1">'draw.'</span><span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">checkWin</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">com</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">sel</span><span class="p">:</span>
+       <span class="nb">print</span><span class="p">(</span><span class="s1">'you wrote wrong. type it again'</span><span class="p">)</span>
+       <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'player 1 ( </span><span class="si">{</span><span class="n">user</span><span class="si">}</span><span class="s1"> vs </span><span class="si">{</span><span class="n">com</span><span class="si">}</span><span class="s1"> ) com'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">user</span> <span class="o">==</span> <span class="n">com</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="s1">'scissor'</span> <span class="ow">and</span> <span class="n">com</span> <span class="o">==</span> <span class="s1">'rock'</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="s1">'rock'</span> <span class="ow">and</span> <span class="n">com</span> <span class="o">==</span> <span class="s1">'paper'</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="s1">'paper'</span> <span class="ow">and</span> <span class="n">com</span> <span class="o">==</span> <span class="s1">'scissor'</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">-------------------------------------------'</span><span class="p">)</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"rock, scissor, paper : "</span><span class="p">)</span>
+    <span class="n">com</span> <span class="o">=</span> <span class="n">sel</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="n">checkWin</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">com</span><span class="p">):</span>
+        <span class="k">break</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'-------------------------------------------</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+-------------------------------------------
+player 1 ( rock vs scissor ) com
+win.
+-------------------------------------------
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Guided-question">
+<a class="anchor" href="#Guided-question" aria-hidden="true"><span class="octicon octicon-link"></span></a>Guided question<a class="anchor-link" href="#Guided-question"> </a>
+</h4>
+<ul>
+<li>What makes it a simulation?<ul>
+<li>Doing rock scissor paper with not using hands can be the simulation. </li>
+</ul>
+</li>
+<li>What are it’s advantages and disadvantages? <ul>
+<li>Advantage is that we can do it alone. Sometimes we are boring with something, playing these game will help you. It is not efficient because we can only do with computer</li>
+</ul>
+</li>
+<li>In your opinion, would an experiment be better in this situation?<ul>
+<li>It will be beneficial when we do this with your friends, because rock scissor paper is a game which is played with many people.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Please-Give-me-Perfect-Score">
+<a class="anchor" href="#Please-Give-me-Perfect-Score" aria-hidden="true"><span class="octicon octicon-link"></span></a>Please Give me Perfect Score<a class="anchor-link" href="#Please-Give-me-Perfect-Score"> </a>
+</h2>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/JeongWooLee/hacks_from_other_lesson/2022/12/13/16.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/JeongWooLee/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/JeongWooLee/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="”https://github.com/fastai“" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://twitter.com/fastdotai“" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="”https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q“" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/JeongWooLee/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
