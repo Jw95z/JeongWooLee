@@ -61,6 +61,9 @@ All the company have different languages. So we have to learn.
 Don't be concern about the news
 The learning is always contained.
 Be adapted
+### Reflections
+I knew that the failure in the college is not important , but entering good college is super important. Yesterday, two speakers came to our school and talk about their career. Kathyleen who had worked in Qualcomm wanted to be banker, but she later succeed in computer science. Another speaker Kris, he failed some classes in the college. However, they have same traits that they went to good college. After the lecture, I changed my mind to enter good college.
+
 ### Sorry teacher 
 I only write little becaus my english is bad. Sorry about this. 
 
