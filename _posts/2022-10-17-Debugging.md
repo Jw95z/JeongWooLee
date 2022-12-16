@@ -3,7 +3,7 @@ title: Diagram
 toc: true
 badges: true
 comments: true
-categories: [markdown]
+categories: [Assignment]
 layout: post
 ---
 ![]({{site.baseurl}}/images/debugg.png)

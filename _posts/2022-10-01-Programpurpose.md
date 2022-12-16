@@ -3,7 +3,7 @@ title: Program design and development
 toc: true
 badges: true
 comments: true
-categories: [markdown]
+categories: [Notes_from_video]
 layout: post
 ---
 Program developed with a systematic approach to achieve a desired purpose.\n
