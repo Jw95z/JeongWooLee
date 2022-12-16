@@ -4,7 +4,7 @@ description: Practice with identifying and correcting code blocks
 title: Big Idea 1 'Identifying and Correcting Errors'
 toc: true
 badges: true
-categories: [markdown]
+categories: [Assignment]
 nb_path: _notebooks/2022-10-03-error_testing.ipynb
 layout: notebook
 ---

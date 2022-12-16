@@ -4,7 +4,7 @@ title: Quiz
 toc: true
 badges: true
 comments: true
-categories: [jupyter, week1]
+categories: [Quiz_stuff]
 image: images/chart-preview.png
 nb_path: _notebooks/2022-08-24-My-First-Post.ipynb
 layout: notebook

@@ -4,7 +4,7 @@ title: Table
 toc: true
 badges: true
 comments: true
-categories: [markdown]
+categories: [Practice]
 nb_path: _notebooks/2022-09-26-javatable.ipynb
 layout: notebook
 ---

@@ -4,7 +4,7 @@ title: Collaboration 1.1
 toc: true
 badges: true
 comments: true
-categories: [markdown]
+categories: [Notes_from_video]
 nb_path: _notebooks/2022-09-19-Collaboration.ipynb
 layout: notebook
 ---
