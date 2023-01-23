@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://jw95z.github.io/JeongWooLee/2023/01/16/model.html" />
-<meta property="og:url" content="https://jw95z.github.io/JeongWooLee/2023/01/16/model.html" />
+<link rel="canonical" href="https://jw95z.github.io/JeongWooLee/2023/01/22/model.html" />
+<meta property="og:url" content="https://jw95z.github.io/JeongWooLee/2023/01/22/model.html" />
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-01-16T00:00:00-06:00" />
+<meta property="article:published_time" content="2023-01-22T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Title" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-16T00:00:00-06:00","datePublished":"2023-01-16T00:00:00-06:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/2023/01/16/model.html"},"url":"https://jw95z.github.io/JeongWooLee/2023/01/16/model.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-22T00:00:00-06:00","datePublished":"2023-01-22T00:00:00-06:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/2023/01/22/model.html"},"url":"https://jw95z.github.io/JeongWooLee/2023/01/22/model.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/JeongWooLee/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jw95z.github.io/JeongWooLee/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/JeongWooLee/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -74,8 +74,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-01-16T00:00:00-06:00" itemprop="datePublished">
-        Jan 16, 2023
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-01-22T00:00:00-06:00" itemprop="datePublished">
+        Jan 22, 2023
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -254,6 +254,9 @@ window.onload = wrap_img;
 
     <span class="c1"># put user objects in list for convenience</span>
     <span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">,</span> <span class="n">u5</span><span class="p">]</span>
+    
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="p">)</span>
 
     <span class="c1"># Find user</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test 1, find user 3&quot;</span><span class="p">)</span>
@@ -294,21 +297,21 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Test 1, find user 3
-name: &#34;Thomas Edison&#34;, id: &#34;toby&#34;, psw: &#34;sha256$HVy...&#34;
-name: &#34;Nicholas Tesla&#34;, id: &#34;nick&#34;, psw: &#34;sha256$whP...&#34;
-* name: &#34;Alexander Graham Bell&#34;, id: &#34;lex&#34;, psw: &#34;sha256$vHU...&#34;
-name: &#34;Eli Whitney&#34;, id: &#34;eli&#34;, psw: &#34;sha256$cbc...&#34;
-name: &#34;Hedy Lemarr&#34;, id: &#34;hedy&#34;, psw: &#34;sha256$cO8...&#34;
+name: &#34;Thomas Edison&#34;, id: &#34;toby&#34;, psw: &#34;sha256$OKc...&#34;
+name: &#34;Nicholas Tesla&#34;, id: &#34;nick&#34;, psw: &#34;sha256$TFf...&#34;
+* name: &#34;Alexander Graham Bell&#34;, id: &#34;lex&#34;, psw: &#34;sha256$rPm...&#34;
+name: &#34;Eli Whitney&#34;, id: &#34;eli&#34;, psw: &#34;sha256$mXm...&#34;
+name: &#34;Hedy Lemarr&#34;, id: &#34;hedy&#34;, psw: &#34;sha256$72g...&#34;
 Test 2, change user 3
-name: &#34;Thomas Edison&#34;, id: &#34;toby&#34;, psw: &#34;sha256$HVy...&#34;
-name: &#34;Nicholas Tesla&#34;, id: &#34;nick&#34;, psw: &#34;sha256$whP...&#34;
-* name: &#34;John Mortensen&#34;, id: &#34;jm1021&#34;, psw: &#34;sha256$D4B...&#34;
-name: &#34;Eli Whitney&#34;, id: &#34;eli&#34;, psw: &#34;sha256$cbc...&#34;
-name: &#34;Hedy Lemarr&#34;, id: &#34;hedy&#34;, psw: &#34;sha256$cO8...&#34;
+name: &#34;Thomas Edison&#34;, id: &#34;toby&#34;, psw: &#34;sha256$OKc...&#34;
+name: &#34;Nicholas Tesla&#34;, id: &#34;nick&#34;, psw: &#34;sha256$TFf...&#34;
+* name: &#34;John Mortensen&#34;, id: &#34;jm1021&#34;, psw: &#34;sha256$leP...&#34;
+name: &#34;Eli Whitney&#34;, id: &#34;eli&#34;, psw: &#34;sha256$mXm...&#34;
+name: &#34;Hedy Lemarr&#34;, id: &#34;hedy&#34;, psw: &#34;sha256$72g...&#34;
 Test 3, make a dictionary
-[{&#34;_name&#34;: &#34;Thomas Edison&#34;, &#34;_uid&#34;: &#34;toby&#34;, &#34;_password&#34;: &#34;sha256$HVyJQq0HNEDNcYN5$b00bf8c4eb7ffa3e8c8ef16bf35bd4266c166fdacbb66b19a357edde5f0d6c32&#34;}, {&#34;_name&#34;: &#34;Nicholas Tesla&#34;, &#34;_uid&#34;: &#34;nick&#34;, &#34;_password&#34;: &#34;sha256$whPl9IJvFVvxzdbc$dd9ee28d280b3f6cdff9959b840a2f8c98e7ecc2d5ad81d7b5ca157c974f8a25&#34;}, {&#34;_name&#34;: &#34;John Mortensen&#34;, &#34;_uid&#34;: &#34;jm1021&#34;, &#34;_password&#34;: &#34;sha256$D4BEOUSVXL0QvQw4$4c3763f6e44437d7f95006b23fcd23c20782545ee63a86070221f6c06b025de4&#34;}, {&#34;_name&#34;: &#34;Eli Whitney&#34;, &#34;_uid&#34;: &#34;eli&#34;, &#34;_password&#34;: &#34;sha256$cbczcX0tRbxSz4FE$cb4f2cad5c47a5d3aa3273b6bef002ca5bf81610ae2b14bb033d154472d55bba&#34;}, {&#34;_name&#34;: &#34;Hedy Lemarr&#34;, &#34;_uid&#34;: &#34;hedy&#34;, &#34;_password&#34;: &#34;sha256$cO8TRRf0Ad2TEeza$648c10910c4ecab4174f6fdb1aece1b403418f01b196dcd1339f3cd5d9fb692d&#34;}]
+[{&#34;_name&#34;: &#34;Thomas Edison&#34;, &#34;_uid&#34;: &#34;toby&#34;, &#34;_password&#34;: &#34;sha256$OKcNKHQ6b2AJENPd$67aa30fdba181445956e78c7cfbf7f6ef0639091307ad3cb0da4a5b610045c99&#34;}, {&#34;_name&#34;: &#34;Nicholas Tesla&#34;, &#34;_uid&#34;: &#34;nick&#34;, &#34;_password&#34;: &#34;sha256$TFfkgbLpZRz11jjj$63b708faf599813ccd9d702279f45b93ff54d9a18857c6557cbd8b206888d77f&#34;}, {&#34;_name&#34;: &#34;John Mortensen&#34;, &#34;_uid&#34;: &#34;jm1021&#34;, &#34;_password&#34;: &#34;sha256$lePZmyOojun2609l$98071fe9ca5b49869d65c82c4c92096d8414ff091e1a98c0df3727f58c479923&#34;}, {&#34;_name&#34;: &#34;Eli Whitney&#34;, &#34;_uid&#34;: &#34;eli&#34;, &#34;_password&#34;: &#34;sha256$mXmAfSkUi6j3Qn43$f5ccfebcc3e6a0ade3b21620e09362d435afe57c476c0be2ad27314101ca24d1&#34;}, {&#34;_name&#34;: &#34;Hedy Lemarr&#34;, &#34;_uid&#34;: &#34;hedy&#34;, &#34;_password&#34;: &#34;sha256$72g1t8IEmWwCmNpP$2196bf58d2eaf13462c74f27385c2fdd6e89a3116243ee23ee05965fc913065a&#34;}]
 Test 4, make a dictionary
-[{&#34;_name&#34;: &#34;Thomas Edison&#34;, &#34;_uid&#34;: &#34;toby&#34;, &#34;_password&#34;: &#34;sha256$HVyJQq0HNEDNcYN5$b00bf8c4eb7ffa3e8c8ef16bf35bd4266c166fdacbb66b19a357edde5f0d6c32&#34;}, {&#34;_name&#34;: &#34;Nicholas Tesla&#34;, &#34;_uid&#34;: &#34;nick&#34;, &#34;_password&#34;: &#34;sha256$whPl9IJvFVvxzdbc$dd9ee28d280b3f6cdff9959b840a2f8c98e7ecc2d5ad81d7b5ca157c974f8a25&#34;}, {&#34;_name&#34;: &#34;John Mortensen&#34;, &#34;_uid&#34;: &#34;jm1021&#34;, &#34;_password&#34;: &#34;sha256$D4BEOUSVXL0QvQw4$4c3763f6e44437d7f95006b23fcd23c20782545ee63a86070221f6c06b025de4&#34;}, {&#34;_name&#34;: &#34;Eli Whitney&#34;, &#34;_uid&#34;: &#34;eli&#34;, &#34;_password&#34;: &#34;sha256$cbczcX0tRbxSz4FE$cb4f2cad5c47a5d3aa3273b6bef002ca5bf81610ae2b14bb033d154472d55bba&#34;}, {&#34;_name&#34;: &#34;Hedy Lemarr&#34;, &#34;_uid&#34;: &#34;hedy&#34;, &#34;_password&#34;: &#34;sha256$cO8TRRf0Ad2TEeza$648c10910c4ecab4174f6fdb1aece1b403418f01b196dcd1339f3cd5d9fb692d&#34;}]
+[{&#34;_name&#34;: &#34;Thomas Edison&#34;, &#34;_uid&#34;: &#34;toby&#34;, &#34;_password&#34;: &#34;sha256$OKcNKHQ6b2AJENPd$67aa30fdba181445956e78c7cfbf7f6ef0639091307ad3cb0da4a5b610045c99&#34;}, {&#34;_name&#34;: &#34;Nicholas Tesla&#34;, &#34;_uid&#34;: &#34;nick&#34;, &#34;_password&#34;: &#34;sha256$TFfkgbLpZRz11jjj$63b708faf599813ccd9d702279f45b93ff54d9a18857c6557cbd8b206888d77f&#34;}, {&#34;_name&#34;: &#34;John Mortensen&#34;, &#34;_uid&#34;: &#34;jm1021&#34;, &#34;_password&#34;: &#34;sha256$lePZmyOojun2609l$98071fe9ca5b49869d65c82c4c92096d8414ff091e1a98c0df3727f58c479923&#34;}, {&#34;_name&#34;: &#34;Eli Whitney&#34;, &#34;_uid&#34;: &#34;eli&#34;, &#34;_password&#34;: &#34;sha256$mXmAfSkUi6j3Qn43$f5ccfebcc3e6a0ade3b21620e09362d435afe57c476c0be2ad27314101ca24d1&#34;}, {&#34;_name&#34;: &#34;Hedy Lemarr&#34;, &#34;_uid&#34;: &#34;hedy&#34;, &#34;_password&#34;: &#34;sha256$72g1t8IEmWwCmNpP$2196bf58d2eaf13462c74f27385c2fdd6e89a3116243ee23ee05965fc913065a&#34;}]
 </pre>
 </div>
 </div>
@@ -536,7 +539,7 @@ Test 2, change user 3
 
 
 
-  </div><a class="u-url" href="/JeongWooLee/2023/01/16/model.html" hidden></a>
+  </div><a class="u-url" href="/JeongWooLee/2023/01/22/model.html" hidden></a>
 </article>
 
       </div>
