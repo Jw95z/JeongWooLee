@@ -3,7 +3,7 @@ title: Test Score
 toc: true
 badges: true
 comments: true
-categories: [Assignment]
+categories: [MCQ]
 layout: post
 ---
 ![]({{site.baseurl}}/images/score.png)
