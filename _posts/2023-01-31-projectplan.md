@@ -1,5 +1,6 @@
 ---
 title: Project Plan
+toc: true
 badges: true
 comments: true
 permalink: /project_plan/
