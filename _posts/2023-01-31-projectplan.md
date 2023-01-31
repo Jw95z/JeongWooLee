@@ -15,6 +15,8 @@ layout: post
 |Testing|<input type="checkbox" disabled /> Describes two calls that pass different argument and cause different result <br> <input type="checkbox" disabled checked /> Conditions tested by each call <br> <input type="checkbox" disabled checked /> result of each call <br>|I will test it when all the code is written. two call is for login and register. Besides, they also have a different result for it. One is for saving data and other is for verifying Id and password|1/1|1/1|
 
 ## Feature
+![result](../images/result.png)
+![register](../images/codeforegister.png)
 My feature is login and registration. Members who have registered on our site can log in from the login page and enter their account, and those who have not registered on the site will be able to register on the site and create their own new account.
 
 ## Code plan
