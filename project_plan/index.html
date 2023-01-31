@@ -96,7 +96,11 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <table>
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#feature">Feature</a></li>
+<li class="toc-entry toc-h2"><a href="#code-plan">Code plan</a></li>
+<li class="toc-entry toc-h2"><a href="#video-plan">Video plan</a></li>
+</ul><table>
   <tbody>
     <tr>
       <td>Reporting Category</td>
@@ -107,42 +111,51 @@ window.onload = wrap_img;
     </tr>
     <tr>
       <td>Program Purpose and Function</td>
-      <td><input type="checkbox" disabled="" checked="" />Input <br />  <input type="checkbox" disabled="" checked="" />Program Functionality  <br /> <input type="checkbox" disabled="" checked="" />Output <br /> <input type="checkbox" disabled="" checked="" /> Main goal in the program <br /> <input type="checkbox" disabled="" checked="" /> Functionality demonstrated in video <br /> <input type="checkbox" disabled="" checked="" /> Input and output shown in the video</td>
+      <td>
+<input type="checkbox" disabled checked>Input <br>  <input type="checkbox" disabled checked>Program Functionality  <br> <input type="checkbox" disabled checked>Output <br> <input type="checkbox" disabled checked> Main goal in the program <br> <input type="checkbox" disabled checked> Functionality demonstrated in video <br> <input type="checkbox" disabled checked> Input and output shown in the video</td>
       <td>Input will be the Id, password, and other information to put in the database. Other input is related to login. We have to verify that it’s right Id and password. Program functionality is to save the data in the proper database. Main goal of my program is to make login and register function</td>
       <td>1/1</td>
       <td>1/1</td>
     </tr>
     <tr>
       <td>Data Abstraction</td>
-      <td><input type="checkbox" disabled="" checked="" />Two code segments <br />  <space><space> - one that shows how data has been stored in this list (or other collection type) <space><br /> - one that shows the data in this same list being used as part of fulfilling the program’s purpose <br /> <input type="checkbox" disabled="" checked="" />Name of the variables representing the list being used in response <br /> <input type="checkbox" disabled="" checked="" />what the data contained in this list is representing in the program <br /></space></space></space></td>
+      <td>
+<input type="checkbox" disabled checked>Two code segments <br>  <space><space> - one that shows how data has been stored in this list (or other collection type) <space><br> - one that shows the data in this same list being used as part of fulfilling the program’s purpose <br> <input type="checkbox" disabled checked>Name of the variables representing the list being used in response <br> <input type="checkbox" disabled checked>what the data contained in this list is representing in the program <br></space></space></space>
+</td>
       <td>The variables is username, password, age, weigh, and name. Users put the value in the variables and it will be in the database. The values will be saved as lists to make sure to pick up when it’s necessary.</td>
       <td>1/1</td>
       <td>1/1</td>
     </tr>
     <tr>
       <td>Managing Complexity</td>
-      <td><input type="checkbox" disabled="" checked="" />a program code segment that shows a list being used to manage complexity in the program<br /> <input type="checkbox" disabled="" />How list manages complexity by explaining why the list have to written or what code will change without lists <br /></td>
+      <td>
+<input type="checkbox" disabled checked>a program code segment that shows a list being used to manage complexity in the program<br> <input type="checkbox" disabled>How list manages complexity by explaining why the list have to written or what code will change without lists <br>
+</td>
       <td>There is a code that shows the list and pull values from it</td>
       <td>1/1</td>
       <td>1/1</td>
     </tr>
     <tr>
       <td>Procedural Abstraction</td>
-      <td><input type="checkbox" disabled="" checked="" /> Two program code segment <br /> - One provident that shows at least one effect parameter in the procedure <br /> - one showing about calling of student’s procedure</td>
+      <td>
+<input type="checkbox" disabled checked> Two program code segment <br> - One provident that shows at least one effect parameter in the procedure <br> - one showing about calling of student’s procedure</td>
       <td>There is a parameter in the function so that it will send the value in the direct order.</td>
       <td>1/1</td>
       <td>1/1</td>
     </tr>
     <tr>
       <td>Algorithm Implementation</td>
-      <td><input type="checkbox" disabled="" checked="" /> Sequencing <br /> <input type="checkbox" disabled="" checked="" /> Selection <br /> <br /> <input type="checkbox" disabled="" /> Iteration <br /> <input type="checkbox" disabled="" /> Describes what identified procedure is and how it contributes to overall functionality</td>
+      <td>
+<input type="checkbox" disabled checked> Sequencing <br> <input type="checkbox" disabled checked> Selection <br> <br> <input type="checkbox" disabled> Iteration <br> <input type="checkbox" disabled> Describes what identified procedure is and how it contributes to overall functionality</td>
       <td>It has sequencing, iteration, and selection. Selection is for matching ID and password, and iteration is for pulling all the values in database to match it. I will write sentences that explains how the code works.</td>
       <td>1/1</td>
       <td>1/1</td>
     </tr>
     <tr>
       <td>Testing</td>
-      <td><input type="checkbox" disabled="" /> Describes two calls that pass different argument and cause different result <br /> <input type="checkbox" disabled="" checked="" /> Conditions tested by each call <br /> <input type="checkbox" disabled="" checked="" /> result of each call <br /></td>
+      <td>
+<input type="checkbox" disabled> Describes two calls that pass different argument and cause different result <br> <input type="checkbox" disabled checked> Conditions tested by each call <br> <input type="checkbox" disabled checked> result of each call <br>
+</td>
       <td>I will test it when all the code is written. two call is for login and register. Besides, they also have a different result for it. One is for saving data and other is for verifying Id and password</td>
       <td>1/1</td>
       <td>1/1</td>
@@ -150,15 +163,18 @@ window.onload = wrap_img;
   </tbody>
 </table>
 
-<h2 id="feature">Feature</h2>
-<p><img src="../images/result.png" alt="result" />
-<img src="../images/codeforegister.png" alt="register" />
+<h2 id="feature">
+<a class="anchor" href="#feature" aria-hidden="true"><span class="octicon octicon-link"></span></a>Feature</h2>
+<p><img src="../images/result.png" alt="result">
+<img src="../images/codeforegister.png" alt="register">
 My feature is login and registration. Members who have registered on our site can log in from the login page and enter their account, and those who have not registered on the site will be able to register on the site and create their own new account.</p>
 
-<h2 id="code-plan">Code plan</h2>
+<h2 id="code-plan">
+<a class="anchor" href="#code-plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code plan</h2>
 <p>The functions I am doing are login and membership registration. Once the user enters information with Python or JavaScript, it is uploaded to the database, and if the ID and password match the database, it exits the login page and returns to the original page. Also, if you already have an ID when signing up for membership, a duplicate ID will not be created, and if the ID and password do not match when you log in, a warning will be issued if the login fails.</p>
 
-<h2 id="video-plan">Video plan</h2>
+<h2 id="video-plan">
+<a class="anchor" href="#video-plan" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video plan</h2>
 <p>In my video, I’ll show you how the site saves the input values ​​to the database and navigates to another page when the login is successful. If there is login information, the input will fail, and if the login is not a value in the database, the login will fail.</p>
 
   </div><!-- from https://github.com/utterance/utterances -->
