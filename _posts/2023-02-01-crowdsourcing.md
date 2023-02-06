@@ -1,9 +1,9 @@
 ---
-title: Computing Bias
+title: Crowdsourcing
 toc: true
 badges: true
 comments: true
-permalink: /computingbias/
+permalink: /crowdsourcing/
 categories: [Assignment]
 layout: post
 ---
