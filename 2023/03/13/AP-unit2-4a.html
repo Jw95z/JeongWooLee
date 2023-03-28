@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -1362,10 +1362,38 @@ Created new uid {"rank": 10, "title": "Glimpse Of Us", "artist": "Joji", "last w
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">update_songs</span><span class="p">():</span> 
-    
+    <span class="n">title</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your user id:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">title</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s1">'message'</span><span class="p">:</span> <span class="sa">f</span><span class="s1">'User ID is missing'</span><span class="p">},</span> <span class="mi">400</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">_title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+        <span class="n">art</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"please change artist"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">user</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"not found"</span><span class="p">)</span>
+        <span class="n">user</span><span class="o">.</span><span class="n">artist</span> <span class="o">=</span> <span class="n">art</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">user1</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">_title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">user1</span><span class="p">)</span>
+<span class="n">update_songs</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>First Class
+{"rank": 1, "title": "First Class", "artist": "James", "last week": "3", "peakPosition": "1", "weeksOnChart": "12"}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

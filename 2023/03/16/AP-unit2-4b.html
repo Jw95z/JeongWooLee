@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      20 min read
     
 </span></p>
 
@@ -229,24 +229,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(0, 'id', 'INTEGER', 1, None, 1)
-(1, '_name', 'VARCHAR(255)', 1, None, 0)
-(2, '_uid', 'VARCHAR(255)', 1, None, 0)
-(3, '_password', 'VARCHAR(255)', 1, None, 0)
-(4, '_dob', 'DATE', 0, None, 0)
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -260,10 +242,10 @@ window.onload = wrap_img;
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>What is a connection object?  After you google it, what do you think it does? A Connection object represents a unique session with a data source. I think the connection create the relationship to database. </li>
+<li>Same for cursor object? In this case, cursor connect to the database called sqlite3</li>
+<li>Look at conn object and cursor object in VSCode debugger. What attributes are in the object? </li>
+<li>Is "results" an object?  How do you know? I don't think result is an object that connect database. This is the value from database</li>
 </ul>
 
 </div>
@@ -318,8 +300,8 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations? I think sqlite3 is more simple than SQL. In SQL, we have to define all the column, but it is more precise and more comfortable while doing a project.</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>? No Insert means to put the data in sqlite3</li>
 </ul>
 </blockquote>
 
@@ -454,8 +436,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>because it removes one of data, and it is difficult to redintegrate</li>
+</ul>
+</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?<ul>
+<li>f means format, so it will print the value more beautiful</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -515,8 +503,14 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
-<li>Could you refactor this menu?  Make it work with a List?</li>
+<li>Why does the menu repeat? <ul>
+<li>Menu has to be repeated because users sometime don't want for only one thing. They sometime want to create and update it.</li>
+</ul>
+</li>
+<li>Could you refactor this menu?  Make it work with a List?<ul>
+<li>Ok I will.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -532,15 +526,16 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
     <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter: (C)reate (R)ead (U)pdate or (D)elete or (S)chema"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'c'</span><span class="p">:</span>
+
+    <span class="k">if</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'1'</span><span class="p">:</span>
         <span class="n">create</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'r'</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'2'</span><span class="p">:</span>
         <span class="n">read</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'u'</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'3'</span><span class="p">:</span>
         <span class="n">update</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'d'</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'4'</span><span class="p">:</span>
         <span class="n">delete</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'s'</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'5'</span><span class="p">:</span>
         <span class="n">schema</span><span class="p">()</span>
     <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
         <span class="k">return</span>
@@ -595,20 +590,6 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>228
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -694,7 +675,7 @@ window.onload = wrap_img;
     <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
     <span class="n">countries</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'countries_stat'</span><span class="p">)</span>
 
-
+    
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">countries</span><span class="p">)):</span>
         <span class="n">country_name</span> <span class="o">=</span> <span class="n">countries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">"country_name"</span><span class="p">]</span>
@@ -758,20 +739,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>('Run away', 'Aurora', 'https://www.youtube.com/watch?v=d_HlPboLRL8', '2015-02-16', '4:09')
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -820,51 +787,6 @@ window.onload = wrap_img;
 </div>
     
 
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://billboard-api2.p.rapidapi.com/hot-100"</span>
-
-<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"date"</span><span class="p">:</span><span class="s2">"2019-05-11"</span><span class="p">,</span><span class="s2">"range"</span><span class="p">:</span><span class="s2">"1-10"</span><span class="p">}</span>
-
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"56cf0d9c39msh90ab47fd56c02e6p1d2792jsn0f4dfaa46b90"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"billboard-api2.p.rapidapi.com"</span>
-<span class="p">}</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
-
-<span class="n">songs</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'content'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="p">[</span><span class="s2">"1"</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>10
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -882,32 +804,9 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
-
-<span class="k">def</span> <span class="nf">create_covid</span><span class="p">():</span>
-    <span class="n">country_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the country_name: "</span><span class="p">)</span>
-    <span class="n">cases</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter whole cases: "</span><span class="p">)</span>
-    <span class="n">deaths</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the deaths: "</span><span class="p">)</span>
-    <span class="n">total_recovered</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter total_recovered"</span><span class="p">)</span>
-    <span class="n">serious_critical</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter total_recovered"</span><span class="p">)</span>
-    <span class="n">active_cases</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter the active cases"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">rebuild</span><span class="p">():</span>
     <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/covid.db'</span><span class="p">)</span>
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-
-    <span class="k">try</span><span class="p">:</span>
-        <span class="c1"># Execute an SQL command to insert data into a table</span>
-        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO covid (_name, _uid, _password, _dob) VALUES (?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">country_name</span><span class="p">,</span> <span class="n">cases</span><span class="p">,</span> <span class="n">deaths</span><span class="p">,</span> <span class="n">total_recovered</span><span class="p">,</span> <span class="n">serious_critical</span><span class="p">,</span> <span class="n">active_cases</span><span class="p">))</span>
-        
-        <span class="c1"># Commit the changes to the database</span>
-        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A new user record </span><span class="si">{</span><span class="n">country_name</span><span class="si">}</span><span class="s2"> has been created"</span><span class="p">)</span>
-                
-    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the INSERT:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
-
-
-    <span class="c1"># Close the cursor and connection objects</span>
-    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -926,27 +825,33 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="k">def</span> <span class="nf">read_covid</span><span class="p">():</span>
-    <span class="c1"># Connect to the database file</span>
+<span class="k">def</span> <span class="nf">recreate_covid</span><span class="p">():</span>
+    <span class="n">country_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the country_name: "</span><span class="p">)</span>
+    <span class="n">cases</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter whole cases: "</span><span class="p">)</span>
+    <span class="n">deaths</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the deaths: "</span><span class="p">)</span>
+    <span class="n">total_recovered</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter total_recovered"</span><span class="p">)</span>
+    <span class="n">serious_critical</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter total_recovered"</span><span class="p">)</span>
+    <span class="n">active_cases</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter the active cases"</span><span class="p">)</span>
     <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/covid.db'</span><span class="p">)</span>
-
-    <span class="c1"># Create a cursor object to execute SQL queries</span>
     <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
-    
-    <span class="c1"># Execute a SELECT statement to retrieve data from a table</span>
-    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM covid'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 
-    <span class="c1"># Print the results</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Table is empty"</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Execute an SQL command to insert data into a table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"DELETE INTO covid"</span><span class="p">)</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"INSERT INTO covid (_name, _uid, _password, _dob) VALUES (?, ?, ?, ?)"</span><span class="p">,</span> <span class="p">(</span><span class="n">country_name</span><span class="p">,</span> <span class="n">cases</span><span class="p">,</span> <span class="n">deaths</span><span class="p">,</span> <span class="n">total_recovered</span><span class="p">,</span> <span class="n">serious_critical</span><span class="p">,</span> <span class="n">active_cases</span><span class="p">))</span>
+        
+        <span class="c1"># Commit the changes to the database</span>
+        <span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"A new user record </span><span class="si">{</span><span class="n">country_name</span><span class="si">}</span><span class="s2"> has been created"</span><span class="p">)</span>
+                
+    <span class="k">except</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Error</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Error while executing the INSERT:"</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
+
 
     <span class="c1"># Close the cursor and connection objects</span>
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">read</span><span class="p">()</span>
+<span class="n">recreate_covid</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -959,11 +864,47 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>('Run away', 'Aurora', 'https://www.youtube.com/watch?v=d_HlPboLRL8', '2015-02-16', '4:09')
+<pre>Error while executing the INSERT: near "INTO": syntax error
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+
+<span class="k">def</span> <span class="nf">read_covid</span><span class="p">():</span>
+    <span class="c1"># Connect to the database file</span>
+    <span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/covid.db'</span><span class="p">)</span>
+
+    <span class="c1"># Create a cursor object to execute SQL queries</span>
+    <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+    
+    <span class="c1"># Execute a SELECT statement to retrieve data from a table</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM covid'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="c1"># Print the results</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="n">tabulate</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">[</span><span class="s2">"appName"</span><span class="p">,</span> <span class="s2">"_uid"</span><span class="p">,</span> <span class="s2">"_password"</span><span class="p">,</span> <span class="s2">"_personalUse"</span><span class="p">,</span> <span class="s2">"_favoriteFeature"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+    <span class="c1"># Close the cursor and connection objects</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">read_covid</span><span class="p">()</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -1016,72 +957,9 @@ window.onload = wrap_img;
     <span class="c1"># Close the cursor and connection objects</span>
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Traceback (most recent call last):
-  File "_pydevd_bundle/pydevd_cython.pyx", line 1078, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
-  File "_pydevd_bundle/pydevd_cython.pyx", line 297, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
-  File "/home/james/anaconda3/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 1976, in do_wait_suspend
-    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
-  File "/home/james/anaconda3/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2011, in _do_wait_suspend
-    time.sleep(0.01)
-KeyboardInterrupt
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/james/vscode/JeongWooLee/_notebooks/2023-03-16-AP-unit2-4b.ipynb Cell 25</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/james/vscode/JeongWooLee/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X30sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> import sqlite3
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/james/vscode/JeongWooLee/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X30sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> def update_covid():
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/james/vscode/JeongWooLee/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X30sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     conn = sqlite3.connect('instance/covid.db')
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/james/vscode/JeongWooLee/_notebooks/2023-03-16-AP-unit2-4b.ipynb#X30sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     cursor = conn.cursor()
-
-File <span class="ansi-green-fg">_pydevd_bundle/pydevd_cython.pyx:1363</span>, in <span class="ansi-cyan-fg">_pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__</span><span class="ansi-blue-fg">()</span>
-
-File <span class="ansi-green-fg">_pydevd_bundle/pydevd_cython.pyx:1740</span>, in <span class="ansi-cyan-fg">_pydevd_bundle.pydevd_cython.ThreadTracer.__call__</span><span class="ansi-blue-fg">()</span>
-
-File <span class="ansi-green-fg">_pydevd_bundle/pydevd_cython.pyx:1087</span>, in <span class="ansi-cyan-fg">_pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch</span><span class="ansi-blue-fg">()</span>
-
-File <span class="ansi-green-fg">_pydevd_bundle/pydevd_cython.pyx:1078</span>, in <span class="ansi-cyan-fg">_pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch</span><span class="ansi-blue-fg">()</span>
-
-File <span class="ansi-green-fg">_pydevd_bundle/pydevd_cython.pyx:297</span>, in <span class="ansi-cyan-fg">_pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend</span><span class="ansi-blue-fg">()</span>
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py:1976</span>, in <span class="ansi-cyan-fg">PyDB.do_wait_suspend</span><span class="ansi-blue-fg">(self, thread, frame, event, arg, exception_type)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1973</span>             from_this_thread.append(frame_custom_thread_id)
-<span class="ansi-green-intense-fg ansi-bold">   1975</span>     with self._threads_suspended_single_notification.notify_thread_suspended(thread_id, stop_reason):
-<span class="ansi-green-fg">-&gt; 1976</span>         keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
-<span class="ansi-green-intense-fg ansi-bold">   1978</span> frames_list = None
-<span class="ansi-green-intense-fg ansi-bold">   1980</span> if keep_suspended:
-<span class="ansi-green-intense-fg ansi-bold">   1981</span>     # This means that we should pause again after a set next statement.
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py:2011</span>, in <span class="ansi-cyan-fg">PyDB._do_wait_suspend</span><span class="ansi-blue-fg">(self, thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2008</span>         self._call_mpl_hook()
-<span class="ansi-green-intense-fg ansi-bold">   2010</span>     self.process_internal_commands()
-<span class="ansi-green-fg">-&gt; 2011</span>     time.sleep(0.01)
-<span class="ansi-green-intense-fg ansi-bold">   2013</span> self.cancel_async_evaluation(get_current_thread_id(thread), str(id(frame)))
-<span class="ansi-green-intense-fg ansi-bold">   2015</span> # process any stepping instructions
-
-<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1120,6 +998,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/debugpy
     <span class="c1"># Close the cursor and connection objects</span>
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">delete_covid</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -1163,22 +1042,23 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/debugpy
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
-    <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter: (C)reate (R)ead (U)pdate or (D)elete or (S)chema"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'1'</span><span class="p">:</span>
-        <span class="n">create_covid</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'2'</span><span class="p">:</span>
-        <span class="n">read_covid</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'3'</span><span class="p">:</span>
-        <span class="n">update_covid</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'4'</span><span class="p">:</span>
-        <span class="n">delete_covid</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'5'</span><span class="p">:</span>
-        <span class="n">schema_covid</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
-        <span class="k">return</span>
+    
+    <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter: (C)reate (R)ead (U)pdate or (D)elete or (S)chema or E(nd)"</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">operation</span><span class="o">==</span> <span class="s1">'c'</span><span class="p">:</span>
+            <span class="n">recreate_covid</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">'r'</span><span class="p">:</span>
+            <span class="n">read_covid</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">'u'</span><span class="p">:</span>
+            <span class="n">update_covid</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">'d'</span><span class="p">:</span>
+            <span class="n">delete_covid</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">'s'</span><span class="p">:</span>
+            <span class="n">schema_covid</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
+            <span class="k">return</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter c, r, u, or d"</span><span class="p">)</span> 
-    <span class="n">menu</span><span class="p">()</span> <span class="c1"># recursion, repeat menu</span>
         
 <span class="k">try</span><span class="p">:</span>
     <span class="n">menu</span><span class="p">()</span> <span class="c1"># start menu</span>
@@ -1187,6 +1067,248 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/debugpy
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                        appName     _uid     _password    _personalUse    _favoriteFeature
+----------------------  ----------  -------  -----------  --------------  ------------------
+Brazil                  30,345,654  662,663  29,364,400   8,318           318,591
+France                  28,244,977  145,020  25,852,832   1,677           2,247,125
+Germany                 24,109,433  134,624  21,243,000   1,980           2,731,809
+UK                      21,933,206  173,352  20,782,350   339             977,504
+Russia                  18,137,137  374,902  17,474,628   2,300           287,607
+S. Korea                16,895,194  22,133   N/A          726             N/A
+Italy                   16,079,209  162,609  14,684,371   409             1,232,229
+Turkey                  15,016,270  98,676   14,854,475   975             63,119
+Spain                   11,786,036  103,908  11,261,340   339             420,788
+Vietnam                 10,563,502  43,013   9,086,075    612             1,434,414
+Argentina               9,060,923   128,344  8,895,999    412             36,580
+Netherlands             8,035,603   22,206   7,643,520    94              369,877
+Japan                   7,621,562   29,284   7,135,403    195             456,875
+Iran                    7,216,040   140,975  6,966,954    1,046           108,111
+Colombia                6,091,094   139,771  5,924,433    342             26,890
+Indonesia               6,043,768   156,067  5,868,251    2,771           19,450
+Poland                  5,991,197   115,948  5,334,375    1,588           540,874
+Mexico                  5,733,514   324,117  5,033,892    4,798           375,505
+Australia               5,689,377   6,991    5,274,197    135             408,189
+Ukraine                 4,997,224   108,306  N/A          177             N/A
+Malaysia                4,427,067   35,491   4,310,599    89              80,977
+Thailand                4,165,874   27,778   3,954,945    1,496           183,151
+Austria                 4,104,859   18,047   3,989,860    121             96,952
+Israel                  4,054,342   10,658   4,009,152    220             34,532
+Belgium                 4,015,791   31,319   3,726,457    169             258,015
+Czechia                 3,895,544   40,081   3,838,099    43              17,364
+Portugal                3,791,744   22,162   N/A          61              N/A
+South Africa            3,759,689   100,298  3,632,572    175             26,819
+Canada                  3,695,585   38,777   3,426,082    426             230,726
+Philippines             3,684,500   60,182   3,610,658    289             13,660
+Switzerland             3,579,867   13,816   3,378,507    90              187,544
+Peru                    3,559,343   212,724  N/A          356             N/A
+Chile                   3,544,463   57,375   3,368,772    286             118,316
+Greece                  3,277,557   28,867   3,151,717    277             96,973
+Denmark                 2,959,040   6,072    2,929,091    15              23,877
+Romania                 2,888,318   65,427   2,606,660    216             216,231
+Sweden                  2,498,388   18,656   2,464,421    19              15,311
+Iraq                    2,324,141   25,204   2,295,947    20              2,990
+Serbia                  2,001,144   15,953   1,967,786    25              17,405
+Bangladesh              1,952,532   29,127   1,893,131    1,297           30,274
+Hungary                 1,890,953   46,048   1,776,617    45              68,288
+Slovakia                1,774,808   19,839   1,730,712    88              24,257
+Jordan                  1,694,216   14,048   1,678,941    124             1,227
+Georgia                 1,654,255   16,800   1,635,791    0               1,664
+Pakistan                1,527,856   30,369   1,493,998    186             3,489
+Ireland                 1,509,536   6,996    1,415,949    41              86,591
+Norway                  1,423,509   2,871    N/A          20              N/A
+Kazakhstan              1,305,457   13,660   1,290,988    24              809
+Hong Kong               1,201,431   9,236    N/A          115             N/A
+Singapore               1,180,124   1,325    1,109,387    9               69,412
+Morocco                 1,164,670   16,065   1,148,154    293             451
+Bulgaria                1,152,892   36,849   959,542      105             156,501
+Croatia                 1,117,175   15,778   1,096,829    22              4,568
+Cuba                    1,101,486   8,523    1,091,603    23              1,360
+Lebanon                 1,096,320   10,374   1,079,455    186             6,491
+Lithuania               1,054,618   9,063    1,016,510    31              29,045
+Tunisia                 1,039,532   28,533   N/A          29              N/A
+Slovenia                1,003,970   6,576    980,501      30              16,893
+Finland                 1,000,472   3,638    46,000       31              950,834
+Nepal                   978,743     11,951   966,523      0               269
+Belarus                 977,434     6,922    928,536      0               41,976
+Bolivia                 904,377     21,908   855,123      220             27,346
+UAE                     897,136     2,302    879,787      0               15,047
+Uruguay                 895,775     7,197    886,654      18              1,924
+New Zealand             884,289     636      824,272      0               59,381
+Ecuador                 868,053     35,581   N/A          759             N/A
+Costa Rica              847,784     8,383    829,515      43              9,886
+Guatemala               841,341     17,496   821,185      5               2,660
+Latvia                  817,316     5,743    803,135      9               8,438
+Azerbaijan              792,476     9,707    782,634      0               135
+Panama                  771,486     8,182    759,832      8               3,472
+Saudi Arabia            753,332     9,076    740,467      45              3,789
+Sri Lanka               663,131     16,502   642,574      0               4,055
+Paraguay                649,034     18,795   624,673      5               5,566
+Kuwait                  631,294     2,555    627,899      8               840
+Myanmar                 612,733     19,434   591,609      0               1,690
+Palestine               581,816     5,353    575,899      17              564
+Dominican Republic      578,954     4,376    574,297      16              281
+Estonia                 570,257     2,531    507,474      7               60,252
+Bahrain                 565,830     1,475    560,795      3               3,560
+Venezuela               522,121     5,705    515,305      230             1,111
+Moldova                 516,986     11,489   504,142      49              1,355
+Egypt                   515,645     24,613   442,182      122             48,850
+Libya                   501,862     6,429    490,900      101             4,533
+Cyprus                  470,481     1,011    124,370      60              345,100
+Ethiopia                470,417     7,510    454,967      15              7,940
+Mongolia                469,580     2,177    313,256      192             154,147
+Armenia                 422,825     8,622    410,558      0               3,645
+Honduras                422,275     10,892   131,100      105             280,283
+Oman                    388,995     4,257    384,055      2               683
+Bosnia and Herzegovina  376,699     15,756   192,218      0               168,725
+Réunion                 374,295     742      355,605      10              17,948
+Qatar                   364,089     677      362,568      1               844
+Kenya                   323,696     5,649    317,909      0               138
+Zambia                  318,984     3,974    314,075      0               935
+North Macedonia         309,062     9,271    299,064      0               727
+Botswana                305,859     2,688    303,026      1               145
+Albania                 274,791     3,496    270,869      2               426
+Algeria                 265,761     6,874    178,344      6               80,543
+Nigeria                 255,685     3,143    249,890      11              2,652
+Zimbabwe                247,524     5,468    241,362      12              694
+Uzbekistan              238,469     1,637    236,483      23              349
+Montenegro              234,619     2,713    231,297      6               609
+Luxembourg              233,966     1,058    221,501      1               11,407
+Mozambique              225,358     2,201    223,104      13              53
+Laos                    205,975     732      7,660        0               197,583
+Kyrgyzstan              200,983     2,991    196,386      131             1,606
+China                   200,654     4,725    166,398      236             29,531
+Iceland                 183,974     112      75,685       1               108,177
+Maldives                178,883     298      163,687      25              14,898
+Afghanistan             178,689     7,682    161,748      1,124           9,259
+Uganda                  164,069     3,596    100,205      2               60,268
+El Salvador             162,089     4,127    150,662      8               7,300
+Ghana                   161,124     1,445    159,655      1               24
+Namibia                 158,332     4,023    153,662      0               647
+Martinique              147,519     918      104          8               146,497
+Trinidad and Tobago     144,359     3,812    133,604      18              6,943
+Brunei                  141,014     218      139,724      2               1,072
+Guadeloupe              140,130     854      2,250        19              137,026
+Cambodia                136,200     3,056    132,896      0               248
+Rwanda                  129,764     1,458    45,522       0               82,784
+Jamaica                 129,489     2,943    82,965       0               43,581
+Cameroon                119,780     1,927    117,791      13              62
+Angola                  99,194      1,900    97,149       0               145
+Malta                   90,595      688      84,646       4               5,261
+DRC                     87,023      1,337    50,930       0               34,756
+Senegal                 85,984      1,966    84,001       1               17
+Malawi                  85,747      2,633    81,938       67              1,176
+Ivory Coast             81,887      799      81,061       0               27
+French Guiana           80,422      394      11,254       1               68,774
+Suriname                79,302      1,327    49,396       0               28,579
+Channel Islands         73,609      166      72,059       0               1,384
+French Polynesia        72,648      648      N/A          7               N/A
+Eswatini                70,284      1,397    68,764       11              123
+Barbados                67,256      389      63,424       0               3,443
+Fiji                    64,524      862      62,677       0               985
+Madagascar              64,121      1,391    59,370       14              3,360
+Guyana                  63,413      1,228    62,092       1               93
+Sudan                   62,093      4,930    N/A          0               N/A
+New Caledonia           60,457      312      60,064       9               81
+Mauritania              58,683      982      57,693       0               8
+Bhutan                  57,771      20       53,080       3               4,671
+Belize                  57,419      676      56,534       6               209
+Taiwan                  56,468      856      23,729       0               31,883
+Cabo Verde              56,004      401      55,538       23              65
+Syria                   55,795      3,150    52,090       0               555
+Gabon                   47,597      303      47,282       0               12
+Papua New Guinea        43,732      649      43,025       7               58
+Seychelles              42,079      165      41,260       0               654
+Curaçao                 41,966      273      41,251       3               442
+Andorra                 41,013      153      40,343       14              517
+Burundi                 38,887      38       773          0               38,076
+Mauritius               37,656      990      35,656       0               1,010
+Mayotte                 37,038      187      2,964        0               33,887
+Togo                    36,977      273      36,679       0               25
+Guinea                  36,459      440      35,976       8               43
+Faeroe Islands          34,658      28       7,693        5               26,937
+Aruba                   34,589      212      34,251       2               126
+Tanzania                33,864      803      N/A          7               N/A
+Bahamas                 33,463      789      32,310       11              364
+Lesotho                 32,910      697      24,155       0               8,058
+Mali                    30,727      731      29,795       0               201
+Haiti                   30,640      835      29,389       0               416
+Isle of Man             28,416      87       26,794       0               1,535
+Benin                   26,952      163      25,506       5               1,283
+Somalia                 26,485      1,350    13,182       0               11,953
+Congo                   24,079      385      20,178       0               3,516
+Saint Lucia             23,239      368      22,736       1               135
+Timor-Leste             22,860      130      22,714       0               16
+Cayman Islands          21,755      26       8,553        1               13,176
+Burkina Faso            20,853      382      20,439       0               32
+Nicaragua               18,491      225      4,225        0               14,041
+Gibraltar               17,706      102      16,579       0               1,025
+South Sudan             17,422      138      13,514       1               3,770
+Tajikistan              17,388      124      17,264       0               0
+Liechtenstein           17,103      85       16,831       0               187
+San Marino              16,140      114      15,662       4               364
+Equatorial Guinea       15,907      183      15,698       5               26
+Djibouti                15,611      189      15,411       0               11
+CAR                     14,649      113      6,859        2               7,677
+Grenada                 14,428      220      13,945       4               263
+Bermuda                 13,143      131      12,719       0               293
+Solomon Islands         12,437      139      11,194       2               1,104
+Dominica                12,011      63       11,926       0               22
+Gambia                  11,995      365      11,591       0               39
+Greenland               11,971      21       2,761        4               9,189
+Yemen                   11,818      2,148    9,001        23              669
+Monaco                  11,604      54       11,362       4               188
+Saint Martin            10,279      63       1,399        7               8,817
+Sint Maarten            9,990       86       9,841        10              63
+Eritrea                 9,733       103      9,629        0               1
+Caribbean Netherlands   9,592       34       9,392        0               166
+Tonga                   9,553       11       8,306        0               1,236
+Niger                   8,914       309      8,507        1               98
+Guinea-Bissau           8,185       171      7,515        6               499
+Comoros                 8,100       160      7,933        0               7
+Sierra Leone            7,681       125      N/A          0               N/A
+Antigua and Barbuda     7,571       135      7,402        1               34
+Liberia                 7,432       294      5,747        2               1,391
+Chad                    7,396       193      4,874        0               2,329
+Samoa                   7,185       13       1,605        3               5,567
+Vanuatu                 6,793       12       5,991        5               790
+St. Vincent Grenadines  6,779       106      6,641        0               32
+British Virgin Islands  6,296       62       N/A          1               N/A
+Sao Tome and Principe   5,953       73       5,875        0               5
+Turks and Caicos        5,941       36       5,862        4               43
+Saint Kitts and Nevis   5,561       43       5,517        0               1
+Cook Islands            4,727       0        3,990        0               737
+St. Barth               4,432       6        N/A          0               N/A
+Palau                   4,396       6        3,879        1               511
+Kiribati                3,076       13       2,597        3               466
+Anguilla                2,731       9        2,716        4               6
+Saint Pierre Miquelon   2,641       1        2,449        1               191
+Diamond Princess        712         13       699          0               0
+Wallis and Futuna       454         7        438          0               9
+Montserrat              183         2        174          0               7
+Falkland Islands        128         0        N/A          0               N/A
+Macao                   82          0        82           0               0
+Vatican City            29          0        29           0               0
+Marshall Islands        15          0        7            0               8
+Western Sahara          10          1        9            0               0
+MS Zaandam              9           2        7            0               0
+Niue                    8           0        7            0               1
+Nauru                   3           0        3            0               0
+Saint Helena            2           0        2            0               0
+Micronesia              1           0        1            0               0
+Please enter c, r, u, or d
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
