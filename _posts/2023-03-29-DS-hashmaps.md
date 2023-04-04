@@ -30,7 +30,7 @@ layout: notebook
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">webbrowser</span>
 
 <span class="k">def</span> <span class="nf">search_song</span><span class="p">():</span>
-    <span class="n">song_title</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;노래 제목을 입력하세요: &quot;</span><span class="p">)</span>
+    <span class="n">song_title</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter the song&#39;s title&quot;</span><span class="p">)</span>
     <span class="n">query</span> <span class="o">=</span> <span class="n">song_title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;+&quot;</span><span class="p">)</span>
     <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://www.youtube.com/results?search_query=</span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="k">return</span> <span class="n">url</span>
@@ -147,35 +147,28 @@ layout: notebook
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Lover&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;Taylor Swift&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="mi">2019</span><span class="p">,</span>
-    <span class="s2">&quot;genre&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Pop&quot;</span><span class="p">,</span> <span class="s2">&quot;Synth-pop&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;csp&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;artist&quot;</span><span class="p">:</span> <span class="s2">&quot;James&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;year&quot;</span><span class="p">:</span> <span class="mi">2016</span><span class="p">,</span>
+    <span class="s2">&quot;genre&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;csp&quot;</span><span class="p">,</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span> <span class="s2">&quot;Electronic&quot;</span><span class="p">,</span> <span class="s2">&quot;Electricity&quot;</span><span class="p">],</span>
     <span class="s2">&quot;tracks&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;I Forgot That You Existed&quot;</span><span class="p">,</span>
-        <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;Cruel Summer&quot;</span><span class="p">,</span>
-        <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;Lover&quot;</span><span class="p">,</span>
-        <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;The Man&quot;</span><span class="p">,</span>
-        <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;The Archer&quot;</span><span class="p">,</span>
-        <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;I Think He Knows&quot;</span><span class="p">,</span>
-        <span class="mi">7</span><span class="p">:</span> <span class="s2">&quot;Miss Americana &amp; The Heartbreak Prince&quot;</span><span class="p">,</span>
-        <span class="mi">8</span><span class="p">:</span> <span class="s2">&quot;Paper Rings&quot;</span><span class="p">,</span>
-        <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;Cornelia Street&quot;</span><span class="p">,</span>
-        <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;Death By A Thousand Cuts&quot;</span><span class="p">,</span>
-        <span class="mi">11</span><span class="p">:</span> <span class="s2">&quot;London Boy&quot;</span><span class="p">,</span>
-        <span class="mi">12</span><span class="p">:</span> <span class="s2">&quot;Soon You&#39;ll Get Better (feat. Dixie Chicks)&quot;</span><span class="p">,</span>
-        <span class="mi">13</span><span class="p">:</span> <span class="s2">&quot;False God&quot;</span><span class="p">,</span>
-        <span class="mi">14</span><span class="p">:</span> <span class="s2">&quot;You Need To Calm Down&quot;</span><span class="p">,</span>
-        <span class="mi">15</span><span class="p">:</span> <span class="s2">&quot;Afterglow&quot;</span><span class="p">,</span>
-        <span class="mi">16</span><span class="p">:</span> <span class="s2">&quot;Me! (feat. Brendon Urie of Panic! At The Disco)&quot;</span><span class="p">,</span>
-        <span class="mi">17</span><span class="p">:</span> <span class="s2">&quot;It&#39;s Nice To Have A Friend&quot;</span><span class="p">,</span>
-        <span class="mi">18</span><span class="p">:</span> <span class="s2">&quot;Daylight&quot;</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;variable&quot;</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;dict&quot;</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;function&quot;</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;binary&quot;</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;cpu&quot;</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;ram&quot;</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s2">&quot;math&quot;</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s2">&quot;science&quot;</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s2">&quot;finished&quot;</span><span class="p">,</span>
+        <span class="mi">10</span><span class="p">:</span> <span class="s2">&quot;tech talks&quot;</span><span class="p">,</span>
+
     <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="c1"># What data structures do you see?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># Dictionaries </span>
+<span class="c1"># But inside the dictionaries, I can see some lists and dictionaries</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -191,7 +184,7 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;title&#39;: &#39;Lover&#39;, &#39;artist&#39;: &#39;Taylor Swift&#39;, &#39;year&#39;: 2019, &#39;genre&#39;: [&#39;Pop&#39;, &#39;Synth-pop&#39;], &#39;tracks&#39;: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}}
+<pre>{&#39;title&#39;: &#39;csp&#39;, &#39;artist&#39;: &#39;James&#39;, &#39;year&#39;: 2016, &#39;genre&#39;: [&#39;csp&#39;, &#39;python&#39;, &#39;Electronic&#39;, &#39;Electricity&#39;], &#39;tracks&#39;: {1: &#39;variable&#39;, 2: &#39;dict&#39;, 3: &#39;function&#39;, 4: &#39;binary&#39;, 5: &#39;cpu&#39;, 6: &#39;ram&#39;, 7: &#39;math&#39;, 8: &#39;science&#39;, 9: &#39;finished&#39;, 10: &#39;tech talks&#39;}}
 </pre>
 </div>
 </div>
@@ -224,8 +217,8 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}
-{1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}
+<pre>{1: &#39;variable&#39;, 2: &#39;dict&#39;, 3: &#39;function&#39;, 4: &#39;binary&#39;, 5: &#39;cpu&#39;, 6: &#39;ram&#39;, 7: &#39;math&#39;, 8: &#39;science&#39;, 9: &#39;finished&#39;, 10: &#39;tech talks&#39;}
+{1: &#39;variable&#39;, 2: &#39;dict&#39;, 3: &#39;function&#39;, 4: &#39;binary&#39;, 5: &#39;cpu&#39;, 6: &#39;ram&#39;, 7: &#39;math&#39;, 8: &#39;science&#39;, 9: &#39;finished&#39;, 10: &#39;tech talks&#39;}
 </pre>
 </div>
 </div>
@@ -258,8 +251,8 @@ layout: notebook
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The Man
-The Man
+<pre>binary
+binary
 </pre>
 </div>
 </div>
@@ -280,8 +273,8 @@ The Man
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;producer&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;Taylor Swift&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack Antonoff&#39;</span><span class="p">,</span> <span class="s1">&#39;Joel Little&#39;</span><span class="p">,</span> <span class="s1">&#39;Taylor Swift&#39;</span><span class="p">,</span> <span class="s1">&#39;Louis Bell&#39;</span><span class="p">,</span> <span class="s1">&#39;Frank Dukes&#39;</span><span class="p">])</span>
 
 <span class="c1"># What can you change to make sure there are no duplicate producers?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># run the set function</span>
+<span class="c1"># Run the iteration to find a repeated one</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -297,7 +290,7 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;title&#39;: &#39;Lover&#39;, &#39;artist&#39;: &#39;Taylor Swift&#39;, &#39;year&#39;: 2019, &#39;genre&#39;: [&#39;Pop&#39;, &#39;Synth-pop&#39;], &#39;tracks&#39;: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;}, &#39;producer&#39;: {&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Louis Bell&#39;, &#39;Frank Dukes&#39;, &#39;Joel Little&#39;}}
+<pre>{&#39;title&#39;: &#39;csp&#39;, &#39;artist&#39;: &#39;James&#39;, &#39;year&#39;: 2016, &#39;genre&#39;: [&#39;csp&#39;, &#39;python&#39;, &#39;Electronic&#39;, &#39;Electricity&#39;], &#39;tracks&#39;: {1: &#39;variable&#39;, 2: &#39;dict&#39;, 3: &#39;function&#39;, 4: &#39;binary&#39;, 5: &#39;cpu&#39;, 6: &#39;ram&#39;, 7: &#39;math&#39;, 8: &#39;science&#39;, 9: &#39;finished&#39;, 10: &#39;tech talks&#39;}, &#39;producer&#39;: {&#39;Louis Bell&#39;, &#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Frank Dukes&#39;, &#39;Joel Little&#39;}}
 </pre>
 </div>
 </div>
@@ -315,13 +308,12 @@ The Man
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;tracks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">19</span><span class="p">:</span> <span class="s2">&quot;All Of The Girls You Loved Before&quot;</span><span class="p">})</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;tracks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">11</span><span class="p">:</span> <span class="s2">&quot;SEEDPOINTS&quot;</span><span class="p">})</span>
 
 <span class="c1"># How would add an additional genre to the dictionary, like electropop? </span>
 <span class="c1"># do the update()</span>
-<span class="c1"># </span>
+<span class="c1"># so it changes the value of the tracks</span>
 
-<span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
 </pre></div>
 
@@ -335,7 +327,7 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;title&#39;: &#39;Lover&#39;, &#39;artist&#39;: &#39;Taylor Swift&#39;, &#39;year&#39;: 2019, &#39;genre&#39;: [&#39;Pop&#39;, &#39;Synth-pop&#39;], &#39;tracks&#39;: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;, 19: &#39;All Of The Girls You Loved Before&#39;}, &#39;producer&#39;: {&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Louis Bell&#39;, &#39;Frank Dukes&#39;, &#39;Joel Little&#39;}}
+<pre>{&#39;title&#39;: &#39;csp&#39;, &#39;artist&#39;: &#39;James&#39;, &#39;year&#39;: 2016, &#39;genre&#39;: [&#39;csp&#39;, &#39;python&#39;, &#39;Electronic&#39;, &#39;Electricity&#39;], &#39;tracks&#39;: {1: &#39;variable&#39;, 2: &#39;dict&#39;, 3: &#39;function&#39;, 4: &#39;binary&#39;, 5: &#39;cpu&#39;, 6: &#39;ram&#39;, 7: &#39;math&#39;, 8: &#39;science&#39;, 9: &#39;finished&#39;, 10: &#39;tech talks&#39;, 11: &#39;SEEDPOINTS&#39;}, &#39;producer&#39;: {&#39;Louis Bell&#39;, &#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Frank Dukes&#39;, &#39;Joel Little&#39;}}
 </pre>
 </div>
 </div>
@@ -353,12 +345,19 @@ The Man
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">genre</span> <span class="o">=</span>  <span class="s2">&quot;&quot;</span>
+<span class="n">types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">lover_album</span><span class="p">[</span><span class="n">h</span><span class="p">]))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]:</span> <span class="c1"># iterate using a for loop for key and value</span>
+    <span class="n">genre</span>  <span class="o">+=</span> <span class="n">i</span> <span class="o">+</span><span class="s2">&quot; &quot;</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;genre: &quot;</span><span class="p">,</span> <span class="n">genre</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">track_number</span><span class="p">,</span> <span class="n">track_name</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;tracks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">track_number</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">track_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="c1"># Write your own code to print tracks in readable format</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># Ok</span>
+<span class="c1"># I got it</span>
 </pre></div>
 
     </div>
@@ -371,12 +370,21 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>title: Lover
-artist: Taylor Swift
-year: 2019
-genre: [&#39;Pop&#39;, &#39;Synth-pop&#39;]
-tracks: {1: &#39;I Forgot That You Existed&#39;, 2: &#39;Cruel Summer&#39;, 3: &#39;Lover&#39;, 4: &#39;The Man&#39;, 5: &#39;The Archer&#39;, 6: &#39;I Think He Knows&#39;, 7: &#39;Miss Americana &amp; The Heartbreak Prince&#39;, 8: &#39;Paper Rings&#39;, 9: &#39;Cornelia Street&#39;, 10: &#39;Death By A Thousand Cuts&#39;, 11: &#39;London Boy&#39;, 12: &#34;Soon You&#39;ll Get Better (feat. Dixie Chicks)&#34;, 13: &#39;False God&#39;, 14: &#39;You Need To Calm Down&#39;, 15: &#39;Afterglow&#39;, 16: &#39;Me! (feat. Brendon Urie of Panic! At The Disco)&#39;, 17: &#34;It&#39;s Nice To Have A Friend&#34;, 18: &#39;Daylight&#39;, 19: &#39;All Of The Girls You Loved Before&#39;}
-producer: {&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Louis Bell&#39;, &#39;Frank Dukes&#39;, &#39;Joel Little&#39;}
+<pre>title: csp
+artist: James
+year: 2016
+genre:  csp python Electronic Electricity 
+1: variable
+2: dict
+3: function
+4: binary
+5: cpu
+6: ram
+7: math
+8: science
+9: finished
+10: tech talks
+11: SEEDPOINTS
 </pre>
 </div>
 </div>
@@ -395,17 +403,25 @@ producer: {&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Louis Bell&#39;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">search</span><span class="p">():</span>
+    
     <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What would you like to know about the album?&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid Search&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()),</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">())[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()),</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">track_number</span><span class="p">,</span> <span class="n">track_name</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;tracks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">track_number</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">track_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># else:</span>
+    <span class="c1">#     print(lover_album.get(search.lower()))</span>
 
 <span class="n">search</span><span class="p">()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># We can search for other columns such as tracks ad title</span>
+<span class="c1"># </span>
 </pre></div>
 
     </div>
@@ -418,7 +434,7 @@ producer: {&#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Louis Bell&#39;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Taylor Swift
+<pre>title
 </pre>
 </div>
 </div>
