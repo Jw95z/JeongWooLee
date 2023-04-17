@@ -270,44 +270,6 @@ binary
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;producer&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;Taylor Swift&#39;</span><span class="p">,</span> <span class="s1">&#39;Jack Antonoff&#39;</span><span class="p">,</span> <span class="s1">&#39;Joel Little&#39;</span><span class="p">,</span> <span class="s1">&#39;Taylor Swift&#39;</span><span class="p">,</span> <span class="s1">&#39;Louis Bell&#39;</span><span class="p">,</span> <span class="s1">&#39;Frank Dukes&#39;</span><span class="p">])</span>
-
-<span class="c1"># What can you change to make sure there are no duplicate producers?</span>
-<span class="c1"># run the set function</span>
-<span class="c1"># Run the iteration to find a repeated one</span>
-
-<span class="c1"># Printing the dictionary</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;title&#39;: &#39;csp&#39;, &#39;artist&#39;: &#39;James&#39;, &#39;year&#39;: 2016, &#39;genre&#39;: [&#39;csp&#39;, &#39;python&#39;, &#39;Electronic&#39;, &#39;Electricity&#39;], &#39;tracks&#39;: {1: &#39;variable&#39;, 2: &#39;dict&#39;, 3: &#39;function&#39;, 4: &#39;binary&#39;, 5: &#39;cpu&#39;, 6: &#39;ram&#39;, 7: &#39;math&#39;, 8: &#39;science&#39;, 9: &#39;finished&#39;, 10: &#39;tech talks&#39;}, &#39;producer&#39;: {&#39;Louis Bell&#39;, &#39;Taylor Swift&#39;, &#39;Jack Antonoff&#39;, &#39;Frank Dukes&#39;, &#39;Joel Little&#39;}}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;tracks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">11</span><span class="p">:</span> <span class="s2">&quot;SEEDPOINTS&quot;</span><span class="p">})</span>
 
 <span class="c1"># How would add an additional genre to the dictionary, like electropop? </span>
@@ -414,8 +376,8 @@ genre:  csp python Electronic Electricity
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()),</span> <span class="nb">dict</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">track_number</span><span class="p">,</span> <span class="n">track_name</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">&quot;tracks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">track_number</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">track_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="c1"># else:</span>
-    <span class="c1">#     print(lover_album.get(search.lower()))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
 
 <span class="n">search</span><span class="p">()</span>
 
@@ -434,7 +396,18 @@ genre:  csp python Electronic Electricity
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>title
+<pre>tracks
+1: variable
+2: dict
+3: function
+4: binary
+5: cpu
+6: ram
+7: math
+8: science
+9: finished
+10: tech talks
+11: SEEDPOINTS
 </pre>
 </div>
 </div>
