@@ -401,44 +401,6 @@ binary
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Jack Antonoff'</span><span class="p">,</span> <span class="s1">'Joel Little'</span><span class="p">,</span> <span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Louis Bell'</span><span class="p">,</span> <span class="s1">'Frank Dukes'</span><span class="p">])</span>
-
-<span class="c1"># What can you change to make sure there are no duplicate producers?</span>
-<span class="c1"># run the set function</span>
-<span class="c1"># Run the iteration to find a repeated one</span>
-
-<span class="c1"># Printing the dictionary</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{'title': 'csp', 'artist': 'James', 'year': 2016, 'genre': ['csp', 'python', 'Electronic', 'Electricity'], 'tracks': {1: 'variable', 2: 'dict', 3: 'function', 4: 'binary', 5: 'cpu', 6: 'ram', 7: 'math', 8: 'science', 9: 'finished', 10: 'tech talks'}, 'producer': {'Louis Bell', 'Taylor Swift', 'Jack Antonoff', 'Frank Dukes', 'Joel Little'}}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">11</span><span class="p">:</span> <span class="s2">"SEEDPOINTS"</span><span class="p">})</span>
 
 <span class="c1"># How would add an additional genre to the dictionary, like electropop? </span>
@@ -545,8 +507,8 @@ genre:  csp python Electronic Electricity
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()),</span> <span class="nb">dict</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">track_number</span><span class="p">,</span> <span class="n">track_name</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">track_number</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">track_name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-    <span class="c1"># else:</span>
-    <span class="c1">#     print(lover_album.get(search.lower()))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
 
 <span class="n">search</span><span class="p">()</span>
 
@@ -565,7 +527,18 @@ genre:  csp python Electronic Electricity
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>title
+<pre>tracks
+1: variable
+2: dict
+3: function
+4: binary
+5: cpu
+6: ram
+7: math
+8: science
+9: finished
+10: tech talks
+11: SEEDPOINTS
 </pre>
 </div>
 </div>
