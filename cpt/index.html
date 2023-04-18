@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="CPT Draft" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Purpose I’m implementing a login system so people can create an account on our group’s site, log in, and create their own schedule. Before logging in, there is an account creation process, so users can even create an account. In addition, if the user loses the password, I want to make it possible to change the password by authenticating based on the information about the birthday that was entered when the account was created. Video Link Link Code for login Link Code for Register Link Code for Deleting account Link Code for changing password Link" />
-<meta property="og:description" content="Purpose I’m implementing a login system so people can create an account on our group’s site, log in, and create their own schedule. Before logging in, there is an account creation process, so users can even create an account. In addition, if the user loses the password, I want to make it possible to change the password by authenticating based on the information about the birthday that was entered when the account was created. Video Link Link Code for login Link Code for Register Link Code for Deleting account Link Code for changing password Link" />
+<meta name="description" content="3.a 3.a.1 The program is coded so that the user can create an account on the site and log in. In addition, we made it possible for users to delete their accounts so that they can retrieve their passwords if they are lost. 3.a.2 In the video, it shows user inputting new username and password to make a new account. When you log in, enter the correct username and password, and go to the main page. If incorrect, the login page tells you that the username or password is incorrect. 3.a.3 The video will show user inputting own username, password, and birthday for making account. If account is finally created, the user will go to login page for the login. The video will show that if user enters correct username and password, he will go to main website. If there is an error during login, the warning will come out. Besides, in order to change password, user has to input the right birthday and username. 3.b 3.b.1 list 3.b.2 signup 3.b.3 data 3.b.4" />
+<meta property="og:description" content="3.a 3.a.1 The program is coded so that the user can create an account on the site and log in. In addition, we made it possible for users to delete their accounts so that they can retrieve their passwords if they are lost. 3.a.2 In the video, it shows user inputting new username and password to make a new account. When you log in, enter the correct username and password, and go to the main page. If incorrect, the login page tells you that the username or password is incorrect. 3.a.3 The video will show user inputting own username, password, and birthday for making account. If account is finally created, the user will go to login page for the login. The video will show that if user enters correct username and password, he will go to main website. If there is an error during login, the warning will come out. Besides, in order to change password, user has to input the right birthday and username. 3.b 3.b.1 list 3.b.2 signup 3.b.3 data 3.b.4" />
 <link rel="canonical" href="https://jw95z.github.io/JeongWooLee/cpt/" />
 <meta property="og:url" content="https://jw95z.github.io/JeongWooLee/cpt/" />
 <meta property="og:site_name" content="fastpages" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="CPT Draft" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-17T00:00:00-05:00","datePublished":"2023-04-17T00:00:00-05:00","description":"Purpose I’m implementing a login system so people can create an account on our group’s site, log in, and create their own schedule. Before logging in, there is an account creation process, so users can even create an account. In addition, if the user loses the password, I want to make it possible to change the password by authenticating based on the information about the birthday that was entered when the account was created. Video Link Link Code for login Link Code for Register Link Code for Deleting account Link Code for changing password Link","headline":"CPT Draft","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/cpt/"},"url":"https://jw95z.github.io/JeongWooLee/cpt/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-17T00:00:00-05:00","datePublished":"2023-04-17T00:00:00-05:00","description":"3.a 3.a.1 The program is coded so that the user can create an account on the site and log in. In addition, we made it possible for users to delete their accounts so that they can retrieve their passwords if they are lost. 3.a.2 In the video, it shows user inputting new username and password to make a new account. When you log in, enter the correct username and password, and go to the main page. If incorrect, the login page tells you that the username or password is incorrect. 3.a.3 The video will show user inputting own username, password, and birthday for making account. If account is finally created, the user will go to login page for the login. The video will show that if user enters correct username and password, he will go to main website. If there is an error during login, the warning will come out. Besides, in order to change password, user has to input the right birthday and username. 3.b 3.b.1 list 3.b.2 signup 3.b.3 data 3.b.4","headline":"CPT Draft","mainEntityOfPage":{"@type":"WebPage","@id":"https://jw95z.github.io/JeongWooLee/cpt/"},"url":"https://jw95z.github.io/JeongWooLee/cpt/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/JeongWooLee/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jw95z.github.io/JeongWooLee/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/JeongWooLee/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -97,15 +97,51 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#purpose">Purpose</a></li>
+<li class="toc-entry toc-h2"><a href="#3a">3.a</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#3a1">3.a.1</a></li>
+<li class="toc-entry toc-h3"><a href="#3a2">3.a.2</a></li>
+<li class="toc-entry toc-h3"><a href="#3a3">3.a.3</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#3b">3.b</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#3b1">3.b.1</a></li>
+<li class="toc-entry toc-h3"><a href="#3b2">3.b.2</a></li>
+<li class="toc-entry toc-h3"><a href="#3b3">3.b.3</a></li>
+<li class="toc-entry toc-h3"><a href="#3b4">3.b.4</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#video-link">Video Link</a></li>
 <li class="toc-entry toc-h2"><a href="#code-for-login">Code for login</a></li>
 <li class="toc-entry toc-h2"><a href="#code-for-register">Code for Register</a></li>
 <li class="toc-entry toc-h2"><a href="#code-for-deleting-account">Code for Deleting account</a></li>
 <li class="toc-entry toc-h2"><a href="#code-for-changing-password">Code for changing password</a></li>
-</ul><h2 id="purpose">
-<a class="anchor" href="#purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purpose</h2>
-<p>I’m implementing a login system so people can create an account on our group’s site, log in, and create their own schedule. Before logging in, there is an account creation process, so users can even create an account. In addition, if the user loses the password, I want to make it possible to change the password by authenticating based on the information about the birthday that was entered when the account was created.</p>
+</ul><h2 id="3a">
+<a class="anchor" href="#3a" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a</h2>
+<h3 id="3a1">
+<a class="anchor" href="#3a1" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a.1</h3>
+<p>The program is coded so that the user can create an account on the site and log in. In addition, we made it possible for users to delete their accounts so that they can retrieve their passwords if they are lost.</p>
+<h3 id="3a2">
+<a class="anchor" href="#3a2" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a.2</h3>
+<p>In the video, it shows user inputting new username and password to make a new account. When you log in, enter the correct username and password, and go to the main page. If incorrect, the login page tells you that the username or password is incorrect.</p>
+<h3 id="3a3">
+<a class="anchor" href="#3a3" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a.3</h3>
+<p>The video will show user inputting own username, password, and birthday for making account. If account is finally created, the user will go to login page for the login. The video will show that if user enters correct username and password, he will go to main website. If there is an error during login, the warning will come out. Besides, in order to change password, user has to input the right birthday and username.</p>
+<h2 id="3b">
+<a class="anchor" href="#3b" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b</h2>
+<h3 id="3b1">
+<a class="anchor" href="#3b1" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.1</h3>
+<p><a href="../images/list_cpt.png">list</a></p>
+<h3 id="3b2">
+<a class="anchor" href="#3b2" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.2</h3>
+<p><a href="../images/signup_cpt.png">signup</a></p>
+<h3 id="3b3">
+<a class="anchor" href="#3b3" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.3</h3>
+<p>data</p>
+<h3 id="3b4">
+<a class="anchor" href="#3b4" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.4</h3>
+
 <h2 id="video-link">
 <a class="anchor" href="#video-link" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video Link</h2>
 <p><a href="">Link</a></p>
