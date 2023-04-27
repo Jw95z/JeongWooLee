@@ -80,7 +80,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -180,7 +180,6 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h4"><a href="#Popcorn-Hacks-(0.2)">Popcorn Hacks (0.2) </a></li>
 <li class="toc-entry toc-h2"><a href="#Submit-By-Thursday-8:35-A.M.">Submit By Thursday 8:35 A.M. </a></li>
 <li class="toc-entry toc-h2"><a href="#Question-Hacks;">Question Hacks; </a></li>
-<li class="toc-entry toc-h2"><a href="#What-is-a-DataFrame?">What is a DataFrame? </a></li>
 </ul>
 </li>
 </ul><!--
@@ -1403,6 +1402,57 @@ Standard Deviation Minutes:  12.844102823170283
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1">#Create a NumPy array of the x</span>
+<span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">24</span> <span class="p">,</span><span class="mi">28</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">72</span><span class="p">])</span>
+
+<span class="c1"># Calculate the percentile rank of x</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">75</span><span class="p">])</span>
+
+<span class="c1"># Print the results</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The 25th percentile"</span><span class="p">,</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">" points"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The 50th percentile"</span><span class="p">,</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">" points"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The 75th percentile"</span><span class="p">,</span> <span class="n">t</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">" points"</span><span class="p">)</span>
+
+<span class="c1"># Determine the number of players who are in the top 10% x</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">points</span><span class="p">[</span><span class="n">points</span> <span class="o">&gt;=</span> <span class="n">t</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"There are"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="s2">"players in the top 10%"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The 25th percentile 16.0  points
+The 50th percentile 22.0  points
+The 75th percentile 29.0  points
+There are 2 players in the top 10%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1421,11 +1471,18 @@ Standard Deviation Minutes:  12.844102823170283
 <ul>
 <li>NumPy is used for numerical computations, while Pandas is used for data manipulation and analysis.</li>
 </ul>
-<h2 id="What-is-a-DataFrame?">
-<a class="anchor" href="#What-is-a-DataFrame?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a DataFrame?<a class="anchor-link" href="#What-is-a-DataFrame?"> </a>
-</h2>
+<p>What is a DataFrame?</p>
+<ul>
+<li>A DataFrame is a data structure in Pandas that represents a table of rows and columns.</li>
+</ul>
 <p>What are some common operations you can perform with NunPy?</p>
+<ul>
+<li>Some common operations in NumPy include array creation, slicing, indexing, and mathematical operations.</li>
+</ul>
 <p>How Can You Incorporate Either of these Data Analysis Tools (NunPy, Pandas) into your project?</p>
+<ul>
+<li>You can incorporate either NumPy or Pandas into your project by importing the library in your Python code and using its functions and methods for data analysis and manipulation.</li>
+</ul>
 
 </div>
 </div>
