@@ -80,7 +80,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      4 min read
     
 </span></p>
 
@@ -197,21 +197,21 @@ window.onload = wrap_img;
 <a class="anchor" href="#Binary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary<a class="anchor-link" href="#Binary"> </a>
 </h2>
 <ol>
-<li>Binary is a base ___ number system.</li>
-<li>0 represents <strong><strong> and 1 represents </strong></strong>.</li>
-<li>A <em>__</em> is the minimum unit of binary information stored in a computer system.</li>
+<li>Binary is a base 2 number system.</li>
+<li>0 represents OFF and 1 represents ON.</li>
+<li>A Bit is the minimum unit of binary information stored in a computer system.</li>
 </ol>
 <h2 id="Boolean-Expressions">
 <a class="anchor" href="#Boolean-Expressions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boolean Expressions<a class="anchor-link" href="#Boolean-Expressions"> </a>
 </h2>
 <ol>
-<li>A <strong>_</strong> <strong>___</strong> is a logical statement that is either TRUE or FALSE and compares data.</li>
+<li>A Boolean Expression is a logical statement that is either TRUE or FALSE and compares data.</li>
 </ol>
 <h2 id="Truth-Tables">
 <a class="anchor" href="#Truth-Tables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Truth Tables<a class="anchor-link" href="#Truth-Tables"> </a>
 </h2>
 <ol>
-<li>The logical operations shown in truth tables are <strong><em>, </em></strong>, <strong><em>, and </em></strong>.</li>
+<li>The logical operations shown in truth tables are AND, OR, NOT, and XOR.</li>
 </ol>
 
 </div>
@@ -408,19 +408,19 @@ window.onload = wrap_img;
 <a class="anchor" href="#Binary-to-Decimal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary to Decimal<a class="anchor-link" href="#Binary-to-Decimal"> </a>
 </h3>
 <ol>
-<li>We can count in binary by using powers of <em>__</em>.</li>
-<li>In binary, we read from <strong><strong> to </strong></strong>.</li>
-<li>0111 has a value of <em>__</em>.</li>
+<li>We can count in binary by using powers of two.</li>
+<li>In binary, we read from right to left.</li>
+<li>0111 has a value of 7.</li>
 </ol>
 <h3 id="Binary-Search">
 <a class="anchor" href="#Binary-Search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Search<a class="anchor-link" href="#Binary-Search"> </a>
 </h3>
 <ol>
-<li>For a binary search, the list must be <strong>_</strong>. </li>
-<li>In a binary search, computers start at the <strong>_</strong>(front,middle,end)/</li>
-<li>The number of steps required in a binary search follows the equation: <strong>_</strong>.</li>
-<li>Binary searches also work with a list of <em>__</em>. We can sort them alphabetically.</li>
-<li>Binary searches can be represented in <strong>__</strong> diagrams.</li>
+<li>For a binary search, the list must be sorted. </li>
+<li>In a binary search, computers start at the middle(front,middle,end)/</li>
+<li>The number of steps required in a binary search follows the equation: log2(n)+1.</li>
+<li>Binary searches also work with a list of strings. We can sort them alphabetically.</li>
+<li>Binary searches can be represented in tree diagrams.</li>
 </ol>
 
 </div>
@@ -475,6 +475,197 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"put number"</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">y</span><span class="o">=</span><span class="s2">""</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"binary"</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">x</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+    <span class="n">y</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="o">%</span><span class="k">2</span>)+y
+    <span class="n">x</span><span class="o">//=</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>put number
+17
+binary
+10001
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"put the number"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">ten</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span> <span class="o">==</span> <span class="s1">'1'</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">ten</span> <span class="o">+=</span> <span class="n">x</span>
+        
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'1'</span><span class="p">:</span>
+            <span class="n">ten</span> <span class="o">=</span> <span class="n">ten</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="n">i</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="n">ten</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1010
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hexa</span><span class="p">(</span><span class="n">decimal</span><span class="p">):</span>
+    <span class="n">hex_digits</span> <span class="o">=</span> <span class="s2">"0123456789ABCDEF"</span>  
+    <span class="n">hex_string</span> <span class="o">=</span> <span class="s2">""</span>  
+    <span class="k">while</span> <span class="n">decimal</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">remainder</span> <span class="o">=</span> <span class="n">decimal</span> <span class="o">%</span> <span class="mi">16</span>  
+        <span class="n">hex_string</span> <span class="o">+=</span> <span class="n">hex_digits</span><span class="p">[</span><span class="n">remainder</span><span class="p">]</span>  
+        <span class="n">decimal</span> <span class="o">//=</span> <span class="mi">16</span>  
+    <span class="k">return</span> <span class="n">hex_string</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"put a number"</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="n">hexa</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>122
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'7A'</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hex_to_binary</span><span class="p">(</span><span class="n">hex_string</span><span class="p">):</span>
+    <span class="n">hex_digits</span> <span class="o">=</span> <span class="s2">"0123456789ABCDEF"</span>  
+    <span class="n">binary_string</span> <span class="o">=</span> <span class="s2">""</span>  
+    <span class="k">for</span> <span class="n">hex_digit</span> <span class="ow">in</span> <span class="n">hex_string</span><span class="p">:</span>
+        <span class="n">decimal_value</span> <span class="o">=</span> <span class="n">hex_digits</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">hex_digit</span><span class="p">)</span>  
+        <span class="n">binary_value</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="n">decimal_value</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>  
+        <span class="n">binary_string</span> <span class="o">+=</span> <span class="n">binary_value</span>  
+    <span class="k">return</span> <span class="n">binary_string</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"put a number"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="n">hex_to_binary</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>09
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'00001001'</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -490,6 +681,87 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">array</span><span class="o">=</span><span class="nb">list</span><span class="p">(),</span> <span class="n">target</span><span class="o">=</span><span class="nb">int</span><span class="p">(),</span> <span class="n">left</span><span class="o">=</span><span class="nb">int</span><span class="p">(),</span> <span class="n">right</span><span class="o">=</span><span class="nb">int</span><span class="p">()):</span>
+    <span class="k">if</span> <span class="n">left</span> <span class="o">&gt;</span> <span class="n">right</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+    <span class="n">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">left</span> <span class="o">+</span> <span class="n">right</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>     
+    <span class="k">if</span> <span class="n">target</span> <span class="o">==</span> <span class="n">array</span><span class="p">[</span><span class="n">mid</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="n">mid</span>
+    <span class="k">elif</span> <span class="n">target</span> <span class="o">&gt;</span> <span class="n">array</span><span class="p">[</span><span class="n">mid</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="n">binary_search</span><span class="p">(</span><span class="n">array</span><span class="o">=</span><span class="n">array</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="n">target</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">right</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">binary_search</span><span class="p">(</span><span class="n">array</span><span class="o">=</span><span class="n">array</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="n">target</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">array</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">31</span><span class="p">]</span>  
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">binary_search</span><span class="p">(</span><span class="n">array</span><span class="o">=</span><span class="n">array</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">result</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"NO"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Donut"</span><span class="p">,</span> <span class="s2">"Cake"</span><span class="p">,</span> <span class="s2">"Soda"</span><span class="p">,</span> <span class="s2">"Banana"</span><span class="p">,</span> <span class="s2">"Fruit"</span><span class="p">]</span>
+<span class="n">list2</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['Banana', 'Cake', 'Donut', 'Fruit', 'Soda']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -505,6 +777,117 @@ OR</li>
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decimal_to_octal</span><span class="p">(</span><span class="n">decimal</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s1">''</span>  
+    <span class="k">while</span> <span class="n">decimal</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">remainder</span> <span class="o">=</span> <span class="n">decimal</span> <span class="o">%</span> <span class="mi">8</span>  
+        <span class="n">result</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">remainder</span><span class="p">)</span> <span class="o">+</span> <span class="n">result</span> 
+        <span class="n">decimal</span> <span class="o">//=</span> <span class="mi">8</span> 
+    <span class="k">return</span> <span class="n">result</span> <span class="ow">or</span> <span class="s1">'0'</span>  
+<span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"put the number"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">ten</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span> <span class="o">==</span> <span class="s1">'1'</span> <span class="k">else</span> <span class="mi">0</span>
+        <span class="n">ten</span> <span class="o">+=</span> <span class="n">x</span>
+        
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'1'</span><span class="p">:</span>
+            <span class="n">ten</span> <span class="o">=</span> <span class="n">ten</span> <span class="o">+</span> <span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="n">i</span><span class="p">)</span>
+        
+<span class="n">decimal_to_octal</span><span class="p">(</span><span class="n">ten</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1001010
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'112'</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">change</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">first</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="n">ret</span> <span class="o">=</span> <span class="s1">''</span>  
+    <span class="k">while</span> <span class="n">num</span><span class="p">:</span> 
+        <span class="n">ret</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">48</span><span class="p">)</span> 
+        <span class="n">num</span> <span class="o">//=</span> <span class="mi">2</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span> 
+        <span class="n">ret</span> <span class="o">+=</span> <span class="s1">'0'</span>
+
+    <span class="n">idx</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">if</span> <span class="n">first</span><span class="p">:</span> 
+        <span class="k">while</span> <span class="n">idx</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">ret</span><span class="p">[</span><span class="n">idx</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'0'</span><span class="p">:</span>
+            <span class="n">idx</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">ret</span><span class="p">[:</span><span class="n">idx</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">isFirst</span> <span class="o">=</span> <span class="kc">True</span> 
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">N</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">change</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">N</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="n">isFirst</span><span class="p">),</span><span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+    <span class="n">isFirst</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1111</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -557,6 +940,22 @@ OR</li>
 </tr>
 </tbody>
 </table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/JeongWooLee/images/copied_from_nb/../images/quizscore.png" alt="quiz"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/JeongWooLee/images/copied_from_nb/../images/binaryquiz.png" alt="binary"></p>
 
 </div>
 </div>
