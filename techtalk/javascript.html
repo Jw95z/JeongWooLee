@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      14 min read
     
 </span></p>
 
@@ -294,10 +294,10 @@ window.onload = wrap_img;
 
 
 
-<div id="8caff5cb-08b3-4544-8c06-afbb7171160e"></div>
+<div id="5de09c0d-de69-4dbb-bcc9-ca770c75b061"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#8caff5cb-08b3-4544-8c06-afbb7171160e');
+var element = $('#5de09c0d-de69-4dbb-bcc9-ca770c75b061');
 console.log("JavaScript/Jupyter Output Intro");
 
 // Browser Console output; debugging or tracing
@@ -370,10 +370,10 @@ element.append('<br><b>Hello World Again!');
 
 
 
-<div id="d8a2d1a3-f1d5-4c9b-9ad5-4e9840790bf3"></div>
+<div id="dc99b89d-ff35-4029-b3c9-e73159d5ca51"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d8a2d1a3-f1d5-4c9b-9ad5-4e9840790bf3');
+var element = $('#dc99b89d-ff35-4029-b3c9-e73159d5ca51');
 console.log("Variable Definition");
 
 var msg = "Hello, World!";
@@ -455,10 +455,10 @@ element.text(msg);
 
 
 
-<div id="f9fa359b-c224-4127-8b37-5008ebb0fbb6"></div>
+<div id="0c7501e9-20e0-4d16-8de5-2ea1ed7cefe9"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#f9fa359b-c224-4127-8b37-5008ebb0fbb6');
+var element = $('#0c7501e9-20e0-4d16-8de5-2ea1ed7cefe9');
 console.log("Function Definition");
 
 /* Function: logIt
@@ -566,10 +566,10 @@ logIt(msg + "  " + classOf); // concatenation of strings
 
 
 
-<div id="713a048c-3b7d-4391-a6a1-57b88f4f4035"></div>
+<div id="d752a433-dde4-4f9f-87c4-b8e2c2f4eb17"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#713a048c-3b7d-4391-a6a1-57b88f4f4035');
+var element = $('#d752a433-dde4-4f9f-87c4-b8e2c2f4eb17');
 console.log("Examine Data Types");
 
 // Function to add typeof to output
@@ -816,10 +816,10 @@ logIt(JSON.stringify(person));  //method used to convert this object into readab
 
 
 
-<div id="c72ca872-4ee4-44c5-b21a-aff4b36cad17"></div>
+<div id="c9d0df6e-1b32-4f7a-9e0c-773dd223bc73"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c72ca872-4ee4-44c5-b21a-aff4b36cad17');
+var element = $('#c9d0df6e-1b32-4f7a-9e0c-773dd223bc73');
 console.log("Person objects");
 
 /* class: Person
@@ -1037,10 +1037,10 @@ student.logIt(); // log to console
 
 
 
-<div id="8e9573c6-eaad-45b1-bed2-fe21e22e3b80"></div>
+<div id="b35c6719-4782-418f-9262-b75b9678ac20"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#8e9573c6-eaad-45b1-bed2-fe21e22e3b80');
+var element = $('#b35c6719-4782-418f-9262-b75b9678ac20');
 console.log("Classroom object");
 
 /* class: Person
@@ -1229,10 +1229,10 @@ $('#jsonText').text(compsci.json);  // posts/embeds/writes compsci.json to HTML 
 
 
 
-<div id="1eae12c5-743a-4115-b03c-92f0475ff3da"></div>
+<div id="85571876-4ab5-4526-97c8-3c693a3bd1ae"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#1eae12c5-743a-4115-b03c-92f0475ff3da');
+var element = $('#85571876-4ab5-4526-97c8-3c693a3bd1ae');
 console.log("Classroom Web Page");
 
 // extract JSON text from HTML page
@@ -1407,200 +1407,176 @@ for (var row of classroom) {
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<script>
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+    function testButtonClick(city) {
 
-    <span class="n">function</span> <span class="n">testButtonClick</span><span class="p">(</span><span class="n">city</span><span class="p">)</span> <span class="p">{</span>
-        
-        <span class="k">if</span> <span class="p">(</span><span class="o">!</span>city.trim<span class="o">())</span> <span class="o">{</span>
-            <span class="n">alert</span><span class="p">(</span><span class="s2">&quot;Enter a city.&quot;</span><span class="p">);</span>
-            <span class="k">return</span><span class="p">;</span>
-        <span class="p">}</span>  
+        if (!city.trim()) {
+            alert("Enter a city.");
+            return;
+        }  
 
-<span class="o">//</span><span class="n">alert</span><span class="p">(</span><span class="s2">&quot;yo momma!:  &quot;</span> <span class="o">+</span> <span class="n">city</span><span class="p">);</span>
+//alert("yo momma!:  " + city);
 
-        <span class="o">//</span> <span class="n">prepare</span> <span class="n">HTML</span> <span class="n">result</span> <span class="n">container</span> <span class="k">for</span> <span class="n">new</span> <span class="n">output</span>
-        <span class="n">const</span> <span class="n">resultContainer</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;astronomy&quot;</span><span class="p">);</span>
+        // prepare HTML result container for new output
+        const resultContainer = document.getElementById("astronomy");
 
-        <span class="o">//</span><span class="n">clear</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">astronomy</span> <span class="n">table</span>
-        <span class="n">resultContainer</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+        //clear contents of astronomy table
+        resultContainer.innerHTML = "";
 
-<span class="o">//</span><span class="n">alert</span><span class="p">(</span><span class="s2">&quot;1: &quot;</span> <span class="o">+</span> <span class="n">resultContainer</span><span class="p">);</span>
+//alert("1: " + resultContainer);
 
-        <span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">options</span>
-        <span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://weatherapi-com.p.rapidapi.com/astronomy.json?q=&quot;</span> <span class="o">+</span> <span class="n">city</span><span class="p">;</span> 
-                        
-<span class="o">//</span><span class="n">alert</span><span class="p">(</span><span class="s2">&quot;2: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">);</span>
-            
-        <span class="n">const</span> <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="n">method</span><span class="p">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">GET</span><span class="p">,</span> <span class="n">POST</span><span class="p">,</span> <span class="n">PUT</span><span class="p">,</span> <span class="n">DELETE</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
-            <span class="n">mode</span><span class="p">:</span> <span class="s1">&#39;cors&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">no</span><span class="o">-</span><span class="n">cors</span><span class="p">,</span> <span class="o">*</span><span class="n">cors</span><span class="p">,</span> <span class="n">same</span><span class="o">-</span><span class="n">origin</span>
-            <span class="n">cache</span><span class="p">:</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">default</span><span class="p">,</span> <span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">reload</span><span class="p">,</span> <span class="n">force</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">only</span><span class="o">-</span><span class="k">if</span><span class="o">-</span><span class="n">cached</span>
-            <span class="n">credentials</span><span class="p">:</span> <span class="s1">&#39;omit&#39;</span><span class="p">,</span> <span class="o">//</span> <span class="n">include</span><span class="p">,</span> <span class="o">*</span><span class="n">same</span><span class="o">-</span><span class="n">origin</span><span class="p">,</span> <span class="n">omit</span>
-            <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;X-RapidAPI-Key&#39;</span><span class="p">:</span> <span class="s1">&#39;0b6ef107f7msh5606de624633ceap17521ejsn27566d20ff5b&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;X-RapidAPI-Host&#39;</span><span class="p">:</span> <span class="s1">&#39;weatherapi-com.p.rapidapi.com&#39;</span>
-            <span class="p">},</span>
-        <span class="p">};</span>
+        // prepare fetch options
+        const url = "https://weatherapi-com.p.rapidapi.com/astronomy.json?q=" + city; 
 
-<span class="o">//</span><span class="n">alert</span><span class="p">(</span><span class="s2">&quot;3: &quot;</span> <span class="o">+</span> <span class="n">headers</span><span class="p">)</span>
+//alert("2: " + url);
 
-<span class="o">//</span><span class="n">alert</span><span class="p">(</span><span class="s2">&quot;3a: pre-fetch&quot;</span> <span class="o">+</span> <span class="n">headers</span><span class="p">);</span>
+        const headers = {
+            method: 'GET', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'omit', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json',
+                'X-RapidAPI-Key': '0b6ef107f7msh5606de624633ceap17521ejsn27566d20ff5b',
+                'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+            },
+        };
 
-        <span class="o">//</span> <span class="n">fetch</span> <span class="n">the</span> <span class="n">API</span>
-        <span class="n">fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="p">)</span>
-        <span class="o">//</span> <span class="n">response</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">RESTful</span> <span class="s2">&quot;promise&quot;</span> <span class="n">on</span> <span class="nb">any</span> <span class="n">successful</span> <span class="n">fetch</span>
-        <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
-            <span class="o">//</span> <span class="n">check</span> <span class="k">for</span> <span class="n">response</span> <span class="n">errors</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">!==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+//alert("3: " + headers)
 
-                <span class="n">const</span> <span class="n">errorMsg</span> <span class="o">=</span> <span class="s1">&#39;Database response error: &#39;</span> <span class="o">+</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="p">;</span>
-                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">errorMsg</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">tr</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">td</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">td</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">errorMsg</span><span class="p">;</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">td</span><span class="p">);</span>
-                <span class="n">resultContainer</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">tr</span><span class="p">);</span>
+//alert("3a: pre-fetch" + headers);
 
-                <span class="k">return</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="o">//</span> <span class="n">valid</span> <span class="n">response</span> <span class="n">will</span> <span class="n">have</span> <span class="n">json</span> <span class="n">data</span>
-            <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
-                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
-                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="p">)</span>
+        // fetch the API
+        fetch(url, headers)
+        // response is a RESTful "promise" on any successful fetch
+        .then(response => {
+            // check for response errors
+            if (response.status !== 200) {
 
-                <span class="o">//</span> <span class="n">World</span> <span class="n">Data</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">name</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;region&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">region</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;country&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">country</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">lat</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;lon&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">lon</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;tz_id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">tz_id</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;localtime_epoch&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">localtime_epoch</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;localtime&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">localtime</span><span class="p">;</span>
+                const errorMsg = 'Database response error: ' + response.status;
+                console.log(errorMsg);
+                const tr = document.createElement("tr");
+                const td = document.createElement("td");
+                td.innerHTML = errorMsg;
+                tr.appendChild(td);
+                resultContainer.appendChild(tr);
 
-                <span class="o">//</span><span class="n">alert</span><span class="p">(</span><span class="s2">&quot;data.astronomy&quot;</span> <span class="o">+</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">sunrise</span><span class="p">);</span>
-                <span class="o">//</span> <span class="n">tr</span> <span class="k">for</span> <span class="n">each</span> <span class="n">row</span>
-                <span class="n">const</span> <span class="n">tr</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
+                return;
+            }
+            // valid response will have json data
+            response.json().then(data => {
+                console.log(data);
+                console.log(data.location)
 
-                <span class="o">//</span> <span class="n">td</span> <span class="k">for</span> <span class="n">each</span> <span class="n">column</span>
-                <span class="n">const</span> <span class="n">sunrise</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">sunset</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">moonrise</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">moonset</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">moon_phase</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">moon_illumination</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
+                // World Data
+                document.getElementById("name").innerHTML = data.location.name;
+                document.getElementById("region").innerHTML = data.location.region;
+                document.getElementById("country").innerHTML = data.location.country;
+                document.getElementById("lat").innerHTML = data.location.lat;
+                document.getElementById("lon").innerHTML = data.location.lon;
+                document.getElementById("tz_id").innerHTML = data.location.tz_id;
+                document.getElementById("localtime_epoch").innerHTML = data.location.localtime_epoch;
+                document.getElementById("localtime").innerHTML = data.location.localtime;
 
-                <span class="o">//</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">specific</span> <span class="n">to</span> <span class="n">the</span> <span class="n">API</span>
-                <span class="n">sunrise</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">sunrise</span><span class="p">;</span>
-                <span class="n">sunset</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">sunset</span><span class="p">;</span> 
-                <span class="n">moonrise</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">moonrise</span><span class="p">;</span> 
-                <span class="n">moonset</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">moonset</span><span class="p">;</span> 
-                <span class="n">moon_phase</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">moon_phase</span><span class="p">;</span> 
-                <span class="n">moon_illumination</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">moon_illumination</span><span class="p">;</span> 
+                //alert("data.astronomy" + data.astronomy.astro.sunrise);
+                // tr for each row
+                const tr = document.createElement("tr");
 
-                <span class="o">//</span> <span class="n">this</span> <span class="n">builds</span> <span class="n">td</span><span class="s1">&#39;s into tr</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">sunrise</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">sunset</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">moonrise</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">moonset</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">moon_phase</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">moon_illumination</span><span class="p">);</span>
+                // td for each column
+                const sunrise = document.createElement("td");
+                const sunset = document.createElement("td");
+                const moonrise = document.createElement("td");
+                const moonset = document.createElement("td");
+                const moon_phase = document.createElement("td");
+                const moon_illumination = document.createElement("td");
 
-                <span class="o">//</span> <span class="n">add</span> <span class="n">HTML</span> <span class="n">to</span> <span class="n">container</span>
-                <span class="n">resultContainer</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">tr</span><span class="p">);</span>
-            <span class="p">})</span>
-        <span class="p">})</span>
+                // data is specific to the API
+                sunrise.innerHTML = data.astronomy.astro.sunrise;
+                sunset.innerHTML = data.astronomy.astro.sunset; 
+                moonrise.innerHTML = data.astronomy.astro.moonrise; 
+                moonset.innerHTML = data.astronomy.astro.moonset; 
+                moon_phase.innerHTML = data.astronomy.astro.moon_phase; 
+                moon_illumination.innerHTML = data.astronomy.astro.moon_illumination; 
 
-<span class="o">//</span><span class="n">alert</span><span class="p">(</span><span class="s2">&quot;4: post fetch&quot;</span><span class="p">);</span>
+                // this builds td's into tr
+                tr.appendChild(sunrise);
+                tr.appendChild(sunset);
+                tr.appendChild(moonrise);
+                tr.appendChild(moonset);
+                tr.appendChild(moon_phase);
+                tr.appendChild(moon_illumination);
 
-    <span class="p">}</span>
+                // add HTML to container
+                resultContainer.appendChild(tr);
+            })
+        })
+
+//alert("4: post fetch");
+
+    }
 
 
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</script><body>
 
-<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">API</span> <span class="n">Information</span> <span class="ow">and</span> <span class="n">Example</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;#astronomybutton&quot;</span><span class="o">&gt;&lt;</span><span class="n">button</span><span class="o">&gt;</span> <span class="n">Astronomy</span> <span class="n">API</span> <span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
-
-    
-<span class="o">&lt;!</span>-- HTML table fragment <span class="k">for</span> page --&gt;
+<h1>API Information and Example</h1><p><a href="#astronomybutton"><button> Astronomy API </button></a></p>
+<!-- HTML table fragment for page -->
 
 
-<span class="n">If</span> <span class="n">you</span> <span class="n">choose</span> <span class="n">a</span> <span class="n">city</span><span class="p">,</span> <span class="n">it</span> <span class="n">will</span> <span class="nb">list</span> <span class="n">out</span> <span class="n">the</span> <span class="n">location</span> <span class="ow">and</span> <span class="n">astronomy</span> <span class="n">details</span><span class="o">.</span>
-
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;astronomybutton&quot;</span><span class="o">&gt;</span>
-
-
-<span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">&quot;city&quot;</span><span class="o">&gt;</span><span class="n">Enter</span> <span class="n">city</span> <span class="n">name</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;city&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;city&quot;</span><span class="o">&gt;&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Get Location &amp; Astronomy&quot;</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">&quot;testButtonClick(document.getElementById(&#39;city&#39;).value)&quot;</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">thead</span><span class="o">&gt;</span><span class="n">Location</span> <span class="n">Details</span>
-  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">City</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Region</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Country</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Latitude</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Longitude</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Time</span> <span class="n">Zone</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Local</span> <span class="n">Time</span> <span class="n">Epoch</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Local</span> <span class="n">Date</span> <span class="ow">and</span> <span class="n">Time</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">thead</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">tbody</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;name&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;region&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;country&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lat&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lon&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;tz_id&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;localtime_epoch&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;localtime&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">tbody</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+<p>If you choose a city, it will list out the location and astronomy details.</p>
+<div id="astronomybutton">
 
 
-
-
-
-
-<span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">thead</span><span class="o">&gt;</span><span class="n">Astronomy</span> <span class="n">Details</span>
-    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Sunrise</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Sunset</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Moonrise</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Moonset</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Moon</span> <span class="n">Phase</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Moon</span> <span class="n">Illumination</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">thead</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tbody</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;astronomy&quot;</span><span class="o">&gt;</span>
-        <span class="o">&lt;!</span>-- generated rows --&gt;
-    <span class="o">&lt;/</span><span class="n">tbody</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>    
-</pre></div>
-
-    </div>
+<p><label for="city">Enter city name:</label></p>
+<p><input type="text" id="city" name="city" />&nbsp;&nbsp;<input type="button" value="Get Location &amp; Astronomy" onclick="testButtonClick(document.getElementById('city').value)" />
+<br /><br /></p>
+<table>
+  <thead>Location Details
+  <tr>
+    <th>City</th>
+    <th>Region</th>
+    <th>Country</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Time Zone</th>
+    <th>Local Time Epoch</th>
+    <th>Local Date and Time</th>
+  </tr>
+  </thead>
+  <tbody>
+    <td id="name"></td>
+    <td id="region"></td>
+    <td id="country"></td>
+    <td id="lat"></td>
+    <td id="lon"></td>
+    <td id="tz_id"></td>
+    <td id="localtime_epoch"></td>
+    <td id="localtime"></td>
+  </tbody>
+</table><table>
+    <thead>Astronomy Details
+    <tr>
+        <th>Sunrise</th>
+        <th>Sunset</th>
+        <th>Moonrise</th>
+        <th>Moonset</th>
+        <th>Moon Phase</th>
+        <th>Moon Illumination</th>
+    </tr>
+    </thead>
+    <tbody id="astronomy">
+        <!-- generated rows -->
+    </tbody>
+</table>
 </div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ 
 
-</div>
-    
-
-</div>
-
+</body></div></div></div></div>
 
 
   </div><a class="u-url" href="/JeongWooLee/techtalk/javascript" hidden></a>
