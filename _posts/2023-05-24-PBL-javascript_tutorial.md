@@ -190,10 +190,10 @@ layout: notebook
 
 
 
-<div id="65722263-b47d-4cd6-a227-6ded446472ff"></div>
+<div id="a96ae066-987d-4414-829c-8dc7db00faad"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#65722263-b47d-4cd6-a227-6ded446472ff');
+var element = $('#a96ae066-987d-4414-829c-8dc7db00faad');
 console.log("JavaScript/Jupyter Output Intro");
 
 // Browser Console output; debugging or tracing
@@ -266,10 +266,10 @@ element.append('<br><b>Hello World Again!');
 
 
 
-<div id="533fdf9a-bce8-44b9-8e40-22e3d172bfbe"></div>
+<div id="d3d2677b-c164-4497-b1c7-86c2a2b23e11"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#533fdf9a-bce8-44b9-8e40-22e3d172bfbe');
+var element = $('#d3d2677b-c164-4497-b1c7-86c2a2b23e11');
 console.log("Variable Definition");
 
 var msg = "Hello, World!";
@@ -351,10 +351,10 @@ element.text(msg);
 
 
 
-<div id="800b99e5-249f-455a-a475-c5674112889a"></div>
+<div id="c15181ed-5f79-4ac6-920e-687acc37b871"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#800b99e5-249f-455a-a475-c5674112889a');
+var element = $('#c15181ed-5f79-4ac6-920e-687acc37b871');
 console.log("Function Definition");
 
 /* Function: logIt
@@ -462,10 +462,10 @@ logIt(msg + "  " + classOf); // concatenation of strings
 
 
 
-<div id="978d9f89-6bdd-4f86-97c2-71bc56d44b81"></div>
+<div id="ca9ed8cc-39d6-41f0-972b-daf9879c1814"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#978d9f89-6bdd-4f86-97c2-71bc56d44b81');
+var element = $('#ca9ed8cc-39d6-41f0-972b-daf9879c1814');
 console.log("Examine Data Types");
 
 // Function to add typeof to output
@@ -712,10 +712,10 @@ logIt(JSON.stringify(person));  //method used to convert this object into readab
 
 
 
-<div id="8cc53b00-d83e-4878-b67f-9e82bb2efb15"></div>
+<div id="68f5f884-b9f2-441a-875a-400acdd78b52"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#8cc53b00-d83e-4878-b67f-9e82bb2efb15');
+var element = $('#68f5f884-b9f2-441a-875a-400acdd78b52');
 console.log("Person objects");
 
 /* class: Person
@@ -933,10 +933,10 @@ student.logIt(); // log to console
 
 
 
-<div id="efdbc19f-bcf7-45f9-b633-5bc8e01cbcbb"></div>
+<div id="582ceb3d-fc2e-446f-bb94-24cac0719fbd"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#efdbc19f-bcf7-45f9-b633-5bc8e01cbcbb');
+var element = $('#582ceb3d-fc2e-446f-bb94-24cac0719fbd');
 console.log("Classroom object");
 
 /* class: Person
@@ -1125,10 +1125,10 @@ $('#jsonText').text(compsci.json);  // posts/embeds/writes compsci.json to HTML 
 
 
 
-<div id="cb2c1795-e57e-4a8e-83af-b1f8907621de"></div>
+<div id="fcd27375-3a6d-43b8-8969-35e295e230db"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#cb2c1795-e57e-4a8e-83af-b1f8907621de');
+var element = $('#fcd27375-3a6d-43b8-8969-35e295e230db');
 console.log("Classroom Web Page");
 
 // extract JSON text from HTML page
@@ -1303,143 +1303,121 @@ for (var row of classroom) {
 </div>
 </div>
 </div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-    <span class="n">function</span> <span class="n">testButtonClick</span><span class="p">(</span><span class="n">city</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="o">!</span>city.trim<span class="o">())</span> <span class="o">{</span>
-            <span class="n">alert</span><span class="p">(</span><span class="s2">&quot;Enter a city.&quot;</span><span class="p">);</span>
-            <span class="k">return</span><span class="p">;</span>
-        <span class="p">}</span>  
-        <span class="n">const</span> <span class="n">resultContainer</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;astronomy&quot;</span><span class="p">);</span>
-        <span class="n">resultContainer</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-        <span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://weatherapi-com.p.rapidapi.com/astronomy.json?q=&quot;</span> <span class="o">+</span> <span class="n">city</span><span class="p">;</span> 
-        <span class="n">const</span> <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="n">method</span><span class="p">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span> 
-            <span class="n">mode</span><span class="p">:</span> <span class="s1">&#39;cors&#39;</span><span class="p">,</span> 
-            <span class="n">cache</span><span class="p">:</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> 
-            <span class="n">credentials</span><span class="p">:</span> <span class="s1">&#39;omit&#39;</span><span class="p">,</span> 
-            <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;X-RapidAPI-Key&#39;</span><span class="p">:</span> <span class="s1">&#39;0b6ef107f7msh5606de624633ceap17521ejsn27566d20ff5b&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;X-RapidAPI-Host&#39;</span><span class="p">:</span> <span class="s1">&#39;weatherapi-com.p.rapidapi.com&#39;</span>
-            <span class="p">},</span>
-        <span class="p">};</span>
-        <span class="n">fetch</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="p">)</span>
-        <span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">!==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">const</span> <span class="n">errorMsg</span> <span class="o">=</span> <span class="s1">&#39;Database response error: &#39;</span> <span class="o">+</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="p">;</span>
-                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">errorMsg</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">tr</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">td</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">td</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">errorMsg</span><span class="p">;</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">td</span><span class="p">);</span>
-                <span class="n">resultContainer</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">tr</span><span class="p">);</span>
-                <span class="k">return</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
-                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
-                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="p">)</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">name</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;region&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">region</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;country&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">country</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;lat&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">lat</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;lon&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">lon</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;tz_id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">tz_id</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;localtime_epoch&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">localtime_epoch</span><span class="p">;</span>
-                <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;localtime&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">location</span><span class="o">.</span><span class="n">localtime</span><span class="p">;</span>
-                <span class="n">const</span> <span class="n">tr</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;tr&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">sunrise</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">sunset</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">moonrise</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">moonset</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">moon_phase</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">const</span> <span class="n">moon_illumination</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">createElement</span><span class="p">(</span><span class="s2">&quot;td&quot;</span><span class="p">);</span>
-                <span class="n">sunrise</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">sunrise</span><span class="p">;</span>
-                <span class="n">sunset</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">sunset</span><span class="p">;</span> 
-                <span class="n">moonrise</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">moonrise</span><span class="p">;</span> 
-                <span class="n">moonset</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">moonset</span><span class="p">;</span> 
-                <span class="n">moon_phase</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">moon_phase</span><span class="p">;</span> 
-                <span class="n">moon_illumination</span><span class="o">.</span><span class="n">innerHTML</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astronomy</span><span class="o">.</span><span class="n">astro</span><span class="o">.</span><span class="n">moon_illumination</span><span class="p">;</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">sunrise</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">sunset</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">moonrise</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">moonset</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">moon_phase</span><span class="p">);</span>
-                <span class="n">tr</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">moon_illumination</span><span class="p">);</span>
-                <span class="n">resultContainer</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">tr</span><span class="p">);</span>
-            <span class="p">})</span>
-        <span class="p">})</span>
-    <span class="p">}</span>
-
-
-<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">API</span> <span class="n">Information</span> <span class="ow">and</span> <span class="n">Example</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;#astronomybutton&quot;</span><span class="o">&gt;&lt;</span><span class="n">button</span><span class="o">&gt;</span> <span class="n">Astronomy</span> <span class="n">API</span> <span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;astronomybutton&quot;</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s2">&quot;city&quot;</span><span class="o">&gt;</span><span class="n">Enter</span> <span class="n">city</span> <span class="n">name</span><span class="p">:</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;city&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;city&quot;</span><span class="o">&gt;&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Get Location &amp; Astronomy&quot;</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">&quot;testButtonClick(document.getElementById(&#39;city&#39;).value)&quot;</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;&lt;</span><span class="n">br</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">thead</span><span class="o">&gt;</span><span class="n">Location</span> <span class="n">Details</span>
-  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">City</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Region</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Country</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Latitude</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Longitude</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Time</span> <span class="n">Zone</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Local</span> <span class="n">Time</span> <span class="n">Epoch</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Local</span> <span class="n">Date</span> <span class="ow">and</span> <span class="n">Time</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">thead</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">tbody</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;name&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;region&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;country&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lat&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;lon&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;tz_id&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;localtime_epoch&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">td</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;localtime&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">tbody</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
-
-
-
-
-
-
-<span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">thead</span><span class="o">&gt;</span><span class="n">Astronomy</span> <span class="n">Details</span>
-    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Sunrise</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Sunset</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Moonrise</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Moonset</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Moon</span> <span class="n">Phase</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Moon</span> <span class="n">Illumination</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">thead</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tbody</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;astronomy&quot;</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tbody</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>    
-</pre></div>
-
-    </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><script>
+    function testButtonClick(city) {
+        if (!city.trim()) {
+            alert("Enter a city.");
+            return;
+        }<br>
+        const resultContainer = document.getElementById("astronomy");
+        resultContainer.innerHTML = "";
+        const url = "<a href="https://weatherapi-com.p.rapidapi.com/astronomy.json?q=">https://weatherapi-com.p.rapidapi.com/astronomy.json?q=</a>" + city; 
+        const headers = {
+            method: 'GET', 
+            mode: 'cors', 
+            cache: 'default', 
+            credentials: 'omit', 
+            headers: {
+                'Content-Type': 'application/json',
+                'X-RapidAPI-Key': '0b6ef107f7msh5606de624633ceap17521ejsn27566d20ff5b',
+                'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+            },
+        };
+        fetch(url, headers)
+        .then(response =&gt; {
+            if (response.status !== 200) {
+                const errorMsg = 'Database response error: ' + response.status;
+                console.log(errorMsg);
+                const tr = document.createElement("tr");
+                const td = document.createElement("td");
+                td.innerHTML = errorMsg;
+                tr.appendChild(td);
+                resultContainer.appendChild(tr);
+                return;
+            }
+            response.json().then(data =&gt; {
+                console.log(data);
+                console.log(data.location)
+                document.getElementById("name").innerHTML = data.location.name;
+                document.getElementById("region").innerHTML = data.location.region;
+                document.getElementById("country").innerHTML = data.location.country;
+                document.getElementById("lat").innerHTML = data.location.lat;
+                document.getElementById("lon").innerHTML = data.location.lon;
+                document.getElementById("tz_id").innerHTML = data.location.tz_id;
+                document.getElementById("localtime_epoch").innerHTML = data.location.localtime_epoch;
+                document.getElementById("localtime").innerHTML = data.location.localtime;
+                const tr = document.createElement("tr");
+                const sunrise = document.createElement("td");
+                const sunset = document.createElement("td");
+                const moonrise = document.createElement("td");
+                const moonset = document.createElement("td");
+                const moon_phase = document.createElement("td");
+                const moon_illumination = document.createElement("td");
+                sunrise.innerHTML = data.astronomy.astro.sunrise;
+                sunset.innerHTML = data.astronomy.astro.sunset; 
+                moonrise.innerHTML = data.astronomy.astro.moonrise; 
+                moonset.innerHTML = data.astronomy.astro.moonset; 
+                moon_phase.innerHTML = data.astronomy.astro.moon_phase; 
+                moon_illumination.innerHTML = data.astronomy.astro.moon_illumination;
+                tr.appendChild(sunrise);
+                tr.appendChild(sunset);
+                tr.appendChild(moonrise);
+                tr.appendChild(moonset);
+                tr.appendChild(moon_phase);
+                tr.appendChild(moon_illumination);
+                resultContainer.appendChild(tr);
+            })
+        })
+    }</p>
+<p>&lt;/script&gt;</p>
+<p><body></p>
+<h1>API Information and Example</h1><p><a href="#astronomybutton"><button> Astronomy API </button></a></p>
+<p><div id="astronomybutton"></p>
+<p><label for="city">Enter city name:</label></p>
+<p><input type="text" id="city" name="city">&nbsp;&nbsp;<input type="button" value="Get Location & Astronomy" onclick="testButtonClick(document.getElementById('city').value)">
+<br><br></p>
+<table>
+  <thead>Location Details
+  <tr>
+    <th>City</th>
+    <th>Region</th>
+    <th>Country</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Time Zone</th>
+    <th>Local Time Epoch</th>
+    <th>Local Date and Time</th>
+  </tr>
+  </thead>
+  <tbody>
+    <td id="name"></td>
+    <td id="region"></td>
+    <td id="country"></td>
+    <td id="lat"></td>
+    <td id="lon"></td>
+    <td id="tz_id"></td>
+    <td id="localtime_epoch"></td>
+    <td id="localtime"></td>
+  </tbody>
+</table><table>
+    <thead>Astronomy Details
+    <tr>
+        <th>Sunrise</th>
+        <th>Sunset</th>
+        <th>Moonrise</th>
+        <th>Moonset</th>
+        <th>Moon Phase</th>
+        <th>Moon Illumination</th>
+    </tr>
+    </thead>
+    <tbody id="astronomy">
+    </tbody>
+</table>
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
