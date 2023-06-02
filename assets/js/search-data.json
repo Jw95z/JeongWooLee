@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "JavaScript Api",
-            "content": "API Information and Example . Astronomy API Enter city name: &nbsp;&nbsp; Location Details City Region Country Latitude Longitude Time Zone Local Time Epoch Local Date and Time . | | | | | | | | Astronomy Details Sunrise Sunset Moonrise Moonset Moon Phase Moon Illumination .",
+            "content": "API Information and Example . Enter city name: &nbsp;&nbsp; Location Details City Region Country Latitude Longitude Time Zone Local Time Epoch Local Date and Time . | | | | | | | | Astronomy Details Sunrise Sunset Moonrise Moonset Moon Phase Moon Illumination .",
             "url": "https://jw95z.github.io/JeongWooLee/javaapi",
             "relUrl": "/javaapi",
             "date": " • Jun 1, 2023"

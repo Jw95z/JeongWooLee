@@ -97,12 +97,7 @@ window.onload = wrap_img;
             if (response.status !== 200) {
                 const errorMsg = 'Database response error: ' + response.status;
                 console.log(errorMsg);
-                const tr = document.createElement("tr");
-                const td = document.createElement("td");
-                td.innerHTML = errorMsg;
-                tr.appendChild(td);
-                resultContainer.appendChild(tr);
-                return;
+                
             }
             response.json().then(data => {
                 console.log(data);
@@ -145,8 +140,7 @@ window.onload = wrap_img;
 <body>
 <h1>API Information and Example</h1>
 
-<a href="#astronomybutton"><button> Astronomy API </button></a>
-<div id="astronomybutton">
+
 <label for="city">Enter city name:</label>
 <input type="text" id="city" name="city" />&nbsp;&nbsp;<input type="button" value="Get Location &amp; Astronomy" onclick="testButtonClick(document.getElementById('city').value)" />
 <br /><br />
@@ -194,7 +188,7 @@ window.onload = wrap_img;
     <tbody id="astronomy">
     </tbody>
 </table>    
-</div></body>
+</body>
 
       </div>
     </main><footer class="site-footer h-card">
